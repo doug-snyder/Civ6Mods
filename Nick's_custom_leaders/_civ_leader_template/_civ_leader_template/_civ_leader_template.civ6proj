@@ -45,10 +45,10 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="NewLeader_Text.xml" />
-    <None Include="Textures\FALLBACK_NEUTRAL_JASPERKITTY.dds.OFF" />
-    <None Include="Textures\FALLBACK_NEUTRAL_JASPERKITTY.tex.OFF" />
-    <None Include="Textures\LEADER_JASPER_KITTY_NEUTRAL.dds.OFF" />
-    <None Include="Textures\LEADER_JASPER_KITTY_NEUTRAL.tex.OFF" />
+    <None Include="Textures\FALLBACK_NEUTRAL_JASPERKITTY.dds" />
+    <None Include="Textures\FALLBACK_NEUTRAL_JASPERKITTY.tex" />
+    <None Include="Textures\LEADER_JASPER_KITTY_NEUTRAL.dds" />
+    <None Include="Textures\LEADER_JASPER_KITTY_NEUTRAL.tex" />
     <None Include="ArtDefs\FallbackLeaders.artdef" />
     <None Include="XLPs\LeaderFallbacks.xlp" />
     <None Include="XLPs\UILeaders.xlp" />
