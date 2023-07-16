@@ -21,7 +21,7 @@ VALUES
 -- Defines the text strings that identify your custom civilization by name.
 -----------------------------------------------
 
-	('en_US',	'LOC_CIVILIZATION_MC_OLMEC_NAME',			'Olmec'			),
+	('en_US',	'LOC_CIVILIZATION_MRSHAKE_CIVNAME_NAME',			'Olmec'			),
 	('en_US',	'LOC_CIVILIZATION_MC_OLMEC_DESCRIPTION',	'Olmec Empire'	),
 	('en_US',	'LOC_CIVILIZATION_MC_OLMEC_ADJECTIVE',  	'Olmec'			),
 	
@@ -33,8 +33,8 @@ VALUES
 -- Please note: The display of in-game icons in text is achieved by using [ICON_Type].
 -----------------------------------------------
 
-	('en_US',	'LOC_TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US_NAME',				'Let the Gods feed us!'				),
-	('en_US',	'LOC_TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US_DESCRIPTION',	
+	('en_US',	'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_NAME',				'Let the Gods feed us!'				),
+	('en_US',	'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_DESCRIPTION',	
 	'Holy Site buildings will yield an additional +2 [ICON_Food] Food, alongside their usual [ICON_Faith] Faith.'	),
 
 -----------------------------------------------
@@ -45,8 +45,8 @@ VALUES
 -- Please note: The display of in-game icons in text is achieved by using [ICON_Type].
 -----------------------------------------------
 
-	('en_US',	'LOC_IMPROVEMENT_OLMEC_COLOSSAL_HEAD_NAME',				'Colossal Head'								),
-	('en_US',	'LOC_IMPROVEMENT_OLMEC_COLOSSAL_HEAD_DESCRIPTION',
+	('en_US',	'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME',				'Colossal Head'								),
+	('en_US',	'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION',
 	'Unlocks the Builder ability to construct a Colossal Head, unique to the Olmec. [NEWLINE][NEWLINE] +1 [ICON_Faith] Faith, +1 [ICON_SCIENCE] Science. +1 [ICON_Faith] Faith if adjacent to a Campus, +1 [ICON_Science] Science if adjacent to a Holy Site. Cities with at least four Colossal heads provide a [ICON_GreatArtist] Great Artist Point. May be built on Rainforest. Cannot be constructed adjacent to another Colossal Head.'	),
 
 -----------------------------------------------
@@ -59,8 +59,8 @@ VALUES
 -- Please note: The display of in-game icons in text is achieved by using [ICON_Type].
 -----------------------------------------------
 
-	('en_US',	'LOC_UNIT_MC_WEREJAGUAR_NAME',	'Werejaguar'	),
-	('en_US',	'LOC_UNIT_MC_WEREJAGUAR_DESCRIPTION',	 
+	('en_US',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',	'Werejaguar'	),
+	('en_US',	'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION',	 
 	'The elite warriors of the Olmec military, these fearsome, masked warriors replace the Spearman and receive a [ICON_Strength] Combat Strength boost during [ICON_Glory_Golden_Age] Golden Ages.'	),
 
 	('en_US',	'LOC_ABILITY_MC_WEREJAGUAR',  '+5 [ICON_Strength] Combat Strength during a [ICON_Glory_Golden_Age] Golden Age.'	),
@@ -158,7 +158,7 @@ VALUES
 -- The order in which city names for a civilization appear is partly affected by the value set for the RandomCityNameDepth within the Civilizations table (again, in Civilization_Config.sql).
 -----------------------------------------------
 
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_1',  'San Lorenzo'),
+	('en_US',	'LOC_CITY_NAME_MRSHAKE_CIVNAME_1',  'San Lorenzo'),
 	('en_US',	'LOC_CITY_NAME_MC_OLMEC_2',  'La Velta'),
 	('en_US',	'LOC_CITY_NAME_MC_OLMEC_3',  'Potrero Nuevo'),
 	('en_US',	'LOC_CITY_NAME_MC_OLMEC_4',  'San Andrés'),

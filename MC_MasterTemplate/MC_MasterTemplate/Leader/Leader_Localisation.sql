@@ -19,55 +19,54 @@ VALUES
 -- Leader Name
 -----------------------------------------------	
 	
-	('en_US',	'LOC_LEADER_MC_PO_NGBE_NAME',  'Po Ngbe'	),
+	('en_US', 'LOC_LEADER_MRSHAKE_CIVLEADER_NAME',  'Civ_Leader_Name'),
 	
 -----------------------------------------------
 -- Leader Unique Ability
 -----------------------------------------------	
 
-	('en_US',	'LOC_TRAIT_LEADER_MC_FEAR_NOT_EXPLORATION_NAME',	'Fear not exploration, for God will guide us'	),
-	('en_US',	'LOC_TRAIT_LEADER_MC_FEAR_NOT_EXPLORATION_DESCRIPTION',		'Settlers and Builders ignore movement penalties in Hills terrain.'	),
+	('en_US', 'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_NAME',			'Leader_Trait_Name'),
+	('en_US', 'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_DESCRIPTION',	'Leader_Trait_Description.'),
 
 -----------------------------------------------
 -- Leader Agenda
 -----------------------------------------------	
 
-	('en_US',	'LOC_AGENDA_MC_PO_NGBE_NAME',	'Seeker of Holy Lands'	),
-	('en_US',	'LOC_AGENDA_MC_PO_NGBE_DESCRIPTION',	'Will explore the lands around him as much as possible. Respects those that commit efforts to science and culture, but dislikes those that do not recognise religion.'	),
+	('en_US',	'LOC_AGENDA_MRSHAKE_CIVLEADER_NAME',			'Civ_Agenda_Name'),
+	('en_US',	'LOC_AGENDA_MRSHAKE_CIVLEADER_DESCRIPTION',		'Civ_Agenda_Description.'),
 	
-	('en_US',	'LOC_DIPLO_KUDO_LEADER_MC_PO_NGBE_REASON_ANY',	'(You have a high culture output and are progressing well with science.)'	),
-	('en_US',	'LOC_DIPLO_MODIFIER_MC_PO_NGBE_HAPPY',	'Ku Po Ngbe recognises your artists and scholars. Let monuments be built for them in celebration!'	),
+	('en_US',	'LOC_DIPLO_KUDO_LEADER_MRSHAKE_CIVLEADER_REASON_ANY',	'(Civ_Leader_Diplo_Kudo_Reason_Any.)'),
+	('en_US',	'LOC_DIPLO_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',			'Civ_Leader_Diplo_Happy.'),
 	
-	('en_US',	'LOC_DIPLO_WARNING_LEADER_MC_PO_NGBE_REASON_ANY',	'(You have a low level of faith.)'	),
-	('en_US',	'LOC_DIPLO_MODIFIER_MC_PO_NGBE_UNHAPPY',	'Religion is the blood that binds the body! Ku Po Ngbe expects you to recognise this more proudly.'	),
+	('en_US',	'LOC_DIPLO_WARNING_LEADER_MRSHAKE_CIVLEADER_REASON_ANY',	'(Civ_Leader_Diplo_Warning_Reason_Any.)'),
+	('en_US',	'LOC_DIPLO_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',				'Civ_Leader_Diplo_Unhappy.'),
 
 		
 -----------------------------------------------
 -- Dawn of Man (Loading Screen) Text
 -----------------------------------------------	
 
-	('en_US',	'LOC_LOADING_INFO_LEADER_MC_PO_NGBE',
-	'Revered Ku of the Olmec, Po Ngbe! Challenge your people to lay claim to the vast lands of Mesoamerica, navigating the hills and forests with mystic ease. Let the world marvel as you erect monuments of the Gods your people worship. Will you, yourself, be declared a God for your leadership? Your fearsome Werejaguars will surely silence those who question your prophecy.'  	),
+	('en_US', 'LOC_LOADING_INFO_LEADER_MRSHAKE_CIVLEADER', 'Civ_Leader_Loading_Info.'),
 
 -----------------------------------------------
 -- Diplomacy Text: First Meet
 -----------------------------------------------	
 
 	-- First AI Line (ANY)
-	('en_US',	'LOC_DIPLO_FIRST_MEET_LEADER_MC_PO_NGBE_ANY',
-	'Approach, stranger. Nehua notoca Po Ngbe, Ku of the Olmec people. Nechpactia nimitzixmati. Know that we cultivate many lands and keep a watchful eye over the rolling hills and plains, far and wide.' ),
+	('en_US',	'LOC_DIPLO_FIRST_MEET_LEADER_MRSHAKE_CIVLEADER_ANY',
+	'Civ_Leader_First_Meet_Any.' ),
 	
 	-- AI invitation to visit nearby City (ANY)
-	('en_US',	'LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MC_PO_NGBE_ANY',
-	'We can help you navigate our territory and walk our grounds, wondering at the colossal monuments we built for our Gods. Will you give us the honour of your company?'	),
+	('en_US',	'LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MRSHAKE_CIVLEADER_ANY',
+	'Civ_Leader_First_Invitation_Any.'	),
 	
 	-- AI accepts human invitation (ANY)
-	('en_US',	'LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MC_PO_NGBE_ANY',
-	'I am glad to hear it.'	),
+	('en_US',	'LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MRSHAKE_CIVLEADER_ANY',
+	'Civ_Leader_First_Invitation_Accept_Any.'	),
 	
 	-- AI invitation to exchange Capital Information (ANY)
-	('en_US',	'LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_MC_PO_NGBE_ANY',
-	'How better to know a friend than to know his home? Will you indulge our tribesmen, for we will certainly welcome yours?'	),
+	('en_US',	'LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_MRSHAKE_CIVLEADER_ANY',
+	'Civ_Leader_First_Capital_Exchange_Any.'	),
 
 -----------------------------------------------
 -- Diplomacy Text: Greetings
@@ -285,7 +284,7 @@ VALUES
 -- Leader Quote and Civilopedia Text
 --------------------------------------------------------------------
 
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MC_PO_NGBE_QUOTE',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_QUOTE',
 	'May spirits hold upright your purity; or else may righteousness take root in your tomb.'  ),
 	
 	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MC_PO_NGBE_TITLE',

@@ -13,14 +13,14 @@
 
 INSERT INTO	PlayerColors (Type, Usage, PrimaryColor, SecondaryColor, Alt1PrimaryColor, Alt1SecondaryColor, Alt2PrimaryColor, Alt2SecondaryColor, Alt3PrimaryColor, Alt3SecondaryColor )
 VALUES	(
-		'LEADER_MC_PO_NGBE', -- Type
-		'Unique', -- Usage
-		'COLOR_MC_OLMEC_A_PRIMARY', -- PrimaryColor
-		'COLOR_MC_OLMEC_A_SECONDARY', -- SecondaryColor
-		'COLOR_MC_OLMEC_B_PRIMARY', -- Alt1PrimaryColor
-		'COLOR_MC_OLMEC_B_SECONDARY', -- Alt1SecondaryColor
-		'COLOR_MC_OLMEC_C_PRIMARY', -- Alt2PrimaryColor
-		'COLOR_MC_OLMEC_C_SECONDARY', -- Alt2SecondaryColor
-		'COLOR_MC_OLMEC_D_PRIMARY', -- Alt3PrimaryColor
-		'COLOR_MC_OLMEC_D_SECONDARY' -- Alt3SecondaryColor
+		'LEADER_MRSHAKE_CIVLEADER',				-- Type
+		'Unique',								-- Usage
+		'COLOR_MRSHAKE_CIVLEADER_A_PRIMARY',	-- PrimaryColor
+		'COLOR_MRSHAKE_CIVLEADER_A_SECONDARY',	-- SecondaryColor
+		'COLOR_MRSHAKE_CIVLEADER_B_PRIMARY',	-- Alt1PrimaryColor
+		'COLOR_MRSHAKE_CIVLEADER_B_SECONDARY',	-- Alt1SecondaryColor
+		'COLOR_MRSHAKE_CIVLEADER_C_PRIMARY',	-- Alt2PrimaryColor
+		'COLOR_MRSHAKE_CIVLEADER_C_SECONDARY',	-- Alt2SecondaryColor
+		'COLOR_MRSHAKE_CIVLEADER_D_PRIMARY',	-- Alt3PrimaryColor
+		'COLOR_MRSHAKE_CIVLEADER_D_SECONDARY'	-- Alt3SecondaryColor
 		);

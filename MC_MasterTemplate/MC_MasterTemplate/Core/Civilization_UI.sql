@@ -17,13 +17,13 @@
 
 -- Configuring Unique Infrastructure for your custom civilization is entirely optional, but it is typically considered appropriate for balance to configure one, such that your custom civilization matches those from the base games in terms of complexity, both for flavour and gameplay balance.
 
--- In this example mod, we are going to create a new version of the Colossal Head improvement which can only be built by our civilization. For info, this particular improvement is one that can be built by the Suzerain of a specific City-State. This mod does not alter the existence of that improvement - so it can also be built by the Suzerain of that City-State even with this mod loaded. However, by using the same element, we eliminate the need to configure anything to have the 2D artwork/icons and 3D model display in-game. The string 'INSERT OR REPLACE INTO' is used as a way to flexibly negotiate the fact that the IMPROVEMENT_COLOSSAL_HEAD already exists, whilst still allowing me to illustrate the code needed - as this particular improvement is, in fact, configured in the base game. 
+-- In this example mod, we are going to create a new version of the Colossal Head improvement which can only be built by our civilization. For info, this particular improvement is one that can be built by the Suzerain of a specific City-State. This mod does not alter the existence of that improvement - so it can also be built by the Suzerain of that City-State even with this mod loaded. However, by using the same element, we eliminate the need to configure anything to have the 2D artwork/icons and 3D model display in-game. The string 'INSERT OR REPLACE INTO' is used as a way to flexibly negotiate the fact that the IMPROVEMENT_CIVIMPROVEMENT already exists, whilst still allowing me to illustrate the code needed - as this particular improvement is, in fact, configured in the base game. 
 -----------------------------------------------		
 
 INSERT OR REPLACE INTO Types	
 		(Type,													Kind						)
 VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'KIND_TRAIT'				),
-		('IMPROVEMENT_COLOSSAL_HEAD',							'KIND_IMPROVEMENT'			);
+		('IMPROVEMENT_CIVIMPROVEMENT',							'KIND_IMPROVEMENT'			);
 
 -----------------------------------------------
 -- CivilizationTraits
@@ -33,7 +33,7 @@ VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'KIND_TRAIT'				),
 		
 INSERT INTO CivilizationTraits
 		(TraitType,												CivilizationType			)
-VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'CIVILIZATION_MC_OLMEC'		);
+VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'CIVILIZATION_MRSHAKE_CIVNAME'		);
 
 -----------------------------------------------
 -- Traits
@@ -43,20 +43,20 @@ VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'CIVILIZATION_MC_O
 
 INSERT INTO Traits
 		(TraitType,												Name,											Description												)
-VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'LOC_IMPROVEMENT_OLMEC_COLOSSAL_HEAD_NAME',		'LOC_IMPROVEMENT_OLMEC_COLOSSAL_HEAD_DESCRIPTION'		);
+VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME',		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION'		);
 
 --------------------------------------------------------------------------------------------------------------------------
 -- Improvements
 
 -- The below defines the core behaviour/configuration of our custom Improvement. This is where we instruct the game to ensure it is unique (by setting the TraitType value), as well as tie together the various locally-defined elements in this mod (ImprovementType, Name, Description, Icon).
 
--- You will note that the initial instruction is a DELETE. This clears the values from the base-game implementation of IMPROVEMENT_COLOSSAL_HEAD - paving the way for the behaviour/effect we define here.
+-- You will note that the initial instruction is a DELETE. This clears the values from the base-game implementation of IMPROVEMENT_CIVIMPROVEMENT - paving the way for the behaviour/effect we define here.
 
 -- Whilst the majority of information is locally-defined (in this mod), please note the PrereqCivic value, which is where we tell the game which Civic must be attained in order to unlock the Improvement.
 
 -- If you have been following the documents in order, below you will find the first reference to an ICON element. The naming convention is always to append ICON_ in front of the full element name to which it applies. In this case, we're referencing an icon from the base-game; but the same logic should be applied throughout.
 --------------------------------------------------------------------------------------------------------------------------
-DELETE FROM Improvements WHERE ImprovementType = 'IMPROVEMENT_COLOSSAL_HEAD';
+DELETE FROM Improvements WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT OR REPLACE INTO Improvements	
 		(
@@ -84,10 +84,10 @@ INSERT OR REPLACE INTO Improvements
 		)
 VALUES	
 		(
-			'IMPROVEMENT_COLOSSAL_HEAD', -- ImprovementType
-			'LOC_IMPROVEMENT_OLMEC_COLOSSAL_HEAD_NAME', -- Name
-			'LOC_IMPROVEMENT_OLMEC_COLOSSAL_HEAD_DESCRIPTION', -- Description
-			'ICON_IMPROVEMENT_COLOSSAL_HEAD', -- Icon
+			'IMPROVEMENT_CIVIMPROVEMENT', -- ImprovementType
+			'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME', -- Name
+			'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION', -- Description
+			'ICON_IMPROVEMENT_CIVIMPROVEMENT', -- Icon
 			-----------------
 			-- Building Info
 			-----------------
@@ -113,16 +113,16 @@ VALUES
 
 -- The valid values for the TerrainType column can be derived from Terrains.xml (base-game), specifically those that are labelled with 'KIND_TERRAIN' within the core Game Data Types table.
 -----------------------------------------------------------------------------------
-DELETE FROM Improvement_ValidTerrains WHERE ImprovementType = 'IMPROVEMENT_COLOSSAL_HEAD';
+DELETE FROM Improvement_ValidTerrains WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT OR REPLACE INTO Improvement_ValidTerrains
 			(ImprovementType,								TerrainType				)
-VALUES 		('IMPROVEMENT_COLOSSAL_HEAD',					'TERRAIN_GRASS'			),
-			('IMPROVEMENT_COLOSSAL_HEAD',					'TERRAIN_GRASS_HILLS'	),
-			('IMPROVEMENT_COLOSSAL_HEAD',					'TERRAIN_PLAINS'		),
-			('IMPROVEMENT_COLOSSAL_HEAD',					'TERRAIN_PLAINS_HILLS'	),
-			('IMPROVEMENT_COLOSSAL_HEAD',					'TERRAIN_TUNDRA'		),
-			('IMPROVEMENT_COLOSSAL_HEAD',					'TERRAIN_TUNDRA_HILLS'	);
+VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_GRASS'			),
+			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_GRASS_HILLS'	),
+			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_PLAINS'		),
+			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_PLAINS_HILLS'	),
+			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_TUNDRA'		),
+			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_TUNDRA_HILLS'	);
 
 -----------------------------------------------------------------------------------
 -- Improvement_ValidFeatures
@@ -133,11 +133,11 @@ VALUES 		('IMPROVEMENT_COLOSSAL_HEAD',					'TERRAIN_GRASS'			),
 
 -- As advised within Civilization_Config.sql (reference: StartBiasFeatures), the use of FeatureType entries from either Expansion1 or Expansion2 will dictate compatibility for your mod.
 -----------------------------------------------------------------------------------
-DELETE FROM Improvement_ValidFeatures WHERE ImprovementType = 'IMPROVEMENT_COLOSSAL_HEAD';
+DELETE FROM Improvement_ValidFeatures WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT OR REPLACE INTO Improvement_ValidFeatures
 			(ImprovementType,						FeatureType			)
-VALUES 		('IMPROVEMENT_COLOSSAL_HEAD',			'FEATURE_JUNGLE'	);
+VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',			'FEATURE_JUNGLE'	);
 
 -----------------------------------------------------------------------------------
 -- Improvement_ValidBuildUnits
@@ -146,7 +146,7 @@ VALUES 		('IMPROVEMENT_COLOSSAL_HEAD',			'FEATURE_JUNGLE'	);
 -----------------------------------------------------------------------------------
 INSERT or REPLACE INTO Improvement_ValidBuildUnits
 			(ImprovementType,						UnitType			)
-VALUES 		('IMPROVEMENT_COLOSSAL_HEAD',			'UNIT_BUILDER'		);
+VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',			'UNIT_BUILDER'		);
 
 -----------------------------------------------------------------------------------
 -- Improvement_YieldChanges
@@ -156,12 +156,12 @@ VALUES 		('IMPROVEMENT_COLOSSAL_HEAD',			'UNIT_BUILDER'		);
 -- YieldType must be chosen from the explicit list of YieldType elements, as follows: YIELD_CULTURE, YIELD_FAITH, YIELD_FOOD, YIELD_GOLD, YIELD_PRODUCTION or YIELD_SCIENCE.
 -- YieldChange is an integer value and can be positive or negative. Please note that as this is an integer, it is entered 'raw' with no quotation-mark wrapper.
 -----------------------------------------------------------------------------------	
-DELETE FROM Improvement_YieldChanges WHERE ImprovementType = 'IMPROVEMENT_COLOSSAL_HEAD';
+DELETE FROM Improvement_YieldChanges WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT or REPLACE INTO Improvement_YieldChanges	
 		(ImprovementType,					YieldType,						YieldChange		)
-VALUES	('IMPROVEMENT_COLOSSAL_HEAD',		'YIELD_FAITH',					1				),
-		('IMPROVEMENT_COLOSSAL_HEAD',		'YIELD_SCIENCE',				1				);		
+VALUES	('IMPROVEMENT_CIVIMPROVEMENT',		'YIELD_FAITH',					1				),
+		('IMPROVEMENT_CIVIMPROVEMENT',		'YIELD_SCIENCE',				1				);		
 
 -----------------------------------------------------------------------------------
 -- Improvement_Adjacencies
@@ -178,12 +178,12 @@ VALUES	('IMPROVEMENT_COLOSSAL_HEAD',		'YIELD_FAITH',					1				),
 -- TilesRequired is an integer that defines how many adjacent tiles of the defined type are required to trigger the YieldChange. For Districts, this must always be one.
 -- AdjacentDistrict defines which type of District the game requires to be adjacent to the Improvement. This column can be replaced with a number of alternatives, for different effects: AdjacentFeature (string), AdjacentTerrain (string), AdjacentNaturalWonder (boolean), AdjacentSeaResource (boolean).
 -----------------------------------------------------------------------------------
-DELETE FROM Improvement_Adjacencies WHERE ImprovementType = 'IMPROVEMENT_COLOSSAL_HEAD';
+DELETE FROM Improvement_Adjacencies WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT or REPLACE INTO Improvement_Adjacencies	
 		(ImprovementType,				YieldChangeId)
-VALUES	('IMPROVEMENT_COLOSSAL_HEAD',	'OLMEC_COLOSSAL_HEAD_HOLY_SITE'		),
-		('IMPROVEMENT_COLOSSAL_HEAD',	'OLMEC_COLOSSAL_HEAD_CAMPUS'		);
+VALUES	('IMPROVEMENT_CIVIMPROVEMENT',	'OLMEC_COLOSSAL_HEAD_HOLY_SITE'		),
+		('IMPROVEMENT_CIVIMPROVEMENT',	'OLMEC_COLOSSAL_HEAD_CAMPUS'		);
 
 INSERT INTO Adjacency_YieldChanges
 		(ID,								Description,	YieldType,			YieldChange,	TilesRequired,		AdjacentDistrict			)
@@ -195,13 +195,13 @@ VALUES	('OLMEC_COLOSSAL_HEAD_HOLY_SITE',	'Placeholder',	'YIELD_SCIENCE',	1,				1
 
 -- This Improvement grants a bonus to Tourism following the discovery of a particular Technology. That effect is defined below - this is a fairly 'rare' flavour to add and I include it here to showcase the type of effect that is possible.
 
--- A search within Improvements.xml (base-game) for TOURISMSOURCE_ will showcase the way this effect is used by the game for certain improvements (including the original implementation of IMPROVEMENT_COLOSSAL_HEAD). This can be used as a good reference and serves as a reminder as to the presence of the DELETE instruction.
+-- A search within Improvements.xml (base-game) for TOURISMSOURCE_ will showcase the way this effect is used by the game for certain improvements (including the original implementation of IMPROVEMENT_CIVIMPROVEMENT). This can be used as a good reference and serves as a reminder as to the presence of the DELETE instruction.
 -----------------------------------------------------------------------------------	
-DELETE FROM Improvement_Tourism WHERE ImprovementType = 'IMPROVEMENT_COLOSSAL_HEAD';
+DELETE FROM Improvement_Tourism WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT INTO Improvement_Tourism	
 		(ImprovementType,				TourismSource,						PrereqTech,			ScalingFactor	)
-VALUES	('IMPROVEMENT_COLOSSAL_HEAD',	'TOURISMSOURCE_SCIENCE',			'TECH_FLIGHT',		100				);
+VALUES	('IMPROVEMENT_CIVIMPROVEMENT',	'TOURISMSOURCE_SCIENCE',			'TECH_FLIGHT',		100				);
 
 -------------------------------------
 -- TraitModifiers
@@ -332,4 +332,4 @@ INSERT INTO RequirementArguments
 VALUES	('OLMEC_4_COLOSSAL_HEAD_REQUIREMENT', 			'CollectionType',			'COLLECTION_CITY_PLOT_YIELDS'	),
 		('OLMEC_4_COLOSSAL_HEAD_REQUIREMENT', 			'Count',					4								),
 		('OLMEC_4_COLOSSAL_HEAD_REQUIREMENT', 			'RequirementSetId',			'PLOT_HAS_OLMEC_COLOSSAL_HEAD'	),
-		('PLOT_HAS_OLMEC_COLOSSAL_HEAD_REQUIREMENT', 	'ImprovementType',			'IMPROVEMENT_COLOSSAL_HEAD'		);
+		('PLOT_HAS_OLMEC_COLOSSAL_HEAD_REQUIREMENT', 	'ImprovementType',			'IMPROVEMENT_CIVIMPROVEMENT'		);

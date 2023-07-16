@@ -15,8 +15,8 @@
 -----------------------------------------------
 
 INSERT INTO	Types
-			(Type,					Kind			)
-VALUES		('LEADER_MC_PO_NGBE',	'KIND_LEADER'	);
+			(Type,							Kind			)
+VALUES		('LEADER_MRSHAKE_CIVLEADER',	'KIND_LEADER'	);
 		
 -----------------------------------------------
 -- Leaders
@@ -30,8 +30,8 @@ VALUES		('LEADER_MC_PO_NGBE',	'KIND_LEADER'	);
 -----------------------------------------------
 
 INSERT INTO	Leaders
-			(LeaderType,			Name,							InheritFrom,		SceneLayers		)
-VALUES		('LEADER_MC_PO_NGBE',	'LOC_LEADER_MC_PO_NGBE_NAME',	'LEADER_DEFAULT', 	4				);
+			(LeaderType,					Name,									InheritFrom,		SceneLayers		)
+VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LOC_LEADER_MRSHAKE_CIVLEADER_NAME',	'LEADER_DEFAULT', 	4				);
 
 -----------------------------------------------
 -- CivilizationLeaders
@@ -42,18 +42,18 @@ VALUES		('LEADER_MC_PO_NGBE',	'LOC_LEADER_MC_PO_NGBE_NAME',	'LEADER_DEFAULT', 	4
 -----------------------------------------------
 
 INSERT INTO	CivilizationLeaders
-			(CivilizationType,				LeaderType,				CapitalName					)
-VALUES		('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	'LOC_CITY_NAME_MC_OLMEC_1'	);
+			(CivilizationType,					LeaderType,					CapitalName							)
+VALUES		('CIVILIZATION_MRSHAKE_CIVNAME',	'LEADER_MRSHAKE_CIVLEADER',	'LOC_CITY_NAME_MRSHAKE_CIVNAME_1'	);
 		
 -----------------------------------------------
 -- LeaderQuotes
 
--- This 'flavour' item ties the Quote - which appears in the Civilopedia on the Leader page - to the custom leader. As with all text entries, the LOC_PEDIA_LEADERS_PAGE_MC_PO_NGBE_QUOTE string is defined in Leader_Localisation.sql.
+-- This 'flavour' item ties the Quote - which appears in the Civilopedia on the Leader page - to the custom leader. As with all text entries, the LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_QUOTE string is defined in Leader_Localisation.sql.
 -----------------------------------------------
 
 INSERT INTO	LeaderQuotes
-			(LeaderType,			Quote										)
-VALUES		('LEADER_MC_PO_NGBE',	'LOC_PEDIA_LEADERS_PAGE_MC_PO_NGBE_QUOTE'	);
+			(LeaderType,					Quote												)
+VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_QUOTE'	);
 
 -----------------------------------------------
 -- CityNames
@@ -66,19 +66,5 @@ VALUES		('LEADER_MC_PO_NGBE',	'LOC_PEDIA_LEADERS_PAGE_MC_PO_NGBE_QUOTE'	);
 -----------------------------------------------
 
 INSERT INTO	CityNames
-			(CivilizationType,				LeaderType,				SortIndex,	CityName						)
-VALUES		('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_1'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_2'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_3'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_4'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_5'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_6'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_7'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_8'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_9'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_10'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_11'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_12'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_13'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_14'		),
-			('CIVILIZATION_MC_OLMEC',		'LEADER_MC_PO_NGBE',	-1,			'LOC_CITY_NAME_MC_OLMEC_15'		);
+			(CivilizationType,					LeaderType,					SortIndex,	CityName							)
+VALUES		('CIVILIZATION_MRSHAKE_CIVNAME',	'LEADER_MRSHAKE_CIVLEADER',	-1,			'LOC_CITY_NAME_MRSHAKE_CIVNAME_1'	);

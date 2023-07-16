@@ -12,8 +12,8 @@
 -----------------------------------------------
 
 INSERT INTO Types
-			(Type,							Kind			)
-VALUES		('TRAIT_AGENDA_MC_PO_NGBE',		'KIND_TRAIT'	);
+			(Type,								Kind			)
+VALUES		('TRAIT_AGENDA_MRSHAKE_CIVLEADER',	'KIND_TRAIT'	);
 
 -----------------------------------------------
 -- Agendas
@@ -24,8 +24,8 @@ VALUES		('TRAIT_AGENDA_MC_PO_NGBE',		'KIND_TRAIT'	);
 -----------------------------------------------
 
 INSERT INTO Agendas
-			(AgendaType,			Name,							Description								)
-VALUES 		('AGENDA_MC_PO_NGBE',	'LOC_AGENDA_MC_PO_NGBE_NAME',	'LOC_AGENDA_MC_PO_NGBE_DESCRIPTION'		);
+			(AgendaType,					Name,									Description									)
+VALUES 		('AGENDA_MRSHAKE_CIVLEADER',	'LOC_AGENDA_MRSHAKE_CIVLEADER_NAME',	'LOC_AGENDA_MRSHAKE_CIVLEADER_DESCRIPTION'	);
 
 -----------------------------------------------
 -- Traits
@@ -34,8 +34,8 @@ VALUES 		('AGENDA_MC_PO_NGBE',	'LOC_AGENDA_MC_PO_NGBE_NAME',	'LOC_AGENDA_MC_PO_N
 -----------------------------------------------
 
 INSERT INTO Traits				
-			(TraitType,						Name,							Description								)
-VALUES		('TRAIT_AGENDA_MC_PO_NGBE',		'LOC_AGENDA_MC_PO_NGBE_NAME',	'LOC_AGENDA_MC_PO_NGBE_DESCRIPTION'		);
+			(TraitType,								Name,									Description									)
+VALUES		('TRAIT_AGENDA_MRSHAKE_CIVLEADER',		'LOC_AGENDA_MRSHAKE_CIVLEADER_NAME',	'LOC_AGENDA_MRSHAKE_CIVLEADER_DESCRIPTION'	);
 
 -----------------------------------------------
 -- AgendaTraits
@@ -46,8 +46,8 @@ VALUES		('TRAIT_AGENDA_MC_PO_NGBE',		'LOC_AGENDA_MC_PO_NGBE_NAME',	'LOC_AGENDA_M
 -----------------------------------------------
 
 INSERT INTO AgendaTraits
-			(AgendaType,			TraitType					)
-VALUES 		('AGENDA_MC_PO_NGBE',	'TRAIT_AGENDA_MC_PO_NGBE'	);
+			(AgendaType,					TraitType						)
+VALUES 		('AGENDA_MRSHAKE_CIVLEADER',	'TRAIT_AGENDA_MRSHAKE_CIVLEADER');
 
 -----------------------------------------------
 -- HistoricalAgendas
@@ -56,8 +56,8 @@ VALUES 		('AGENDA_MC_PO_NGBE',	'TRAIT_AGENDA_MC_PO_NGBE'	);
 -----------------------------------------------
 
 INSERT INTO HistoricalAgendas
-			(LeaderType,			AgendaType				)
-VALUES 		('LEADER_MC_PO_NGBE',	'AGENDA_MC_PO_NGBE'		);
+			(LeaderType,					AgendaType					)
+VALUES 		('LEADER_MRSHAKE_CIVLEADER',	'AGENDA_MRSHAKE_CIVLEADER'	);
 
 -----------------------------------------------
 -- ExclusiveAgendas
@@ -70,8 +70,8 @@ VALUES 		('LEADER_MC_PO_NGBE',	'AGENDA_MC_PO_NGBE'		);
 -----------------------------------------------
 
 INSERT INTO ExclusiveAgendas
-			(AgendaOne,				AgendaTwo					)
-VALUES 		('AGENDA_MC_PO_NGBE',	'AGENDA_INDUSTRIALIST'		);
+			(AgendaOne,						AgendaTwo				)
+VALUES 		('AGENDA_MRSHAKE_CIVLEADER',	'AGENDA_INDUSTRIALIST'	);
 
 -----------------------------------------------
 -- TraitModifiers
@@ -82,9 +82,9 @@ VALUES 		('AGENDA_MC_PO_NGBE',	'AGENDA_INDUSTRIALIST'		);
 -----------------------------------------------
 
 INSERT INTO TraitModifiers
-			(TraitType,						ModifierId								)
-VALUES		('TRAIT_AGENDA_MC_PO_NGBE',		'AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY'	),
-			('TRAIT_AGENDA_MC_PO_NGBE',		'AGENDA_MODIFIER_MC_PO_NGBE_HAPPY'		);
+			(TraitType,							ModifierId									)
+VALUES		('TRAIT_AGENDA_MRSHAKE_CIVLEADER',	'AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY'	),
+			('TRAIT_AGENDA_MRSHAKE_CIVLEADER',	'AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY'	);
 		
 -----------------------------------------------
 -- Modifiers
@@ -95,9 +95,9 @@ VALUES		('TRAIT_AGENDA_MC_PO_NGBE',		'AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY'	),
 -----------------------------------------------
 
 INSERT INTO Modifiers	
-			(ModifierId,								ModifierType,									SubjectRequirementSetId			)
-VALUES		('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',		'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',	'REQSET_MC_PO_NGBE_UNHAPPY'		),
-			('AGENDA_MODIFIER_MC_PO_NGBE_HAPPY',		'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',	'REQSET_MC_PO_NGBE_HAPPY'		);
+			(ModifierId,									ModifierType,									SubjectRequirementSetId				)
+VALUES		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',	'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',	'REQSET_MRSHAKE_CIVLEADER_UNHAPPY'	),
+			('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',		'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',	'REQSET_MRSHAKE_CIVLEADER_HAPPY'	);
 
 -----------------------------------------------	
 -- ModifierStrings
@@ -107,9 +107,9 @@ VALUES		('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',		'MODIFIER_PLAYER_DIPLOMACY_SIMPL
 -- It is recommended not to amend these entries, except to ensure the ModifierId values match the ones you are configuring.
 -----------------------------------------------	
 INSERT INTO ModifierStrings
-			(ModifierId,								Context,	Text								)
-VALUES		('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',		'Sample',	'LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL'	),
-			('AGENDA_MODIFIER_MC_PO_NGBE_HAPPY',		'Sample',	'LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL'	);
+			(ModifierId,									Context,	Text								)
+VALUES		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',	'Sample',	'LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL'	),
+			('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',		'Sample',	'LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL'	);
 
 -----------------------------------------------
 -- ModifierArguments
@@ -129,20 +129,20 @@ VALUES		('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',		'Sample',	'LOC_TOOLTIP_SAMPLE_DI
 -----------------------------------------------
 
 INSERT INTO ModifierArguments
-			(ModifierId,							Name,							Value												)
-VALUES		('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',	'InitialValue',					-5													),
-			('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',	'IncrementValue',				-1													),
-			('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',	'IncrementTurns',				-10													),
-			('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',	'MaxValue',						-25													),
-			('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',	'StatementKey',					'LOC_DIPLO_WARNING_LEADER_MC_PO_NGBE_REASON_ANY'	),
-			('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',	'SimpleModifierDescription',	'LOC_DIPLO_MODIFIER_MC_PO_NGBE_UNHAPPY'				),
+		(ModifierId,									Name,							Value													)
+VALUES	('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',	'InitialValue',					-5														),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',	'IncrementValue',				-1														),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',	'IncrementTurns',				-10														),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',	'MaxValue',						-25														),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',	'StatementKey',					'LOC_DIPLO_WARNING_LEADER_MRSHAKE_CIVLEADER_REASON_ANY'	),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',	'SimpleModifierDescription',	'LOC_DIPLO_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY'			),
 	
-			('AGENDA_MODIFIER_MC_PO_NGBE_HAPPY',	'InitialValue',					5													),
-			('AGENDA_MODIFIER_MC_PO_NGBE_HAPPY',	'IncrementValue',				1													),
-			('AGENDA_MODIFIER_MC_PO_NGBE_HAPPY',	'IncrementTurns',				10													),
-			('AGENDA_MODIFIER_MC_PO_NGBE_HAPPY',	'MaxValue',						12													),
-			('AGENDA_MODIFIER_MC_PO_NGBE_HAPPY',	'StatementKey',					'LOC_DIPLO_KUDO_LEADER_MC_PO_NGBE_REASON_ANY'		),
-			('AGENDA_MODIFIER_MC_PO_NGBE_HAPPY',	'SimpleModifierDescription',	'LOC_DIPLO_MODIFIER_MC_PO_NGBE_HAPPY'				);
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',		'InitialValue',					5														),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',		'IncrementValue',				1														),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',		'IncrementTurns',				10														),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',		'MaxValue',						12														),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',		'StatementKey',					'LOC_DIPLO_KUDO_LEADER_MRSHAKE_CIVLEADER_REASON_ANY'	),
+		('AGENDA_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',		'SimpleModifierDescription',	'LOC_DIPLO_MODIFIER_MRSHAKE_CIVLEADER_HAPPY'					);
 			
 -----------------------------------------------
 -- RequirementSets
@@ -158,9 +158,9 @@ VALUES		('AGENDA_MODIFIER_MC_PO_NGBE_UNHAPPY',	'InitialValue',					-5											
 -----------------------------------------------
 
 INSERT INTO RequirementSets
-			(RequirementSetId,				RequirementSetType			)
-VALUES		('REQSET_MC_PO_NGBE_UNHAPPY',	'REQUIREMENTSET_TEST_ALL'	),
-			('REQSET_MC_PO_NGBE_HAPPY',		'REQUIREMENTSET_TEST_ALL'	);
+			(RequirementSetId,						RequirementSetType			)
+VALUES		('REQSET_MRSHAKE_CIVLEADER_UNHAPPY',	'REQUIREMENTSET_TEST_ALL'	),
+			('REQSET_MRSHAKE_CIVLEADER_HAPPY',		'REQUIREMENTSET_TEST_ALL'	);
 
 -----------------------------------------------
 -- RequirementSetRequirements
@@ -178,11 +178,11 @@ VALUES		('REQSET_MC_PO_NGBE_UNHAPPY',	'REQUIREMENTSET_TEST_ALL'	),
 -----------------------------------------------
 
 INSERT INTO RequirementSetRequirements
-			(RequirementSetId,				RequirementId						)
-VALUES		('REQSET_MC_PO_NGBE_UNHAPPY',	'REQUIRES_MAJOR_CIV_OPPONENT'		),
-			('REQSET_MC_PO_NGBE_UNHAPPY',	'REQUIRES_MET_10_TURNS_AGO'			),
-			('REQSET_MC_PO_NGBE_UNHAPPY',	'REQUIRES_HAS_LOW_FAITH'			),
-			('REQSET_MC_PO_NGBE_HAPPY',		'REQUIRES_MAJOR_CIV_OPPONENT'		),
-			('REQSET_MC_PO_NGBE_HAPPY',		'REQUIRES_MET_10_TURNS_AGO'			),
-			('REQSET_MC_PO_NGBE_HAPPY',		'REQUIRES_HAS_HIGH_CULTURE'			),
-			('REQSET_MC_PO_NGBE_HAPPY',		'REQUIRES_HAS_HIGH_SCIENCE'			);
+			(RequirementSetId,						RequirementId						)
+VALUES		('REQSET_MRSHAKE_CIVLEADER_UNHAPPY',	'REQUIRES_MAJOR_CIV_OPPONENT'		),
+			('REQSET_MRSHAKE_CIVLEADER_UNHAPPY',	'REQUIRES_MET_10_TURNS_AGO'			),
+			('REQSET_MRSHAKE_CIVLEADER_UNHAPPY',	'REQUIRES_HAS_LOW_FAITH'			),
+			('REQSET_MRSHAKE_CIVLEADER_HAPPY',		'REQUIRES_MAJOR_CIV_OPPONENT'		),
+			('REQSET_MRSHAKE_CIVLEADER_HAPPY',		'REQUIRES_MET_10_TURNS_AGO'			),
+			('REQSET_MRSHAKE_CIVLEADER_HAPPY',		'REQUIRES_HAS_HIGH_CULTURE'			),
+			('REQSET_MRSHAKE_CIVLEADER_HAPPY',		'REQUIRES_HAS_HIGH_SCIENCE'			);

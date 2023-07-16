@@ -11,7 +11,7 @@
 -----------------------------------------------
 -- Types
 
--- This inserts the Unique Unit reference into the primary Data Types table as a recognised trait. This is mandatory, if configuring a custom trait for your civilization. The string listed under 'Type' must be used throughout the mod when referring to the TraitType. In addition, we are inserting the Unit itself (UNIT_MC_WEREJAGUAR) and defining the UnitAbility (ABILITY_WEREJAGUAR), which is then tied to this unit (and no others).
+-- This inserts the Unique Unit reference into the primary Data Types table as a recognised trait. This is mandatory, if configuring a custom trait for your civilization. The string listed under 'Type' must be used throughout the mod when referring to the TraitType. In addition, we are inserting the Unit itself (UNIT_MRSHAKE_CIVUNIT) and defining the UnitAbility (ABILITY_WEREJAGUAR), which is then tied to this unit (and no others).
 
 -- The standard naming convention follows: TRAIT_CIVILIZATION_UNIQUEUNITNAME
 
@@ -21,7 +21,7 @@
 INSERT INTO Types
 		(Type,									Kind			)
 VALUES	('TRAIT_CIVILIZATION_MC_WEREJAGUAR',	'KIND_TRAIT'	),
-		('UNIT_MC_WEREJAGUAR',					'KIND_UNIT'		),
+		('UNIT_MRSHAKE_CIVUNIT',					'KIND_UNIT'		),
 		('ABILITY_MC_WEREJAGUAR',				'KIND_ABILITY'	);
 
 -----------------------------------------------
@@ -37,18 +37,18 @@ VALUES	('CLASS_MC_WEREJAGUAR',		'ABILITY_CLASS'	);
 -----------------------------------------------
 -- TypeTags
 
--- As mentioned above, we now link the Unit itself (UNIT_MC_WEREJAGUAR) to our newly-defined class (CLASS_MC_WEREJAGUAR). The second set of values associate the newly-defined Unit Ability (ABILITY_MC_WEREJAGUAR) to all objects within that same class (CLASS_MC_WEREJAGUAR).
+-- As mentioned above, we now link the Unit itself (UNIT_MRSHAKE_CIVUNIT) to our newly-defined class (CLASS_MC_WEREJAGUAR). The second set of values associate the newly-defined Unit Ability (ABILITY_MC_WEREJAGUAR) to all objects within that same class (CLASS_MC_WEREJAGUAR).
 
--- The second INSERT function ensures our new Unit (UNIT_MC_WEREJAGUAR) inherits the classes that the UNIT_SPEARMAN already has configured. This ensures that groups to which the UNIT_SPEARMAN belongs, the UNIT_MC_WEREJAGUAR also belongs. This ensures integration with other Unit Abilities and identifications and allows for a cohesive replacement.
+-- The second INSERT function ensures our new Unit (UNIT_MRSHAKE_CIVUNIT) inherits the classes that the UNIT_SPEARMAN already has configured. This ensures that groups to which the UNIT_SPEARMAN belongs, the UNIT_MRSHAKE_CIVUNIT also belongs. This ensures integration with other Unit Abilities and identifications and allows for a cohesive replacement.
 -----------------------------------------------		
 
 INSERT INTO TypeTags
 		(Type,						Tag						)
-VALUES	('UNIT_MC_WEREJAGUAR',		'CLASS_MC_WEREJAGUAR'	),
+VALUES	('UNIT_MRSHAKE_CIVUNIT',		'CLASS_MC_WEREJAGUAR'	),
 		('ABILITY_MC_WEREJAGUAR',	'CLASS_MC_WEREJAGUAR'	);
 
 INSERT INTO TypeTags (Type,		Tag)
-SELECT 	'UNIT_MC_WEREJAGUAR',	Tag
+SELECT 	'UNIT_MRSHAKE_CIVUNIT',	Tag
 FROM 	TypeTags
 WHERE 	Type = 'UNIT_SPEARMAN';
 
@@ -60,7 +60,7 @@ WHERE 	Type = 'UNIT_SPEARMAN';
 		
 INSERT INTO Traits
 		(TraitType,								Name,								Description								)
-VALUES	('TRAIT_CIVILIZATION_MC_WEREJAGUAR',	'LOC_UNIT_MC_WEREJAGUAR_NAME',		'LOC_UNIT_MC_WEREJAGUAR_DESCRIPTION'	);
+VALUES	('TRAIT_CIVILIZATION_MC_WEREJAGUAR',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',		'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION'	);
 
 -----------------------------------------------
 -- CivilizationTraits
@@ -70,16 +70,16 @@ VALUES	('TRAIT_CIVILIZATION_MC_WEREJAGUAR',	'LOC_UNIT_MC_WEREJAGUAR_NAME',		'LOC
 		
 INSERT INTO CivilizationTraits
 		(CivilizationType,				TraitType								)
-VALUES	('CIVILIZATION_MC_OLMEC',		'TRAIT_CIVILIZATION_MC_WEREJAGUAR'		);
+VALUES	('CIVILIZATION_MRSHAKE_CIVNAME',		'TRAIT_CIVILIZATION_MC_WEREJAGUAR'		);
 
 -----------------------------------------------
 -- Units
 
 -- The below defines the core behaviour/configuration of our custom Unit. This is where we instruct the game to ensure it is unique (by setting the TraitType value), as well as tie together the various locally-defined elements in this mod (UnitType, Name, Description).
 
--- You will note that the full set of values is populated via a hybrid of methods - some are taken from the UNIT_SPEARMAN that UNIT_MC_WEREJAGUAR replaces, whilst others are brand-new values that we've defined in this mod.
+-- You will note that the full set of values is populated via a hybrid of methods - some are taken from the UNIT_SPEARMAN that UNIT_MRSHAKE_CIVUNIT replaces, whilst others are brand-new values that we've defined in this mod.
 
--- For integer values, it is possible to set a relative value by using simple mathematical operators - you'll note that we do this for the unit Cost and the Combat (Strength). What we're saying here is that the UNIT_MC_WEREJAGUAR has a Cost that is 15 higher than the UNIT_SPEARMAN, but it also has a Combat Strength of 5 more.
+-- For integer values, it is possible to set a relative value by using simple mathematical operators - you'll note that we do this for the unit Cost and the Combat (Strength). What we're saying here is that the UNIT_MRSHAKE_CIVUNIT has a Cost that is 15 higher than the UNIT_SPEARMAN, but it also has a Combat Strength of 5 more.
 
 -- It is, of course, possible to explicitly define every value - in which case, the SELECT command would be replaced by VALUES; whilst the FROM and WHERE commands can be removed. As a syntax note: remember that if you use VALUES, you will need to use open ( and close ) parentheses to achieve valid code. The SELECT command does not require these, hence they are not present here.
 
@@ -107,9 +107,9 @@ INSERT INTO Units	(
 		PrereqTech,
 		PrereqCivic
 		)
-SELECT	'UNIT_MC_WEREJAGUAR',	-- UnitType
-		'LOC_UNIT_MC_WEREJAGUAR_NAME',	-- Name
-		'LOC_UNIT_MC_WEREJAGUAR_DESCRIPTION', -- Description
+SELECT	'UNIT_MRSHAKE_CIVUNIT',	-- UnitType
+		'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',	-- Name
+		'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION', -- Description
 		'TRAIT_CIVILIZATION_MC_WEREJAGUAR', -- TraitType
 		BaseMoves,
 		Cost + 15,
@@ -133,11 +133,11 @@ WHERE	UnitType = 'UNIT_SPEARMAN';
 -----------------------------------------------
 -- UnitUpgrades
 
--- This section defines the position in the UnitUpgrades chain that the custom UNIT_MC_WEREJAGUAR fits into. For this mod, we are simply replacing the UNIT_SPEARMAN, so this ensures the continuity of the UNIT_SPEARMAN chain for the UNIT_MC_WEREJAGUAR.
+-- This section defines the position in the UnitUpgrades chain that the custom UNIT_MRSHAKE_CIVUNIT fits into. For this mod, we are simply replacing the UNIT_SPEARMAN, so this ensures the continuity of the UNIT_SPEARMAN chain for the UNIT_MRSHAKE_CIVUNIT.
 -----------------------------------------------
 		
 INSERT INTO UnitUpgrades (Unit,	UpgradeUnit)
-SELECT 	'UNIT_MC_WEREJAGUAR',	UpgradeUnit
+SELECT 	'UNIT_MRSHAKE_CIVUNIT',	UpgradeUnit
 FROM 	UnitUpgrades
 WHERE	Unit = 'UNIT_SPEARMAN';
 
@@ -146,25 +146,25 @@ WHERE	Unit = 'UNIT_SPEARMAN';
 
 -- UnitAiInfos are used to help mould the AI behaviour for Units. They essentially link each UnitType to one or more types of AI behaviour - such as exploration, melee combat or ranged combat.
 
--- In the below example, we are simply inheriting the UNIT_SPEARMAN behaviour for our UNIT_MC_WEREJAGUAR.
+-- In the below example, we are simply inheriting the UNIT_SPEARMAN behaviour for our UNIT_MRSHAKE_CIVUNIT.
 
 -- A full list of UnitAiType entries can be found in Units.xml. A search for the string 'UnitAiType' will find the full list.
 -----------------------------------------------
 		
 INSERT INTO UnitAiInfos (UnitType,	AiType)
-SELECT 	'UNIT_MC_WEREJAGUAR',		AiType
+SELECT 	'UNIT_MRSHAKE_CIVUNIT',		AiType
 FROM 	UnitAiInfos
 WHERE 	UnitType = 'UNIT_SPEARMAN';
 		
 -----------------------------------------------
 -- UnitReplaces
 
--- This command tells the game about the replacement itself - this ensures that for any civilization to whom the UNIT_MC_WEREJAGUAR is available (which is only this custom civilization, thanks to the link to the TraitType), the UNIT_SPEARMAN will not be available; replaced instead by the UNIT_MC_WEREJAGUAR.
+-- This command tells the game about the replacement itself - this ensures that for any civilization to whom the UNIT_MRSHAKE_CIVUNIT is available (which is only this custom civilization, thanks to the link to the TraitType), the UNIT_SPEARMAN will not be available; replaced instead by the UNIT_MRSHAKE_CIVUNIT.
 -----------------------------------------------
 		
 INSERT INTO UnitReplaces
 		(CivUniqueUnitType,		ReplacesUnitType	)
-VALUES	('UNIT_MC_WEREJAGUAR',	'UNIT_SPEARMAN'		);
+VALUES	('UNIT_MRSHAKE_CIVUNIT',	'UNIT_SPEARMAN'		);
 
 -----------------------------------------------
 -- UnitAbilities
@@ -176,7 +176,7 @@ VALUES	('UNIT_MC_WEREJAGUAR',	'UNIT_SPEARMAN'		);
 
 INSERT INTO UnitAbilities
 		(UnitAbilityType,			Name,								Description						)
-VALUES	('ABILITY_MC_WEREJAGUAR',	'LOC_UNIT_MC_WEREJAGUAR_NAME',		'LOC_ABILITY_MC_WEREJAGUAR'		);
+VALUES	('ABILITY_MC_WEREJAGUAR',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',		'LOC_ABILITY_MC_WEREJAGUAR'		);
 
 -----------------------------------------------
 -- Modifiers
@@ -185,7 +185,7 @@ VALUES	('ABILITY_MC_WEREJAGUAR',	'LOC_UNIT_MC_WEREJAGUAR_NAME',		'LOC_ABILITY_MC
 
 -- This particular Modifier is a little different - as it references an OwnerRequirementSetId. This instructs the game to implement this Modifier only when the requirements are met - but these requirements pertain to an OwnerRequirementSetId.
 
--- We are using this kind of requirement due to the nature of the ability. We are giving a particular unit a combat boost during a Golden Age. Golden Ages are granted to a civilization and the civilization is the owner of the unit in question. In this case, context is important. The use of OwnerRequirementSetId ensures it is only when the custom civilization, that has the UNIT_MC_WEREJAGUAR, is in a Golden Age will the effect apply. SubjectRequirementSetId would be used in cases where we want to check a variable is true in the context of the unit - for example, that it is in a certain terrain, or that it has a particular type of opponent in combat.
+-- We are using this kind of requirement due to the nature of the ability. We are giving a particular unit a combat boost during a Golden Age. Golden Ages are granted to a civilization and the civilization is the owner of the unit in question. In this case, context is important. The use of OwnerRequirementSetId ensures it is only when the custom civilization, that has the UNIT_MRSHAKE_CIVUNIT, is in a Golden Age will the effect apply. SubjectRequirementSetId would be used in cases where we want to check a variable is true in the context of the unit - for example, that it is in a certain terrain, or that it has a particular type of opponent in combat.
 
 -- Compatibility note: Golden Ages were introduced in Rise & Fall. This particular unit ability requires that expansion to function. Specifically, the requirement creates the dependency on the expansion.
 -----------------------------------------------
