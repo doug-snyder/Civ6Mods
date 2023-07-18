@@ -21,9 +21,9 @@ VALUES
 -- Defines the text strings that identify your custom civilization by name.
 -----------------------------------------------
 
-	('en_US',	'LOC_CIVILIZATION_MRSHAKE_CIVNAME_NAME',			'Olmec'			),
-	('en_US',	'LOC_CIVILIZATION_MC_OLMEC_DESCRIPTION',	'Olmec Empire'	),
-	('en_US',	'LOC_CIVILIZATION_MC_OLMEC_ADJECTIVE',  	'Olmec'			),
+	('en_US',	'LOC_CIVILIZATION_MRSHAKE_CIVNAME_NAME',		'Civname'			),
+	('en_US',	'LOC_CIVILIZATION_MRSHAKE_CIVNAME_DESCRIPTION',	'Civname_Empire'	),
+	('en_US',	'LOC_CIVILIZATION_MRSHAKE_CIVNAME_ADJECTIVE',  	'Civname'			),
 	
 -----------------------------------------------
 -- Civilization Unique Ability
@@ -33,9 +33,8 @@ VALUES
 -- Please note: The display of in-game icons in text is achieved by using [ICON_Type].
 -----------------------------------------------
 
-	('en_US',	'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_NAME',				'Let the Gods feed us!'				),
-	('en_US',	'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_DESCRIPTION',	
-	'Holy Site buildings will yield an additional +2 [ICON_Food] Food, alongside their usual [ICON_Faith] Faith.'	),
+	('en_US',	'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_NAME',			'Civtrait_Name.'									),
+	('en_US',	'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_DESCRIPTION',	'Civtrait_Description [ICON_Food] [ICON_Faith].'	),
 
 -----------------------------------------------
 -- Civilization Unique Infrastructure (Improvement)
@@ -45,9 +44,8 @@ VALUES
 -- Please note: The display of in-game icons in text is achieved by using [ICON_Type].
 -----------------------------------------------
 
-	('en_US',	'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME',				'Colossal Head'								),
-	('en_US',	'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION',
-	'Unlocks the Builder ability to construct a Colossal Head, unique to the Olmec. [NEWLINE][NEWLINE] +1 [ICON_Faith] Faith, +1 [ICON_SCIENCE] Science. +1 [ICON_Faith] Faith if adjacent to a Campus, +1 [ICON_Science] Science if adjacent to a Holy Site. Cities with at least four Colossal heads provide a [ICON_GreatArtist] Great Artist Point. May be built on Rainforest. Cannot be constructed adjacent to another Colossal Head.'	),
+	('en_US',	'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME',			'Civimprovement_Name'			),
+	('en_US',	'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION',	'Civimprovement_Description.'	),
 
 -----------------------------------------------
 -- Civilization Unique Unit
@@ -59,11 +57,9 @@ VALUES
 -- Please note: The display of in-game icons in text is achieved by using [ICON_Type].
 -----------------------------------------------
 
-	('en_US',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',	'Werejaguar'	),
-	('en_US',	'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION',	 
-	'The elite warriors of the Olmec military, these fearsome, masked warriors replace the Spearman and receive a [ICON_Strength] Combat Strength boost during [ICON_Glory_Golden_Age] Golden Ages.'	),
-
-	('en_US',	'LOC_ABILITY_MC_WEREJAGUAR',  '+5 [ICON_Strength] Combat Strength during a [ICON_Glory_Golden_Age] Golden Age.'	),
+	('en_US',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',		'Civunit_Name'			),
+	('en_US',	'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION',	'Civunit_Description.'	),
+	('en_US',	'LOC_ABILITY_MRSHAKE_CIVUNIT',			'Civunit_Ability.'		),
 
 -----------------------------------------------
 -- Mountains
@@ -74,7 +70,7 @@ VALUES
 
 -- Please note: Special characters are able to be used as this file has been saved using the "Unicode (UTF-8 without signature)" encoding in ModBuddy's Save As feature.
 -----------------------------------------------
-
+/*
 	('en_US',	'LOC_NAMED_MOUNTAIN_CORDILLERA_NEOVOLCANICA',		'Cordillera Neovolcanica'	),
 	('en_US',	'LOC_NAMED_MOUNTAIN_MEXICAN_PLATEAU',				'Mexican Plateau'			),
 	('en_US',	'LOC_NAMED_MOUNTAIN_SIERRA_MADRE_OCCIDENTAL',		'Sierra Madre Occidental'	),
@@ -82,7 +78,7 @@ VALUES
 	('en_US',	'LOC_NAMED_MOUNTAIN_SIERRA_MADRE_ORIENTAL',			'Sierra Madre Oriental'		),
 	('en_US',	'LOC_NAMED_MOUNTAIN_CHIAPAS',						'Chiapas'					),
 	('en_US',	'LOC_NAMED_MOUNTAIN_MONTANAS_GUATEMALA',			'Montañas Guatemala'		),
-
+*/
 -----------------------------------------------
 -- Rivers
 
@@ -92,7 +88,7 @@ VALUES
 
 -- Please note: Special characters are able to be used as this file has been saved using the "Unicode (UTF-8 without signature)" encoding in ModBuddy's Save As feature.
 -----------------------------------------------
-
+/*
 	('en_US',	'LOC_NAMED_RIVER_GRANDE',				'Río Grande'				),
 	('en_US',	'LOC_NAMED_RIVER_USUMACINTA',			'Río Usumacinta'			),
 	('en_US',	'LOC_NAMED_RIVER_NAZAS',				'Río Nazas'					),
@@ -103,7 +99,7 @@ VALUES
 	('en_US',	'LOC_NAMED_RIVER_GRANDE_DE_SANTIAGO',	'Río Grande de Santiago'	),
 	('en_US',	'LOC_NAMED_RIVER_FUERTE',				'Río Fuerte'				),
 	('en_US',	'LOC_NAMED_RIVER_CONCHOS',				'Río Conchos'				),
-
+*/
 -----------------------------------------------
 -- Lakes
 
@@ -113,13 +109,13 @@ VALUES
 
 -- Please note: Special characters are able to be used as this file has been saved using the "Unicode (UTF-8 without signature)" encoding in ModBuddy's Save As feature.
 -----------------------------------------------
-
+/*
 	('en_US',	'LOC_NAMED_LAKE_CHAPALA',				'Chapala'			),
 	('en_US',	'LOC_NAMED_LAKE_PATZCUARO',				'Pátzcuaro'			),
 	('en_US',	'LOC_NAMED_LAKE_BACALAR',				'Bacalar'			),
 	('en_US',	'LOC_NAMED_LAKE_LAGUNA_CATEMACO',		'Laguna Catemaco'	),
 	('en_US',	'LOC_NAMED_LAKE_EL_CARACOL',			'El Caracol'		),
-
+*/
 -----------------------------------------------
 -- Deserts
 
@@ -129,11 +125,11 @@ VALUES
 
 -- Please note: Special characters are able to be used as this file has been saved using the "Unicode (UTF-8 without signature)" encoding in ModBuddy's Save As feature.
 -----------------------------------------------
-
+/*
 	('en_US',	'LOC_NAMED_DESERT_SONORA',		'Desierto de Soñora'		),
 	('en_US',	'LOC_NAMED_DESERT_LA_GUAJIRA',	'Desierto La Guajira'		),
 	('en_US',	'LOC_NAMED_DESERT_SECHURA',		'Desierto de Sechura'		),
-
+*/
 -----------------------------------------------
 -- Volcanoes
 
@@ -143,13 +139,13 @@ VALUES
 
 -- Please note: Special characters are able to be used as this file has been saved using the "Unicode (UTF-8 without signature)" encoding in ModBuddy's Save As feature.
 -----------------------------------------------
-
+/*
 	('en_US',	'LOC_NAMED_VOLCANO_PICO_DE_ORIZABA',	'Pico de Orizaba'			),
 	('en_US',	'LOC_NAMED_VOLCANO_TAJUMULCO',			'Tajumulco'					),
 	('en_US',	'LOC_NAMED_VOLCANO_TACANA',				'Volcan Tacana'				),
 	('en_US',	'LOC_NAMED_VOLCANO_SANTIAGUITO',		'Santiaguito'				),
 	('en_US',	'LOC_NAMED_VOLCANO_CHAPARRASTIQUE',		'Chaparrastique'			),
-
+*/
 -----------------------------------------------
 -- Cities
 
@@ -158,21 +154,7 @@ VALUES
 -- The order in which city names for a civilization appear is partly affected by the value set for the RandomCityNameDepth within the Civilizations table (again, in Civilization_Config.sql).
 -----------------------------------------------
 
-	('en_US',	'LOC_CITY_NAME_MRSHAKE_CIVNAME_1',  'San Lorenzo'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_2',  'La Velta'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_3',  'Potrero Nuevo'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_4',  'San Andrés'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_5',  'Cobata'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_6',  'Llano del Jicaro'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_7',  'San Martin Pajapan'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_8',  'Arroyo Sonso'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_9',  'Las Limas'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_10',  'El Manati'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_11',  'Cascajal'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_12',  'Jilotepeque'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_13',  'Pequeno Lorenzo'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_14',  'Jicaro Nuevo'),
-	('en_US',	'LOC_CITY_NAME_MC_OLMEC_15',  'Limas del Nuevo'),
+	('en_US',	'LOC_CITY_NAME_MRSHAKE_CIVNAME_1',  'City_Name_1'),
 	
 -----------------------------------------------
 -- Citizens
@@ -180,26 +162,8 @@ VALUES
 -- Defines the text strings to be used for the names of citizens by the custom civilization, that were defined in Civilization_Config.sql.
 -----------------------------------------------
 	
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_1',		'Ikal'		),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_2',		'Tanok'		),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_3',		'Kabil'		),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_4',		'Kasakir'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_5',		'Irepani'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_6',		'Iktan'		),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_7',		'Seneca'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_8',		'Tlayolotl'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_9',		'Rahui'		),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_MALE_10',		'Tsijiari'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_1',	'Ajaniame'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_2',	'Taiyari'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_3',	'Shanarani'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_4',	'Erendirani'),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_5',	'Soona'		),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_6',	'Yatzil'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_7',	'Nakawe'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_8',	'Inda Jani'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_9',	'Axochitl'	),
-	('en_US',	'LOC_CITIZEN_MC_OLMEC_FEMALE_10',	'Sesasi'	),
+	('en_US',	'LOC_CITIZEN_MRSHAKE_CIVNAME_MALE_1',	'Civname_Citizen_Male_1'	),
+	('en_US',	'LOC_CITIZEN_MRSHAKE_CIVNAME_FEMALE_1',	'Civname_Citizen_Female_1'	),
 	
 -----------------------------------------------
 -- Info
@@ -208,12 +172,12 @@ VALUES
 
 -- Please note: the entries here are for flavour only. The values do not affect gameplay in any way - specifically, the LOC_CIVINFO_PREFIX_CIVNAME_CAPITAL value does not dictate the capital in-game.
 -----------------------------------------------
-
-	('en_US',	'LOC_CIVINFO_MC_OLMEC_LOCATION',		'Mesoamerica'		),
-	('en_US',	'LOC_CIVINFO_MC_OLMEC_SIZE',			'2.3 million km²'	),
-	('en_US',	'LOC_CIVINFO_MC_OLMEC_POPULATION',		'c. 14 million'		),
-	('en_US',	'LOC_CIVINFO_MC_OLMEC_CAPITAL',			'San Lorenzo'		),
-
+/*
+	('en_US',	'LOC_CIVINFO_MC_OLMEC_LOCATION',	'Mesoamerica'		),
+	('en_US',	'LOC_CIVINFO_MC_OLMEC_SIZE',		'2.3 million km²'	),
+	('en_US',	'LOC_CIVINFO_MC_OLMEC_POPULATION',	'c. 14 million'		),
+	('en_US',	'LOC_CIVINFO_MC_OLMEC_CAPITAL',		'San Lorenzo'		),
+*/
 -----------------------------------------------
 -- Civilopedia
 

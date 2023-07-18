@@ -21,9 +21,9 @@
 -----------------------------------------------		
 
 INSERT OR REPLACE INTO Types	
-		(Type,													Kind						)
-VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'KIND_TRAIT'				),
-		('IMPROVEMENT_CIVIMPROVEMENT',							'KIND_IMPROVEMENT'			);
+		(Type,														Kind						)
+VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT',	'KIND_TRAIT'				),
+		('IMPROVEMENT_CIVIMPROVEMENT',								'KIND_IMPROVEMENT'			);
 
 -----------------------------------------------
 -- CivilizationTraits
@@ -32,8 +32,8 @@ VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'KIND_TRAIT'				),
 -----------------------------------------------
 		
 INSERT INTO CivilizationTraits
-		(TraitType,												CivilizationType			)
-VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'CIVILIZATION_MRSHAKE_CIVNAME'		);
+		(TraitType,													CivilizationType				)
+VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT',	'CIVILIZATION_MRSHAKE_CIVNAME'	);
 
 -----------------------------------------------
 -- Traits
@@ -42,8 +42,10 @@ VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'CIVILIZATION_MRSH
 -----------------------------------------------
 
 INSERT INTO Traits
-		(TraitType,												Name,											Description												)
-VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD',	'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME',		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION'		);
+		(TraitType, Name, Description)
+VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT',
+		 'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME',
+		 'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION');
 
 --------------------------------------------------------------------------------------------------------------------------
 -- Improvements
@@ -64,47 +66,41 @@ INSERT OR REPLACE INTO Improvements
 			Name,
 			Description,
 			Icon,
-			-----------------
+
 			-- Building Info
-			-----------------
 			Buildable,
 			SameAdjacentValid,
 			TraitType,
 			PrereqCivic,
-			-----------------
+
 			-- Plunder Info
-			-----------------
 			PlunderType,
 			PlunderAmount,
-			-----------------
+
 			-- Housing Info
-			-----------------
 			Housing,
 			TilesRequired
 		)
 VALUES	
 		(
-			'IMPROVEMENT_CIVIMPROVEMENT', -- ImprovementType
-			'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME', -- Name
-			'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION', -- Description
-			'ICON_IMPROVEMENT_CIVIMPROVEMENT', -- Icon
-			-----------------
+			'IMPROVEMENT_CIVIMPROVEMENT',							-- ImprovementType
+			'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME',			-- Name
+			'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION',	-- Description
+			'ICON_IMPROVEMENT_CIVIMPROVEMENT',						-- Icon
+
 			-- Building Info
-			-----------------
-			1, -- Buildable
-			0, -- SameAdjacentValid
-			'TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD', -- TraitType
-			'CIVIC_MYSTICISM', -- PrereqCivic
-			-----------------
+			1,															-- Buildable
+			0,															-- SameAdjacentValid
+			'TRAIT_CIVILIZATION_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT',	-- TraitType
+			'CIVIC_MYSTICISM',											-- PrereqCivic
+	
 			-- Plunder Info
-			-----------------
-			'PLUNDER_SCIENCE', -- PlunderType
-			1, -- PlunderAmount
-			-----------------
+			'PLUNDER_SCIENCE',	-- PlunderType
+			1,					-- PlunderAmount
+
 			-- Housing Info
-			-----------------
-			0, -- Housing
-			1 -- TilesRequired
+			0,	-- Housing
+			1	-- TilesRequired
 		);
 -----------------------------------------------------------------------------------
 -- Improvement_ValidTerrains
@@ -116,13 +112,13 @@ VALUES
 DELETE FROM Improvement_ValidTerrains WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT OR REPLACE INTO Improvement_ValidTerrains
-			(ImprovementType,								TerrainType				)
-VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_GRASS'			),
-			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_GRASS_HILLS'	),
-			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_PLAINS'		),
-			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_PLAINS_HILLS'	),
-			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_TUNDRA'		),
-			('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_TUNDRA_HILLS'	);
+			(ImprovementType,				TerrainType				)
+VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',	'TERRAIN_GRASS'			),
+			('IMPROVEMENT_CIVIMPROVEMENT',	'TERRAIN_GRASS_HILLS'	),
+			('IMPROVEMENT_CIVIMPROVEMENT',	'TERRAIN_PLAINS'		),
+			('IMPROVEMENT_CIVIMPROVEMENT',	'TERRAIN_PLAINS_HILLS'	),
+			('IMPROVEMENT_CIVIMPROVEMENT',	'TERRAIN_TUNDRA'		),
+			('IMPROVEMENT_CIVIMPROVEMENT',	'TERRAIN_TUNDRA_HILLS'	);
 
 -----------------------------------------------------------------------------------
 -- Improvement_ValidFeatures
@@ -136,8 +132,8 @@ VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',					'TERRAIN_GRASS'			),
 DELETE FROM Improvement_ValidFeatures WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT OR REPLACE INTO Improvement_ValidFeatures
-			(ImprovementType,						FeatureType			)
-VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',			'FEATURE_JUNGLE'	);
+			(ImprovementType,				FeatureType			)
+VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',	'FEATURE_JUNGLE'	);
 
 -----------------------------------------------------------------------------------
 -- Improvement_ValidBuildUnits
@@ -145,8 +141,8 @@ VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',			'FEATURE_JUNGLE'	);
 -- This section defines the UnitType elements that can perform the action to build the Improvement. In most cases, this will always be UNIT_BUILDER - but, naturally, there are other units which you may wish to grant this action.
 -----------------------------------------------------------------------------------
 INSERT or REPLACE INTO Improvement_ValidBuildUnits
-			(ImprovementType,						UnitType			)
-VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',			'UNIT_BUILDER'		);
+			(ImprovementType,				UnitType		)
+VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',	'UNIT_BUILDER'	);
 
 -----------------------------------------------------------------------------------
 -- Improvement_YieldChanges
@@ -159,9 +155,9 @@ VALUES 		('IMPROVEMENT_CIVIMPROVEMENT',			'UNIT_BUILDER'		);
 DELETE FROM Improvement_YieldChanges WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT or REPLACE INTO Improvement_YieldChanges	
-		(ImprovementType,					YieldType,						YieldChange		)
-VALUES	('IMPROVEMENT_CIVIMPROVEMENT',		'YIELD_FAITH',					1				),
-		('IMPROVEMENT_CIVIMPROVEMENT',		'YIELD_SCIENCE',				1				);		
+		(ImprovementType,				YieldType,			YieldChange		)
+VALUES	('IMPROVEMENT_CIVIMPROVEMENT',	'YIELD_FAITH',		1				),
+		('IMPROVEMENT_CIVIMPROVEMENT',	'YIELD_SCIENCE',	1				);		
 
 -----------------------------------------------------------------------------------
 -- Improvement_Adjacencies
@@ -182,13 +178,13 @@ DELETE FROM Improvement_Adjacencies WHERE ImprovementType = 'IMPROVEMENT_CIVIMPR
 
 INSERT or REPLACE INTO Improvement_Adjacencies	
 		(ImprovementType,				YieldChangeId)
-VALUES	('IMPROVEMENT_CIVIMPROVEMENT',	'OLMEC_COLOSSAL_HEAD_HOLY_SITE'		),
-		('IMPROVEMENT_CIVIMPROVEMENT',	'OLMEC_COLOSSAL_HEAD_CAMPUS'		);
+VALUES	('IMPROVEMENT_CIVIMPROVEMENT',	'OLMEC_COLOSSAL_HEAD_HOLY_SITE'	),
+		('IMPROVEMENT_CIVIMPROVEMENT',	'OLMEC_COLOSSAL_HEAD_CAMPUS'	);
 
 INSERT INTO Adjacency_YieldChanges
-		(ID,								Description,	YieldType,			YieldChange,	TilesRequired,		AdjacentDistrict			)
-VALUES	('OLMEC_COLOSSAL_HEAD_HOLY_SITE',	'Placeholder',	'YIELD_SCIENCE',	1,				1,					'DISTRICT_HOLY_SITE'		),
-		('OLMEC_COLOSSAL_HEAD_CAMPUS',		'Placeholder',	'YIELD_FAITH',		1,				1,					'DISTRICT_CAMPUS'			);
+		(ID,								Description,	YieldType,			YieldChange,	TilesRequired,	AdjacentDistrict			)
+VALUES	('OLMEC_COLOSSAL_HEAD_HOLY_SITE',	'Placeholder',	'YIELD_SCIENCE',	1,				1,				'DISTRICT_HOLY_SITE'		),
+		('OLMEC_COLOSSAL_HEAD_CAMPUS',		'Placeholder',	'YIELD_FAITH',		1,				1,				'DISTRICT_CAMPUS'			);
 
 -----------------------------------------------------------------------------------
 -- Improvement_Tourism
@@ -200,8 +196,8 @@ VALUES	('OLMEC_COLOSSAL_HEAD_HOLY_SITE',	'Placeholder',	'YIELD_SCIENCE',	1,				1
 DELETE FROM Improvement_Tourism WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 
 INSERT INTO Improvement_Tourism	
-		(ImprovementType,				TourismSource,						PrereqTech,			ScalingFactor	)
-VALUES	('IMPROVEMENT_CIVIMPROVEMENT',	'TOURISMSOURCE_SCIENCE',			'TECH_FLIGHT',		100				);
+		(ImprovementType,				TourismSource,				PrereqTech,		ScalingFactor	)
+VALUES	('IMPROVEMENT_CIVIMPROVEMENT',	'TOURISMSOURCE_SCIENCE',	'TECH_FLIGHT',	100				);
 
 -------------------------------------
 -- TraitModifiers
@@ -215,8 +211,8 @@ VALUES	('IMPROVEMENT_CIVIMPROVEMENT',	'TOURISMSOURCE_SCIENCE',			'TECH_FLIGHT',	
 -- Learning point: The starting point to search in the base game XML is to look-up an existing CivilizationType (e.g. CIVILIZATION_FRANCE) and note their TRAIT_CIVILIZATION_ that is neither the Unique Ability nor the Unique Unit. In France's case, it is TRAIT_CIVILIZATION_IMPROVEMENT_CHATEAU. Searching that will lead you to the ModifierId entry (or entries) that grant the various bonuses associated with that TraitType. You can apply this simple principle in order to look-up how the code is constructed, in every situation.
 -------------------------------------
 INSERT INTO TraitModifiers			
-		(TraitType,													ModifierId								)
-VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD', 		'OLMEC_COLOSSAL_HEAD_GREAT_ARTIST'		);
+		(TraitType,													ModifierId							)
+VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT', 	'OLMEC_COLOSSAL_HEAD_GREAT_ARTIST'	);
 
 -------------------------------------
 -- Modifiers
@@ -238,9 +234,9 @@ VALUES	('TRAIT_CIVILIZATION_IMPROVEMENT_OLMEC_COLOSSAL_HEAD', 		'OLMEC_COLOSSAL_
 -- You may also note that we are creating two Modifiers, here, despite only linking one to our trait. In this example, the second modifier is referenced by the first one (which has the MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER ModifierType). I'll detail how this works in the next code section.
 -------------------------------------
 INSERT INTO Modifiers	
-		(ModifierId,										ModifierType,											SubjectRequirementSetId		)
-VALUES	('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST',				'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER',				'OLMEC_4_COLOSSAL_HEAD'		),
-		('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT',			'MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS',			null						);
+		(ModifierId,								ModifierType,									SubjectRequirementSetId		)
+VALUES	('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST',		'MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER',		'OLMEC_4_COLOSSAL_HEAD'		),
+		('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT',	'MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS',	null						);
 
 -------------------------------------
 -- ModifierArguments
@@ -262,10 +258,10 @@ VALUES	('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST',				'MODIFIER_PLAYER_CITIES_ATTACH_MO
 -- You may note that the below section ties together two separate ModifierId elements by referencing the value of OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT to populate the value of OLMEC_COLOSSAL_HEAD_GREAT_ARTIST.
 -------------------------------------
 INSERT INTO ModifierArguments
-		(ModifierId,										Name,						Value										)
-VALUES	('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST',				'ModifierId',				'OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT'	),
-		('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT',			'GreatPersonClassType',		'GREAT_PERSON_CLASS_ARTIST'					),
-		('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT',			'Amount',					1											);
+		(ModifierId,								Name,					Value										)
+VALUES	('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST',		'ModifierId',			'OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT'	),
+		('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT',	'GreatPersonClassType',	'GREAT_PERSON_CLASS_ARTIST'					),
+		('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST_POINT',	'Amount',				1											);
 
 -------------------------------------
 -- RequirementSets
@@ -282,9 +278,9 @@ VALUES	('OLMEC_COLOSSAL_HEAD_GREAT_ARTIST',				'ModifierId',				'OLMEC_COLOSSAL_
 -- This particular example daisy-chains two RequirementSetId elements together - further down, you'll see that one references the other. It's essentially a 'layered' requirement - one feeds the other.
 -------------------------------------
 INSERT INTO RequirementSets
-		(RequirementSetId,						RequirementSetType				)
-VALUES	('OLMEC_4_COLOSSAL_HEAD',				'REQUIREMENTSET_TEST_ALL'		),
-		('PLOT_HAS_OLMEC_COLOSSAL_HEAD',		'REQUIREMENTSET_TEST_ALL'		);
+		(RequirementSetId,					RequirementSetType			)
+VALUES	('OLMEC_4_COLOSSAL_HEAD',			'REQUIREMENTSET_TEST_ALL'	),
+		('PLOT_HAS_OLMEC_COLOSSAL_HEAD',	'REQUIREMENTSET_TEST_ALL'	);
 
 -------------------------------------
 -- RequirementSetRequirements
@@ -294,9 +290,9 @@ VALUES	('OLMEC_4_COLOSSAL_HEAD',				'REQUIREMENTSET_TEST_ALL'		),
 -- In the below table, we're simply mapping a RequirementSetId to a RequirementId. All of these values are held locally, in this mod, as we'll be defining the RequirementId parameters ourselves.
 -------------------------------------
 INSERT INTO RequirementSetRequirements
-		(RequirementSetId,						RequirementId									)
-VALUES	('OLMEC_4_COLOSSAL_HEAD',				'OLMEC_4_COLOSSAL_HEAD_REQUIREMENT'				),
-		('PLOT_HAS_OLMEC_COLOSSAL_HEAD',		'PLOT_HAS_OLMEC_COLOSSAL_HEAD_REQUIREMENT'		);
+		(RequirementSetId,					RequirementId								)
+VALUES	('OLMEC_4_COLOSSAL_HEAD',			'OLMEC_4_COLOSSAL_HEAD_REQUIREMENT'			),
+		('PLOT_HAS_OLMEC_COLOSSAL_HEAD',	'PLOT_HAS_OLMEC_COLOSSAL_HEAD_REQUIREMENT'	);
 
 -------------------------------------
 -- Requirements
@@ -308,9 +304,9 @@ VALUES	('OLMEC_4_COLOSSAL_HEAD',				'OLMEC_4_COLOSSAL_HEAD_REQUIREMENT'				),
 --Because the final table (further below) is where the logic is tied together, we'll walk through it all in the notes in that section.
 -------------------------------------
 INSERT INTO Requirements
-		(RequirementId, 									RequirementType									)
-VALUES	('OLMEC_4_COLOSSAL_HEAD_REQUIREMENT',				'REQUIREMENT_COLLECTION_COUNT_ATLEAST'			),
-		('PLOT_HAS_OLMEC_COLOSSAL_HEAD_REQUIREMENT',		'REQUIREMENT_PLOT_IMPROVEMENT_TYPE_MATCHES'		);
+		(RequirementId, 									RequirementType								)
+VALUES	('OLMEC_4_COLOSSAL_HEAD_REQUIREMENT',				'REQUIREMENT_COLLECTION_COUNT_ATLEAST'		),
+		('PLOT_HAS_OLMEC_COLOSSAL_HEAD_REQUIREMENT',		'REQUIREMENT_PLOT_IMPROVEMENT_TYPE_MATCHES'	);
 
 -------------------------------------
 -- RequirementArguments
@@ -332,4 +328,4 @@ INSERT INTO RequirementArguments
 VALUES	('OLMEC_4_COLOSSAL_HEAD_REQUIREMENT', 			'CollectionType',			'COLLECTION_CITY_PLOT_YIELDS'	),
 		('OLMEC_4_COLOSSAL_HEAD_REQUIREMENT', 			'Count',					4								),
 		('OLMEC_4_COLOSSAL_HEAD_REQUIREMENT', 			'RequirementSetId',			'PLOT_HAS_OLMEC_COLOSSAL_HEAD'	),
-		('PLOT_HAS_OLMEC_COLOSSAL_HEAD_REQUIREMENT', 	'ImprovementType',			'IMPROVEMENT_CIVIMPROVEMENT'		);
+		('PLOT_HAS_OLMEC_COLOSSAL_HEAD_REQUIREMENT', 	'ImprovementType',			'IMPROVEMENT_CIVIMPROVEMENT'	);

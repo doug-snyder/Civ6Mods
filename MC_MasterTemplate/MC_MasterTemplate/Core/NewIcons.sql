@@ -24,6 +24,7 @@
 -- Please note: I have included a sample configuration for the ICON_ATLAS_COLOSSAL_HEAD but you may note that this is not referenced in the IconDefinitions. The ICON_COLOSSAL_HEAD exists in the base-game and therefore this is just to illustrate which icon-sizes are required for an Improvement.
 -----------------------------------------------
 
+/*
 INSERT INTO IconTextureAtlases	
 		(Name,									IconSize,	IconsPerRow,	IconsPerColumn,		Filename					)
 VALUES	('ICON_ATLAS_MC_OLMEC',					22,	 		1,				1,					'OlmecAtlas22.dds'			),
@@ -62,6 +63,7 @@ VALUES	('ICON_ATLAS_MC_OLMEC',					22,	 		1,				1,					'OlmecAtlas22.dds'			),
 		('ICON_ATLAS_COLOSSAL_HEAD',			80,			1,				1,					'ColossalHead80.dds'		),
 		('ICON_ATLAS_COLOSSAL_HEAD',			200,		1,				1,					'ColossalHead200.dds'		),
 		('ICON_ATLAS_COLOSSAL_HEAD',			256,		1,				1,					'ColossalHead256.dds'		);
+*/
 
 -----------------------------------------------
 -- IconDefinitions
@@ -72,8 +74,8 @@ VALUES	('ICON_ATLAS_MC_OLMEC',					22,	 		1,				1,					'OlmecAtlas22.dds'			),
 -----------------------------------------------
 
 INSERT INTO IconDefinitions
-		(Name,										Atlas,							'Index'				)
-VALUES	('ICON_CIVILIZATION_MRSHAKE_CIVNAME',				'ICON_ATLAS_MC_OLMEC',			0					),
-		('ICON_LEADER_MRSHAKE_CIVLEADER',					'ICON_ATLAS_MC_PO_NGBE',		0					),
-		('ICON_UNIT_MC_WEREJAGUAR_PORTRAIT',		'ICON_ATLAS_MC_WEREJAGUAR',		0					),
-		('ICON_UNIT_MRSHAKE_CIVUNIT',					'ICON_ATLAS_MC_WEREJAGUAR',		1					);
+		(Name,										Atlas,							'Index'	)
+VALUES	('ICON_CIVILIZATION_MRSHAKE_CIVNAME',		'ICON_ATLAS_MC_OLMEC',			0		),
+		('ICON_LEADER_MRSHAKE_CIVLEADER',			'ICON_ATLAS_MC_PO_NGBE',		0		),
+		('ICON_UNIT_MRSHAKE_CIVUNIT_PORTRAIT',		'ICON_ATLAS_MC_WEREJAGUAR',		0		),
+		('ICON_UNIT_MRSHAKE_CIVUNIT',				'ICON_ATLAS_MC_WEREJAGUAR',		1		);

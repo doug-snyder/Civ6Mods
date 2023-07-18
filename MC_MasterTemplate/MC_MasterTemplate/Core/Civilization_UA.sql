@@ -18,8 +18,8 @@
 -----------------------------------------------
 
 INSERT INTO	Types
-		(Type,												Kind			)
-VALUES	('TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US',		'KIND_TRAIT'	);
+		(Type,											Kind			)
+VALUES	('TRAIT_CIVILIZATION_MRSHAKE_CIVIMPROVEMENT',	'KIND_TRAIT'	);
 
 -----------------------------------------------
 -- Traits
@@ -28,8 +28,10 @@ VALUES	('TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US',		'KIND_TRAIT'	);
 -----------------------------------------------
 
 INSERT INTO	Traits	
-		(TraitType,											Name,														Description														)
-VALUES	('TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US',		'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_NAME',		'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_DESCRIPTION'	);
+		(TraitType,	Name, Description	)
+VALUES	('TRAIT_CIVILIZATION_MRSHAKE_CIVIMPROVEMENT',
+		 'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_NAME',
+		 'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_DESCRIPTION');
 		
 -----------------------------------------------
 -- CivilizationTraits
@@ -38,8 +40,8 @@ VALUES	('TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US',		'LOC_TRAIT_CIVILIZATION_M
 -----------------------------------------------
 
 INSERT INTO	CivilizationTraits
-		(CivilizationType,				TraitType										)
-VALUES	('CIVILIZATION_MRSHAKE_CIVNAME',		'TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US'	);
+		(CivilizationType,					TraitType									)
+VALUES	('CIVILIZATION_MRSHAKE_CIVNAME',	'TRAIT_CIVILIZATION_MRSHAKE_CIVIMPROVEMENT'	);
 
 -----------------------------------------------
 -- TraitModifiers
@@ -56,9 +58,9 @@ VALUES	('CIVILIZATION_MRSHAKE_CIVNAME',		'TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEE
 -----------------------------------------------
 
 INSERT INTO	TraitModifiers	
-		(TraitType,											ModifierId											)
-VALUES	('TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US',		'MODIFIER_MC_LET_THE_GODS_FEED_US_SHRINE_YIELD'		),
-		('TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US',		'MODIFIER_MC_LET_THE_GODS_FEED_US_TEMPLE_YIELD'		);
+		(TraitType,										ModifierId										)
+VALUES	('TRAIT_CIVILIZATION_MRSHAKE_CIVIMPROVEMENT',	'MODIFIER_MRSHAKE_CIVIMPROVEMENT_SHRINE_YIELD'	),
+		('TRAIT_CIVILIZATION_MRSHAKE_CIVIMPROVEMENT',	'MODIFIER_MRSHAKE_CIVIMPROVEMENT_TEMPLE_YIELD'	);
 
 -----------------------------------------------
 -- Modifiers
@@ -77,9 +79,9 @@ VALUES	('TRAIT_CIVILIZATION_MC_LET_THE_GODS_FEED_US',		'MODIFIER_MC_LET_THE_GODS
 -----------------------------------------------
 
 INSERT INTO	Modifiers
-		(ModifierId,											ModifierType,											RunOnce,		Permanent	)
-VALUES	('MODIFIER_MC_LET_THE_GODS_FEED_US_SHRINE_YIELD',		'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE',	0,				1			),
-		('MODIFIER_MC_LET_THE_GODS_FEED_US_TEMPLE_YIELD',		'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE',	0,				1			);
+		(ModifierId,										ModifierType,											RunOnce,		Permanent)
+VALUES	('MODIFIER_MRSHAKE_CIVIMPROVEMENT_SHRINE_YIELD',	'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE',	0,				1),
+		('MODIFIER_MRSHAKE_CIVIMPROVEMENT_TEMPLE_YIELD',	'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE',	0,				1);
 
 -----------------------------------------------
 -- ModifierArguments
@@ -96,10 +98,10 @@ VALUES	('MODIFIER_MC_LET_THE_GODS_FEED_US_SHRINE_YIELD',		'MODIFIER_PLAYER_CITIE
 -----------------------------------------------
 
 INSERT INTO	ModifierArguments
-		(ModifierId,												Name,							Value									)
-VALUES	('MODIFIER_MC_LET_THE_GODS_FEED_US_SHRINE_YIELD',			'BuildingType',					'BUILDING_SHRINE'						),
-		('MODIFIER_MC_LET_THE_GODS_FEED_US_SHRINE_YIELD',			'YieldType',					'YIELD_FOOD'							),
-		('MODIFIER_MC_LET_THE_GODS_FEED_US_SHRINE_YIELD',			'Amount',						2										),
-		('MODIFIER_MC_LET_THE_GODS_FEED_US_TEMPLE_YIELD',			'BuildingType',					'BUILDING_TEMPLE'						),
-		('MODIFIER_MC_LET_THE_GODS_FEED_US_TEMPLE_YIELD',			'YieldType',					'YIELD_FOOD'							),
-		('MODIFIER_MC_LET_THE_GODS_FEED_US_TEMPLE_YIELD',			'Amount',						2										);
+		(ModifierId,										Name,				Value				)
+VALUES	('MODIFIER_MRSHAKE_CIVIMPROVEMENT_SHRINE_YIELD',	'BuildingType',		'BUILDING_SHRINE'	),
+		('MODIFIER_MRSHAKE_CIVIMPROVEMENT_SHRINE_YIELD',	'YieldType',		'YIELD_FOOD'		),
+		('MODIFIER_MRSHAKE_CIVIMPROVEMENT_SHRINE_YIELD',	'Amount',			2					),
+		('MODIFIER_MRSHAKE_CIVIMPROVEMENT_TEMPLE_YIELD',	'BuildingType',		'BUILDING_TEMPLE'	),
+		('MODIFIER_MRSHAKE_CIVIMPROVEMENT_TEMPLE_YIELD',	'YieldType',		'YIELD_FOOD'		),
+		('MODIFIER_MRSHAKE_CIVIMPROVEMENT_TEMPLE_YIELD',	'Amount',			2					);

@@ -20,34 +20,34 @@
 	
 INSERT INTO Types
 		(Type,									Kind			)
-VALUES	('TRAIT_CIVILIZATION_MC_WEREJAGUAR',	'KIND_TRAIT'	),
-		('UNIT_MRSHAKE_CIVUNIT',					'KIND_UNIT'		),
-		('ABILITY_MC_WEREJAGUAR',				'KIND_ABILITY'	);
+VALUES	('TRAIT_CIVILIZATION_MRSHAKE_CIVUNIT',	'KIND_TRAIT'	),
+		('UNIT_MRSHAKE_CIVUNIT',				'KIND_UNIT'		),
+		('ABILITY_MRSHAKE_CIVUNIT',				'KIND_ABILITY'	);
 
 -----------------------------------------------
 -- Tags
 
--- Certain game functions are aligned to groups of units (known as classes), rather than the individual unit-types themselves. For this reason, here we define the class (CLASS_MC_WEREJAGUAR) - we will later associate the unit to this class (as the only unit of that class) but also the UnitAbility to that same class. The below table INSERT paves the way for the special ability to be applied to our custom unit.
+-- Certain game functions are aligned to groups of units (known as classes), rather than the individual unit-types themselves. For this reason, here we define the class (CLASS_MRSHAKE_CIVUNIT) - we will later associate the unit to this class (as the only unit of that class) but also the UnitAbility to that same class. The below table INSERT paves the way for the special ability to be applied to our custom unit.
 -----------------------------------------------	
 	
 INSERT INTO Tags
 		(Tag,						Vocabulary		)
-VALUES	('CLASS_MC_WEREJAGUAR',		'ABILITY_CLASS'	);
+VALUES	('CLASS_MRSHAKE_CIVUNIT',	'ABILITY_CLASS'	);
 
 -----------------------------------------------
 -- TypeTags
 
--- As mentioned above, we now link the Unit itself (UNIT_MRSHAKE_CIVUNIT) to our newly-defined class (CLASS_MC_WEREJAGUAR). The second set of values associate the newly-defined Unit Ability (ABILITY_MC_WEREJAGUAR) to all objects within that same class (CLASS_MC_WEREJAGUAR).
+-- As mentioned above, we now link the Unit itself (UNIT_MRSHAKE_CIVUNIT) to our newly-defined class (CLASS_MRSHAKE_CIVUNIT). The second set of values associate the newly-defined Unit Ability (ABILITY_MRSHAKE_CIVUNIT) to all objects within that same class (CLASS_MRSHAKE_CIVUNIT).
 
 -- The second INSERT function ensures our new Unit (UNIT_MRSHAKE_CIVUNIT) inherits the classes that the UNIT_SPEARMAN already has configured. This ensures that groups to which the UNIT_SPEARMAN belongs, the UNIT_MRSHAKE_CIVUNIT also belongs. This ensures integration with other Unit Abilities and identifications and allows for a cohesive replacement.
 -----------------------------------------------		
 
 INSERT INTO TypeTags
 		(Type,						Tag						)
-VALUES	('UNIT_MRSHAKE_CIVUNIT',		'CLASS_MC_WEREJAGUAR'	),
-		('ABILITY_MC_WEREJAGUAR',	'CLASS_MC_WEREJAGUAR'	);
+VALUES	('UNIT_MRSHAKE_CIVUNIT',	'CLASS_MRSHAKE_CIVUNIT'	),
+		('ABILITY_MRSHAKE_CIVUNIT',	'CLASS_MRSHAKE_CIVUNIT'	);
 
-INSERT INTO TypeTags (Type,		Tag)
+INSERT INTO TypeTags (Type,	Tag)
 SELECT 	'UNIT_MRSHAKE_CIVUNIT',	Tag
 FROM 	TypeTags
 WHERE 	Type = 'UNIT_SPEARMAN';
@@ -60,7 +60,7 @@ WHERE 	Type = 'UNIT_SPEARMAN';
 		
 INSERT INTO Traits
 		(TraitType,								Name,								Description								)
-VALUES	('TRAIT_CIVILIZATION_MC_WEREJAGUAR',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',		'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION'	);
+VALUES	('TRAIT_CIVILIZATION_MRSHAKE_CIVUNIT',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',	'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION'	);
 
 -----------------------------------------------
 -- CivilizationTraits
@@ -69,8 +69,8 @@ VALUES	('TRAIT_CIVILIZATION_MC_WEREJAGUAR',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',		'L
 -----------------------------------------------
 		
 INSERT INTO CivilizationTraits
-		(CivilizationType,				TraitType								)
-VALUES	('CIVILIZATION_MRSHAKE_CIVNAME',		'TRAIT_CIVILIZATION_MC_WEREJAGUAR'		);
+		(CivilizationType,					TraitType							)
+VALUES	('CIVILIZATION_MRSHAKE_CIVNAME',	'TRAIT_CIVILIZATION_MRSHAKE_CIVUNIT');
 
 -----------------------------------------------
 -- Units
@@ -85,7 +85,7 @@ VALUES	('CIVILIZATION_MRSHAKE_CIVNAME',		'TRAIT_CIVILIZATION_MC_WEREJAGUAR'		);
 
 -----------------------------------------------	
 	
-INSERT INTO Units	(
+INSERT INTO Units(
 		UnitType,
 		Name,
 		Description,
@@ -107,10 +107,10 @@ INSERT INTO Units	(
 		PrereqTech,
 		PrereqCivic
 		)
-SELECT	'UNIT_MRSHAKE_CIVUNIT',	-- UnitType
-		'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',	-- Name
+SELECT	'UNIT_MRSHAKE_CIVUNIT',					-- UnitType
+		'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',		-- Name
 		'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION', -- Description
-		'TRAIT_CIVILIZATION_MC_WEREJAGUAR', -- TraitType
+		'TRAIT_CIVILIZATION_MRSHAKE_CIVUNIT',	-- TraitType
 		BaseMoves,
 		Cost + 15,
 		PurchaseYield,
@@ -152,7 +152,7 @@ WHERE	Unit = 'UNIT_SPEARMAN';
 -----------------------------------------------
 		
 INSERT INTO UnitAiInfos (UnitType,	AiType)
-SELECT 	'UNIT_MRSHAKE_CIVUNIT',		AiType
+SELECT 	'UNIT_MRSHAKE_CIVUNIT',	AiType
 FROM 	UnitAiInfos
 WHERE 	UnitType = 'UNIT_SPEARMAN';
 		
@@ -163,7 +163,7 @@ WHERE 	UnitType = 'UNIT_SPEARMAN';
 -----------------------------------------------
 		
 INSERT INTO UnitReplaces
-		(CivUniqueUnitType,		ReplacesUnitType	)
+		(CivUniqueUnitType,			ReplacesUnitType	)
 VALUES	('UNIT_MRSHAKE_CIVUNIT',	'UNIT_SPEARMAN'		);
 
 -----------------------------------------------
@@ -176,7 +176,7 @@ VALUES	('UNIT_MRSHAKE_CIVUNIT',	'UNIT_SPEARMAN'		);
 
 INSERT INTO UnitAbilities
 		(UnitAbilityType,			Name,								Description						)
-VALUES	('ABILITY_MC_WEREJAGUAR',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',		'LOC_ABILITY_MC_WEREJAGUAR'		);
+VALUES	('ABILITY_MRSHAKE_CIVUNIT',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',	'LOC_ABILITY_MRSHAKE_CIVUNIT'	);
 
 -----------------------------------------------
 -- Modifiers
@@ -191,8 +191,8 @@ VALUES	('ABILITY_MC_WEREJAGUAR',	'LOC_UNIT_MRSHAKE_CIVUNIT_NAME',		'LOC_ABILITY_
 -----------------------------------------------
 	
 INSERT INTO Modifiers	
-		(ModifierId,									ModifierType,									OwnerRequirementSetId		)
-VALUES	('MODIFIER_WEREJAGUAR_GOLDEN_AGE_STRENGTH',		'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH',			'PLAYER_HAS_GOLDEN_AGE'		);
+		(ModifierId,								ModifierType,							OwnerRequirementSetId	)
+VALUES	('MODIFIER_CIVUNIT_GOLDEN_AGE_STRENGTH',	'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH',	'PLAYER_HAS_GOLDEN_AGE'	);
 
 -----------------------------------------------
 -- ModifierArguments
@@ -207,22 +207,22 @@ VALUES	('MODIFIER_WEREJAGUAR_GOLDEN_AGE_STRENGTH',		'MODIFIER_UNIT_ADJUST_COMBAT
 -----------------------------------------------
 
 INSERT INTO ModifierArguments		
-		(ModifierId,										Name,						Value	)
-VALUES	('MODIFIER_WEREJAGUAR_GOLDEN_AGE_STRENGTH',			'Amount',					5		);
+		(ModifierId,								Name,		Value	)
+VALUES	('MODIFIER_CIVUNIT_GOLDEN_AGE_STRENGTH',	'Amount',	5		);
 
 -----------------------------------------------
 -- UnitAbilityModifiers
 
 -- In order to link the UnitAbility and the Modifier we have set up, we need to use the UnitAbilityModifiers table.
 
--- This simply ties the two elements together - it ensures that any unit that has the ABILITY_MC_WEREJAGUAR UnitAbilityType will receive the bonus granted by the MODIFIER_WEREJAGUAR_GOLDEN_AGE_STRENGTH Modifier.
+-- This simply ties the two elements together - it ensures that any unit that has the ABILITY_MRSHAKE_CIVUNIT UnitAbilityType will receive the bonus granted by the MODIFIER_CIVUNIT_GOLDEN_AGE_STRENGTH Modifier.
 
--- We specified the CLASS_MC_WEREJAGUAR as being the only one linked to the ABILITY_MC_WEREJAGUAR earlier in this document (using the TypeTags table). This way, we ensure that the only unit to get this ability is, in fact, the Werejaguar.
+-- We specified the CLASS_MRSHAKE_CIVUNIT as being the only one linked to the ABILITY_MRSHAKE_CIVUNIT earlier in this document (using the TypeTags table). This way, we ensure that the only unit to get this ability is, in fact, the Werejaguar.
 -----------------------------------------------
 
 INSERT INTO UnitAbilityModifiers
-		(UnitAbilityType,				ModifierId									)
-VALUES	('ABILITY_MC_WEREJAGUAR',		'MODIFIER_WEREJAGUAR_GOLDEN_AGE_STRENGTH'	);
+		(UnitAbilityType,			ModifierId								)
+VALUES	('ABILITY_MRSHAKE_CIVUNIT',	'MODIFIER_CIVUNIT_GOLDEN_AGE_STRENGTH'	);
 
 -----------------------------------------------
 -- ModifierStrings
@@ -235,5 +235,5 @@ VALUES	('ABILITY_MC_WEREJAGUAR',		'MODIFIER_WEREJAGUAR_GOLDEN_AGE_STRENGTH'	);
 -----------------------------------------------
 
 INSERT INTO ModifierStrings
-		(ModifierId,									Context,		Text							)
-VALUES	('MODIFIER_WEREJAGUAR_GOLDEN_AGE_STRENGTH',		'Preview',		'LOC_ABILITY_MC_WEREJAGUAR'		);
+		(ModifierId,								Context,	Text							)
+VALUES	('MODIFIER_CIVUNIT_GOLDEN_AGE_STRENGTH',	'Preview',	'LOC_ABILITY_MRSHAKE_CIVUNIT'	);

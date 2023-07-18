@@ -16,7 +16,7 @@
 -----------------------------------------------
 
 INSERT INTO LoadingInfo
-			(LeaderType,			ForegroundImage,					BackgroundImage,					PlayDawnOfManAudio	)
+			(LeaderType,					ForegroundImage,						BackgroundImage,							PlayDawnOfManAudio	)
 VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LEADER_MRSHAKE_CIVLEADER_NEUTRAL',		'LEADER_MRSHAKE_CIVLEADER_BACKGROUND',		0					);
 
 --------------------------------------------------------------------------------------------------------------------------		
@@ -29,5 +29,5 @@ VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LEADER_MRSHAKE_CIVLEADER_NEUTRAL',		'LEADE
 -- Please note: the foreground image of the leader, on the Diplomacy Screen, is configured via an ArtDef file and does not require any associated code.
 --------------------------------------------------------------------------------------------------------------------------			
 INSERT INTO DiplomacyInfo			
-			(Type,						BackgroundImage					)
-VALUES		('LEADER_MRSHAKE_CIVLEADER',		'LEADER_PO_NGBE_DIPLO_BG'		);
+			(Type,								BackgroundImage					)
+VALUES		('LEADER_MRSHAKE_CIVLEADER',		'LEADER_CIVLEADER_DIPLO_BG'		);
