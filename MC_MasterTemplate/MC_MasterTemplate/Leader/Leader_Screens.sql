@@ -17,7 +17,7 @@
 
 INSERT INTO LoadingInfo
 			(LeaderType,			ForegroundImage,					BackgroundImage,					PlayDawnOfManAudio	)
-VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LEADER_MC_PO_NGBE_NEUTRAL',		'LEADER_MC_PO_NGBE_BACKGROUND',		0					);
+VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LEADER_MRSHAKE_CIVLEADER_NEUTRAL',		'LEADER_MRSHAKE_CIVLEADER_BACKGROUND',		0					);
 
 --------------------------------------------------------------------------------------------------------------------------		
 -- Background Art
