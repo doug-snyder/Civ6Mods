@@ -45,9 +45,9 @@ The base-game ArtDef files are located in your Civilization VI installation fold
 
 2. Next, open our project's Civilization.artdef file.
 
-3. Expand the 'CIVILIZATION_MC_OLMEC' entry, select the 'Audio' sub-entry and edit the 'XrefName' to match the value you want to use.
+3. Expand the 'CIVILIZATION_MS2099_OLMEC' entry, select the 'Audio' sub-entry and edit the 'XrefName' to match the value you want to use.
 
-4. Lastly, go up one level, selecting 'CIVILIZATION_MC_OLMEC' and edit the 'Name' field to exactly match the the unique civilization string for your custom civilization. If you're unsure what this is, look it up via the Civilization_Config.sql file in this project.
+4. Lastly, go up one level, selecting 'CIVILIZATION_MS2099_OLMEC' and edit the 'Name' field to exactly match the the unique civilization string for your custom civilization. If you're unsure what this is, look it up via the Civilization_Config.sql file in this project.
 
 5. With these amendments made, click File --> Save.
 
@@ -63,7 +63,7 @@ The Cultures.artdef file is used to control the visual, cultural appearance of o
 
 The principle is the same as for Civilizations.artdef, in terms of looking up existing entries we wish to inherit. Once we know the culture names, we need to populate them in place of the 'SouthAmerican' entries that exist in our current file.
 
-Finally, selecting each entry in turn, you'll note that the right-hand-pane has a Civilizations label and 'CIVILIZATION_MC_OLMEC' is listed. You'll need to click into this field and edit the entry to match your custom civilization's unique string.
+Finally, selecting each entry in turn, you'll note that the right-hand-pane has a Civilizations label and 'CIVILIZATION_MS2099_OLMEC' is listed. You'll need to click into this field and edit the entry to match your custom civilization's unique string.
 
 --------
 ARTDEF CONFIGURATION: Units.artdef

@@ -21,7 +21,7 @@ VALUES
 -- Defines the text strings that identify your custom civilization by name.
 -----------------------------------------------
 
-	('en_US',	'LOC_CIVILIZATION_MS2099_CIVNAME_NAME',		'Civname'			),
+	('en_US',	'LOC_CIVILIZATION_MS2099_CIVNAME_NAME',			'Civname'			),
 	('en_US',	'LOC_CIVILIZATION_MS2099_CIVNAME_DESCRIPTION',	'Civname_Empire'	),
 	('en_US',	'LOC_CIVILIZATION_MS2099_CIVNAME_ADJECTIVE',  	'Civname'			),
 	
@@ -57,7 +57,7 @@ VALUES
 -- Please note: The display of in-game icons in text is achieved by using [ICON_Type].
 -----------------------------------------------
 
-	('en_US',	'LOC_UNIT_MS2099_CIVUNIT_NAME',		'Civunit_Name'			),
+	('en_US',	'LOC_UNIT_MS2099_CIVUNIT_NAME',			'Civunit_Name'			),
 	('en_US',	'LOC_UNIT_MS2099_CIVUNIT_DESCRIPTION',	'Civunit_Description.'	),
 	('en_US',	'LOC_ABILITY_MS2099_CIVUNIT',			'Civunit_Ability.'		),
 
@@ -191,9 +191,9 @@ VALUES
 -----------------------------------------------
 
 	('en_US',	'LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MS2099_CIVNAME_CHAPTER_HISTORY_PARA_1',		
-	'LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MS2099_CIVNAME_CHAPTER_HISTORY_PARA_1.'),	
+				'LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MS2099_CIVNAME_CHAPTER_HISTORY_PARA_1.'),	
 	('en_US',	'LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MS2099_CIVNAME_CHAPTER_HISTORY_PARA_2',		
-	'LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MS2099_CIVNAME_CHAPTER_HISTORY_PARA_2.'),	
+				'LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MS2099_CIVNAME_CHAPTER_HISTORY_PARA_2.'),	
 
 	-----------------------------------------------
 -- Unique Unit Civilopedia Entry
@@ -211,4 +211,4 @@ VALUES
 -----------------------------------------------
 
 	('en_US',	'LOC_PEDIA_UNITS_PAGE_UNIT_MS2099_CIVNAME_UU_CHAPTER_HISTORY_PARA_1',  	
-	'LOC_PEDIA_UNITS_PAGE_UNIT_MS2099_CIVNAME_UU_CHAPTER_HISTORY_PARA_1.'	);
+				'LOC_PEDIA_UNITS_PAGE_UNIT_MS2099_CIVNAME_UU_CHAPTER_HISTORY_PARA_1.'	);

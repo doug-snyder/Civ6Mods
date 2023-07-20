@@ -24,7 +24,7 @@ VALUES		('TRAIT_AGENDA_MS2099_CIVLEADER',	'KIND_TRAIT'	);
 -----------------------------------------------
 
 INSERT INTO Agendas
-			(AgendaType,					Name,									Description									)
+			(AgendaType,				Name,								Description									)
 VALUES 		('AGENDA_MS2099_CIVLEADER',	'LOC_AGENDA_MS2099_CIVLEADER_NAME',	'LOC_AGENDA_MS2099_CIVLEADER_DESCRIPTION'	);
 
 -----------------------------------------------
@@ -34,8 +34,8 @@ VALUES 		('AGENDA_MS2099_CIVLEADER',	'LOC_AGENDA_MS2099_CIVLEADER_NAME',	'LOC_AG
 -----------------------------------------------
 
 INSERT INTO Traits				
-			(TraitType,								Name,									Description									)
-VALUES		('TRAIT_AGENDA_MS2099_CIVLEADER',		'LOC_AGENDA_MS2099_CIVLEADER_NAME',	'LOC_AGENDA_MS2099_CIVLEADER_DESCRIPTION'	);
+			(TraitType,							Name,								Description									)
+VALUES		('TRAIT_AGENDA_MS2099_CIVLEADER',	'LOC_AGENDA_MS2099_CIVLEADER_NAME',	'LOC_AGENDA_MS2099_CIVLEADER_DESCRIPTION'	);
 
 -----------------------------------------------
 -- AgendaTraits
@@ -46,8 +46,8 @@ VALUES		('TRAIT_AGENDA_MS2099_CIVLEADER',		'LOC_AGENDA_MS2099_CIVLEADER_NAME',	'
 -----------------------------------------------
 
 INSERT INTO AgendaTraits
-			(AgendaType,					TraitType						)
-VALUES 		('AGENDA_MS2099_CIVLEADER',	'TRAIT_AGENDA_MS2099_CIVLEADER');
+			(AgendaType,				TraitType						)
+VALUES 		('AGENDA_MS2099_CIVLEADER',	'TRAIT_AGENDA_MS2099_CIVLEADER'	);
 
 -----------------------------------------------
 -- HistoricalAgendas
@@ -56,7 +56,7 @@ VALUES 		('AGENDA_MS2099_CIVLEADER',	'TRAIT_AGENDA_MS2099_CIVLEADER');
 -----------------------------------------------
 
 INSERT INTO HistoricalAgendas
-			(LeaderType,					AgendaType					)
+			(LeaderType,				AgendaType					)
 VALUES 		('LEADER_MS2099_CIVLEADER',	'AGENDA_MS2099_CIVLEADER'	);
 
 -----------------------------------------------
@@ -70,7 +70,7 @@ VALUES 		('LEADER_MS2099_CIVLEADER',	'AGENDA_MS2099_CIVLEADER'	);
 -----------------------------------------------
 
 INSERT INTO ExclusiveAgendas
-			(AgendaOne,						AgendaTwo				)
+			(AgendaOne,					AgendaTwo				)
 VALUES 		('AGENDA_MS2099_CIVLEADER',	'AGENDA_INDUSTRIALIST'	);
 
 -----------------------------------------------
@@ -97,7 +97,7 @@ VALUES		('TRAIT_AGENDA_MS2099_CIVLEADER',	'AGENDA_MODIFIER_MS2099_CIVLEADER_UNHA
 INSERT INTO Modifiers	
 			(ModifierId,									ModifierType,									SubjectRequirementSetId				)
 VALUES		('AGENDA_MODIFIER_MS2099_CIVLEADER_UNHAPPY',	'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',	'REQSET_MS2099_CIVLEADER_UNHAPPY'	),
-			('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',	'REQSET_MS2099_CIVLEADER_HAPPY'	);
+			('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER',	'REQSET_MS2099_CIVLEADER_HAPPY'		);
 
 -----------------------------------------------	
 -- ModifierStrings
@@ -141,8 +141,8 @@ VALUES	('AGENDA_MODIFIER_MS2099_CIVLEADER_UNHAPPY',	'InitialValue',					-5						
 		('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'IncrementValue',				1														),
 		('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'IncrementTurns',				10														),
 		('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'MaxValue',						12														),
-		('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'StatementKey',					'LOC_DIPLO_KUDO_LEADER_MS2099_CIVLEADER_REASON_ANY'	),
-		('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'SimpleModifierDescription',	'LOC_DIPLO_MODIFIER_MS2099_CIVLEADER_HAPPY'					);
+		('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'StatementKey',					'LOC_DIPLO_KUDO_LEADER_MS2099_CIVLEADER_REASON_ANY'		),
+		('AGENDA_MODIFIER_MS2099_CIVLEADER_HAPPY',		'SimpleModifierDescription',	'LOC_DIPLO_MODIFIER_MS2099_CIVLEADER_HAPPY'				);
 			
 -----------------------------------------------
 -- RequirementSets
@@ -158,9 +158,9 @@ VALUES	('AGENDA_MODIFIER_MS2099_CIVLEADER_UNHAPPY',	'InitialValue',					-5						
 -----------------------------------------------
 
 INSERT INTO RequirementSets
-			(RequirementSetId,						RequirementSetType			)
+			(RequirementSetId,					RequirementSetType			)
 VALUES		('REQSET_MS2099_CIVLEADER_UNHAPPY',	'REQUIREMENTSET_TEST_ALL'	),
-			('REQSET_MS2099_CIVLEADER_HAPPY',		'REQUIREMENTSET_TEST_ALL'	);
+			('REQSET_MS2099_CIVLEADER_HAPPY',	'REQUIREMENTSET_TEST_ALL'	);
 
 -----------------------------------------------
 -- RequirementSetRequirements
@@ -178,11 +178,11 @@ VALUES		('REQSET_MS2099_CIVLEADER_UNHAPPY',	'REQUIREMENTSET_TEST_ALL'	),
 -----------------------------------------------
 
 INSERT INTO RequirementSetRequirements
-			(RequirementSetId,						RequirementId						)
-VALUES		('REQSET_MS2099_CIVLEADER_UNHAPPY',	'REQUIRES_MAJOR_CIV_OPPONENT'		),
-			('REQSET_MS2099_CIVLEADER_UNHAPPY',	'REQUIRES_MET_10_TURNS_AGO'			),
-			('REQSET_MS2099_CIVLEADER_UNHAPPY',	'REQUIRES_HAS_LOW_FAITH'			),
-			('REQSET_MS2099_CIVLEADER_HAPPY',		'REQUIRES_MAJOR_CIV_OPPONENT'		),
-			('REQSET_MS2099_CIVLEADER_HAPPY',		'REQUIRES_MET_10_TURNS_AGO'			),
-			('REQSET_MS2099_CIVLEADER_HAPPY',		'REQUIRES_HAS_HIGH_CULTURE'			),
-			('REQSET_MS2099_CIVLEADER_HAPPY',		'REQUIRES_HAS_HIGH_SCIENCE'			);
+			(RequirementSetId,					RequirementId					)
+VALUES		('REQSET_MS2099_CIVLEADER_UNHAPPY',	'REQUIRES_MAJOR_CIV_OPPONENT'	),
+			('REQSET_MS2099_CIVLEADER_UNHAPPY',	'REQUIRES_MET_10_TURNS_AGO'		),
+			('REQSET_MS2099_CIVLEADER_UNHAPPY',	'REQUIRES_HAS_LOW_FAITH'		),
+			('REQSET_MS2099_CIVLEADER_HAPPY',	'REQUIRES_MAJOR_CIV_OPPONENT'	),
+			('REQSET_MS2099_CIVLEADER_HAPPY',	'REQUIRES_MET_10_TURNS_AGO'		),
+			('REQSET_MS2099_CIVLEADER_HAPPY',	'REQUIRES_HAS_HIGH_CULTURE'		),
+			('REQSET_MS2099_CIVLEADER_HAPPY',	'REQUIRES_HAS_HIGH_SCIENCE'		);

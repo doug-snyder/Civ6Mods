@@ -16,6 +16,6 @@
 -- Please note: For the below code to be used, Rise & Fall (Expansion1) is required.
 -----------------------------------------------
 INSERT INTO MomentIllustrations
-		(MomentIllustrationType,					MomentDataType,					GameDataType,						Texture								)
-VALUES	('MOMENT_ILLUSTRATION_UNIQUE_UNIT',			'MOMENT_DATA_UNIT',				'UNIT_MRSHAKE_CIVUNIT',				'WerejaguarHistoricMoment.dds'		),
-		('MOMENT_ILLUSTRATION_UNIQUE_IMPROVEMENT',	'MOMENT_DATA_IMPROVEMENT',		'IMPROVEMENT_CIVIMPROVEMENT',		'ColossalHeadHistoricMoment.dds'	);
+		(MomentIllustrationType,					MomentDataType,				GameDataType,					Texture								)
+VALUES	('MOMENT_ILLUSTRATION_UNIQUE_UNIT',			'MOMENT_DATA_UNIT',			'UNIT_MS2099_CIVUNIT',			'WerejaguarHistoricMoment.dds'		),
+		('MOMENT_ILLUSTRATION_UNIQUE_IMPROVEMENT',	'MOMENT_DATA_IMPROVEMENT',	'IMPROVEMENT_CIVIMPROVEMENT',	'ColossalHeadHistoricMoment.dds'	);
