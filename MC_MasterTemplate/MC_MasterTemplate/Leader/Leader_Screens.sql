@@ -17,7 +17,7 @@
 
 INSERT INTO LoadingInfo
 			(LeaderType,					ForegroundImage,						BackgroundImage,							PlayDawnOfManAudio	)
-VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LEADER_MRSHAKE_CIVLEADER_NEUTRAL',		'LEADER_MRSHAKE_CIVLEADER_BACKGROUND',		0					);
+VALUES		('LEADER_MS2099_CIVLEADER',	'LEADER_MS2099_CIVLEADER_NEUTRAL',		'LEADER_MS2099_CIVLEADER_BACKGROUND',		0					);
 
 --------------------------------------------------------------------------------------------------------------------------		
 -- Background Art
@@ -30,4 +30,4 @@ VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LEADER_MRSHAKE_CIVLEADER_NEUTRAL',		'LEADE
 --------------------------------------------------------------------------------------------------------------------------			
 INSERT INTO DiplomacyInfo			
 			(Type,								BackgroundImage					)
-VALUES		('LEADER_MRSHAKE_CIVLEADER',		'LEADER_CIVLEADER_DIPLO_BG'		);
+VALUES		('LEADER_MS2099_CIVLEADER',		'LEADER_CIVLEADER_DIPLO_BG'		);

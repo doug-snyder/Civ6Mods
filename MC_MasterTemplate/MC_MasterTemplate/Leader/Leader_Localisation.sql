@@ -19,53 +19,53 @@ VALUES
 -- Leader Name
 -----------------------------------------------	
 	
-	('en_US', 'LOC_LEADER_MRSHAKE_CIVLEADER_NAME',  'Civ_Leader_Name'),
+	('en_US', 'LOC_LEADER_MS2099_CIVLEADER_NAME',  'Civ_Leader_Name'),
 	
 -----------------------------------------------
 -- Leader Unique Ability
 -----------------------------------------------	
 
-	('en_US', 'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_NAME',			'Leader_Trait_Name'),
-	('en_US', 'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_DESCRIPTION',	'Leader_Trait_Description.'),
+	('en_US', 'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_NAME',			'Leader_Trait_Name'),
+	('en_US', 'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_DESCRIPTION',	'Leader_Trait_Description.'),
 
 -----------------------------------------------
 -- Leader Agenda
 -----------------------------------------------	
 
-	('en_US',	'LOC_AGENDA_MRSHAKE_CIVLEADER_NAME',			'Civ_Agenda_Name'),
-	('en_US',	'LOC_AGENDA_MRSHAKE_CIVLEADER_DESCRIPTION',		'Civ_Agenda_Description.'),
+	('en_US',	'LOC_AGENDA_MS2099_CIVLEADER_NAME',			'Civ_Agenda_Name'),
+	('en_US',	'LOC_AGENDA_MS2099_CIVLEADER_DESCRIPTION',		'Civ_Agenda_Description.'),
 	
-	('en_US',	'LOC_DIPLO_KUDO_LEADER_MRSHAKE_CIVLEADER_REASON_ANY',	'(Civ_Leader_Diplo_Kudo_Reason_Any.)'),
-	('en_US',	'LOC_DIPLO_MODIFIER_MRSHAKE_CIVLEADER_HAPPY',			'Civ_Leader_Diplo_Happy.'),
+	('en_US',	'LOC_DIPLO_KUDO_LEADER_MS2099_CIVLEADER_REASON_ANY',	'(Civ_Leader_Diplo_Kudo_Reason_Any.)'),
+	('en_US',	'LOC_DIPLO_MODIFIER_MS2099_CIVLEADER_HAPPY',			'Civ_Leader_Diplo_Happy.'),
 	
-	('en_US',	'LOC_DIPLO_WARNING_LEADER_MRSHAKE_CIVLEADER_REASON_ANY',	'(Civ_Leader_Diplo_Warning_Reason_Any.)'),
-	('en_US',	'LOC_DIPLO_MODIFIER_MRSHAKE_CIVLEADER_UNHAPPY',				'Civ_Leader_Diplo_Unhappy.'),
+	('en_US',	'LOC_DIPLO_WARNING_LEADER_MS2099_CIVLEADER_REASON_ANY',	'(Civ_Leader_Diplo_Warning_Reason_Any.)'),
+	('en_US',	'LOC_DIPLO_MODIFIER_MS2099_CIVLEADER_UNHAPPY',				'Civ_Leader_Diplo_Unhappy.'),
 
 		
 -----------------------------------------------
 -- Dawn of Man (Loading Screen) Text
 -----------------------------------------------	
 
-	('en_US', 'LOC_LOADING_INFO_LEADER_MRSHAKE_CIVLEADER', 'Civ_Leader_Loading_Info.'),
+	('en_US', 'LOC_LOADING_INFO_LEADER_MS2099_CIVLEADER', 'Civ_Leader_Loading_Info.'),
 
 -----------------------------------------------
 -- Diplomacy Text: First Meet
 -----------------------------------------------	
 
 	-- First AI Line (ANY)
-	('en_US',	'LOC_DIPLO_FIRST_MEET_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_FIRST_MEET_LEADER_MS2099_CIVLEADER_ANY',
 	'Civ_Leader_First_Meet_Any.'),
 	
 	-- AI invitation to visit nearby City (ANY)
-	('en_US',	'LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MS2099_CIVLEADER_ANY',
 	'Civ_Leader_First_Invitation_Any.'),
 	
 	-- AI accepts human invitation (ANY)
-	('en_US',	'LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MS2099_CIVLEADER_ANY',
 	'Civ_Leader_First_Invitation_Accept_Any.'),
 	
 	-- AI invitation to exchange Capital Information (ANY)
-	('en_US',	'LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_MS2099_CIVLEADER_ANY',
 	'Civ_Leader_First_Capital_Exchange_Any.'),
 
 -----------------------------------------------
@@ -73,11 +73,11 @@ VALUES
 -----------------------------------------------	
 
 	-- (HAPPY)
-	('en_US',	'LOC_DIPLO_GREETING_LEADER_MRSHAKE_CIVLEADER_HAPPY',
+	('en_US',	'LOC_DIPLO_GREETING_LEADER_MS2099_CIVLEADER_HAPPY',
 	'Loc_Diplo_Greeting_Leader_Happy.'),
 
 	-- (UNHAPPY)
-	('en_US',	'LOC_DIPLO_GREETING_LEADER_MRSHAKE_CIVLEADER_UNHAPPY',
+	('en_US',	'LOC_DIPLO_GREETING_LEADER_MS2099_CIVLEADER_UNHAPPY',
 	'Loc_Diplo_Greeting_Leader_Unhappy.'),
 	
 -----------------------------------------------  
@@ -85,15 +85,15 @@ VALUES
 -----------------------------------------------	
 
 	-- AI Accepts (ANY)
-	('en_US',	'LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
 	'Loc_Diplo_Accept_Delegation_From_Human_Leader_Any.'),
 	
 	-- AI Rejects (ANY)
-	('en_US',	'LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
 	'Loc_Diplo_Reject_Delegation_From_Human_Leader_Any.'),
 	
 	-- AI Requests (ANY)
-	('en_US',	'LOC_DIPLO_DELEGATION_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_DELEGATION_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'Loc_Diplo_Delegation_From_AI_Leader_Any.'),
 	
 -----------------------------------------------
@@ -101,15 +101,15 @@ VALUES
 -----------------------------------------------	
 
 	-- AI accepts from human (ANY)	
-	('en_US',	'LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
 	'Accept_Open_Borders.'),
 	
 	-- AI rejects from human (ANY)	
-	('en_US',	'LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
 	'Reject_Open_Borders.'),
 	
 	-- AI requests from human (ANY)	
-	('en_US',	'LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'Request_Open_Borders.'),
 	
 -----------------------------------------------
@@ -117,23 +117,23 @@ VALUES
 -----------------------------------------------	
 
 	-- AI accepts from human (ANY)
-	('en_US',	'LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Accept_Friendship.'),
 	
 	-- AI rejects from human (ANY)	
-	('en_US',	'LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Reject_Friendship.'),
 	
 	-- AI Requests friendship from human (ANY)	
-	('en_US',	'LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Request_Friendship'),
 	
 	-- Human accepts AI requests, AI responds (ANY)	
-	('en_US',	'LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'Human_Accept_Friendship.'),
 	
 	-- Human rejects AI requests, AI responds (ANY)	
-	('en_US',	'LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'Human_Reject_Friendship.'),
 
 -----------------------------------------------
@@ -141,7 +141,7 @@ VALUES
 -----------------------------------------------	
 
 	-- AI Requests an alliance from human (ANY)
-	('en_US',	'LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Request_Alliance'),
 
 -----------------------------------------------
@@ -149,11 +149,11 @@ VALUES
 -----------------------------------------------	
 	
 	-- AI Kudos (ANY)
-	('en_US',	'LOC_DIPLO_KUDO_EXIT_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_KUDO_EXIT_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Kudos.'),
 	
 	-- AI Warnings (ANY)
-	('en_US',	'LOC_DIPLO_WARNING_EXIT_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_WARNING_EXIT_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Warnings.'),
 
 -----------------------------------------------
@@ -161,23 +161,23 @@ VALUES
 -----------------------------------------------	
 	
 	-- AI warns player for border troops (HAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_MRSHAKE_CIVLEADER_HAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_MS2099_CIVLEADER_HAPPY',
 	'AI_Warn_Border_Troops_Happy.'),
 
 	-- AI warns player for border troops (UNHAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_MRSHAKE_CIVLEADER_UNHAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_MS2099_CIVLEADER_UNHAPPY',
 	'AI_Warn_Border_Troops_Unhappy.'),
 	
 	-- AI accepts player's warning for border troops warning (HAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_MRSHAKE_CIVLEADER_HAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_MS2099_CIVLEADER_HAPPY',
 	'AI_Accept_Player_Border_Troops_Warning_Happy.'),
 	
 	-- AI accepts player's warning for border troops warning (UNHAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_MRSHAKE_CIVLEADER_UNHAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_MS2099_CIVLEADER_UNHAPPY',
 	'AI_Accept_Player_Border_Troops_Warning_Unhappy.'),
 	
 	-- AI rejects player's warning for border troops warning (ANY) ~ DECLARES WAR
-	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Reject_Player_Border_Troops_Warning_Declare_War.'),
 
 -----------------------------------------------
@@ -185,27 +185,27 @@ VALUES
 -----------------------------------------------	
 	
 	-- AI warns player for settling too close (HAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_LEADER_MRSHAKE_CIVLEADER_HAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_LEADER_MS2099_CIVLEADER_HAPPY',
 	'AI_Warn_Player_Settling_Happy.'),
 	
 	-- AI warns player for settling too close (UNHAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_LEADER_MRSHAKE_CIVLEADER_UNHAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_LEADER_MS2099_CIVLEADER_UNHAPPY',
 	'AI_Warn_Player_Settling_Unhappy.'),
 	
 	-- Positive AI response to human request (HAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_MRSHAKE_CIVLEADER_HAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_MS2099_CIVLEADER_HAPPY',
 	'AI_Settling_Response_Positive_Happy.'),
 	
 	-- Positive AI response to human request (UNHAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_MRSHAKE_CIVLEADER_UNHAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_MS2099_CIVLEADER_UNHAPPY',
 	'AI_Settling_Response_Positive_Unhappy'),
 	
 	-- Negative AI response to human request (HAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_MRSHAKE_CIVLEADER_HAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_MS2099_CIVLEADER_HAPPY',
 	'AI_Settling_Response_Negative_Happy.'),
 	
 	-- Negative AI response to human request (UNHAPPY)
-	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_MRSHAKE_CIVLEADER_UNHAPPY',
+	('en_US',	'LOC_DIPLO_WARNING_DONT_SETTLE_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_MS2099_CIVLEADER_UNHAPPY',
 	'AI_Settling_Response_Negative_Unhappy.'),
 	
 -----------------------------------------------
@@ -213,19 +213,19 @@ VALUES
 -----------------------------------------------	
 
 	-- AI Accepts Deal (HAPPY)
-	('en_US',	'LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_MRSHAKE_CIVLEADER_HAPPY',
+	('en_US',	'LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_MS2099_CIVLEADER_HAPPY',
 	'AI_Accept_Trade_Happy'),
 	
 	-- AI Accepts Deal (Unhappy)
-	('en_US',	'LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_MRSHAKE_CIVLEADER_UNHAPPY',
+	('en_US',	'LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_MS2099_CIVLEADER_UNHAPPY',
 	'AI_Accept_Trade_Unhappy.'),
 
 	-- AI Rejects Deal (HAPPY)
-	('en_US',	'LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_MRSHAKE_CIVLEADER_HAPPY',
+	('en_US',	'LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_MS2099_CIVLEADER_HAPPY',
 	'AI_Reject_Trade_Happy.'),
 	
 	-- AI Rejects Deal (Unhappy)
-	('en_US',	'LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_MRSHAKE_CIVLEADER_UNHAPPY',
+	('en_US',	'LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_MS2099_CIVLEADER_UNHAPPY',
 	'AI_Reject_Trade_Unhappy.'),
 
 -----------------------------------------------
@@ -233,11 +233,11 @@ VALUES
 -----------------------------------------------	
 
 	-- Human denounce, AI responds
-	('en_US',	'LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Denounce_Reponse.'),
 	
 	-- From AI
-	('en_US',	'LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Denounce_Initiate.'),
 	
 -----------------------------------------------
@@ -245,11 +245,11 @@ VALUES
 -----------------------------------------------	
 
 	-- Human Declares War, AI responds
-	('en_US',	'LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Declare_War_Response.'),
 	
 	-- AI Declares War
-	('en_US',	'LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Declare_War_Initiate.'), 
 
 -----------------------------------------------
@@ -257,15 +257,15 @@ VALUES
 -----------------------------------------------	
 	
 	-- AI accepts from human
-	('en_US',	'LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Accept_Peace.'),
 	
 	-- AI refuses human
-	('en_US',	'LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Refuse_Peace.'),
 	
 	-- AI requests from human
-	('en_US',	'LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Requests_Peace.'),
 
 -----------------------------------------------
@@ -273,42 +273,42 @@ VALUES
 -----------------------------------------------	
 	
 	-- AI is Defeated
-	('en_US',	'LOC_DIPLO_DEFEAT_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY',
+	('en_US',	'LOC_DIPLO_DEFEAT_FROM_AI_LEADER_MS2099_CIVLEADER_ANY',
 	'AI_Defeated_By_Human.'),
 
 	-- Human is Defeated (will see this in hotseat)
-	('en_US',	'LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_MRSHAKE_CIVLEADER_ANY',
-	'{LOC_DIPLO_DEFEAT_FROM_AI_LEADER_MRSHAKE_CIVLEADER_ANY}'),
+	('en_US',	'LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_MS2099_CIVLEADER_ANY',
+	'{LOC_DIPLO_DEFEAT_FROM_AI_LEADER_MS2099_CIVLEADER_ANY}'),
 
 --------------------------------------------------------------------
 -- Leader Quote and Civilopedia Text
 --------------------------------------------------------------------
 
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_QUOTE',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MS2099_CIVLEADER_QUOTE',
 	'Civleader_Quote.' ),
 	
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_TITLE',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MS2099_CIVLEADER_TITLE',
 	'Civleader.'),
 	
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_SUBTITLE',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_MS2099_CIVLEADER_SUBTITLE',
 	'Civleader_Subtitle.'),
 	
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MRSHAKE_CIVLEADER_CHAPTER_CAPSULE_BODY',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_CAPSULE_BODY',
 	'Civleader_Chapter_Capsule_Body.'),
 	
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MRSHAKE_CIVLEADER_CHAPTER_DETAILED_BODY',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_DETAILED_BODY',
 	'Civleader_Chapter_Detailed_Body. [ICON_Faith] [ICON_Science]'),
 
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MRSHAKE_CIVLEADER_CHAPTER_HISTORY_PARA_1',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_HISTORY_PARA_1',
 	'Civleader_Chapter_History_Para_1.'),
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MRSHAKE_CIVLEADER_CHAPTER_HISTORY_PARA_2',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_HISTORY_PARA_2',
 	'Civleader_Chapter_History_Para_2.'),
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MRSHAKE_CIVLEADER_CHAPTER_HISTORY_PARA_3',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_HISTORY_PARA_3',
 	'Civleader_Chapter_History_Para_3.'),
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MRSHAKE_CIVLEADER_CHAPTER_HISTORY_PARA_4',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_HISTORY_PARA_4',
 	'Civleader_Chapter_History_Para_4.'),
-	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MRSHAKE_CIVLEADER_CHAPTER_HISTORY_PARA_5',
+	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_HISTORY_PARA_5',
 	'Civleader_Chapter_History_Para_5.'),
 
-	('en_US',	'LOC_PEDIA_UNITS_PAGE_UNIT_MRSHAKE_CIVLEADER_UU_CHAPTER_HISTORY_PARA_1',  	
+	('en_US',	'LOC_PEDIA_UNITS_PAGE_UNIT_MS2099_CIVLEADER_UU_CHAPTER_HISTORY_PARA_1',  	
 	'Civunit_Chapter_History_Para_1.');

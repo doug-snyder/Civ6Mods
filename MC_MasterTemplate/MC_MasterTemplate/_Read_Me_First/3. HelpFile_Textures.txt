@@ -34,7 +34,7 @@ Additionally, ensure you save your source artwork into your separate location - 
 
 Finally, give your source artwork files sensible, recognisable/descriptive names and do not use spaces in filenames. Letters, numbers and underscores are all of the types of characters you need. The filenames do not strictly matter (in most cases), but following a sensible naming convention will help with organisation of both your mod and your thoughts.
 
-The only file that should maintain a specific name is the equivalent of the LEADER_MRSHAKE_CIVLEADER_BACKGROUND.DDS file. This must have the name LEADER_LEADERNAME_BACKGROUND.DDS (where LEADERNAME will likely include your prefix, if you've followed the earlier recommendation).
+The only file that should maintain a specific name is the equivalent of the LEADER_MS2099_CIVLEADER_BACKGROUND.DDS file. This must have the name LEADER_LEADERNAME_BACKGROUND.DDS (where LEADERNAME will likely include your prefix, if you've followed the earlier recommendation).
 
 4. With all of the artwork you require created, you no longer need the game-ready artwork that came with this template. Within ModBuddy's Solution Explorer (left-hand-side pane), expand the Textures folder, select all of the files (.DDS and .TEX), right-click and choose Delete. This should clear the Textures folder in ModBuddy, but also in your project folder structure.
 

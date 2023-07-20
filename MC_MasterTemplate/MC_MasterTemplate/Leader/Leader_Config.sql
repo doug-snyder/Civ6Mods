@@ -16,20 +16,20 @@
 --INSERT INTO Players (CivilizationType, CivilizationName, CivilizationIcon, CivilizationAbilityName, CivilizationAbilityDescription, CivilizationAbilityIcon, LeaderType, LeaderName, LeaderIcon, LeaderAbilityName, LeaderAbilityDescription, LeaderAbilityIcon)
 --VALUES	(	
 		-- Civilization
---		'CIVILIZATION_MRSHAKE_CIVNAME',	-- CivilizationType
---		'LOC_CIVILIZATION_MRSHAKE_CIVNAME_NAME', -- CivilizationName
---		'ICON_CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationIcon
---		'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_NAME', -- CivilizationAbilityName
---		'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
---		'ICON_CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationAbilityIcon
+--		'CIVILIZATION_MS2099_CIVNAME',	-- CivilizationType
+--		'LOC_CIVILIZATION_MS2099_CIVNAME_NAME', -- CivilizationName
+--		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationIcon
+--		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_NAME', -- CivilizationAbilityName
+--		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
+--		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationAbilityIcon
 		
 		-- Leader
---		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
---		'LOC_LEADER_MRSHAKE_CIVLEADER_NAME', -- LeaderName
---		'ICON_LEADER_MRSHAKE_CIVLEADER', -- LeaderIcon (Portrait)
---		'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_NAME', -- LeaderAbilityName
---		'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_DESCRIPTION', -- LeaderAbilityDescription
---		'ICON_LEADER_MRSHAKE_CIVLEADER' -- LeaderAbilityIcon
+--		'LEADER_MS2099_CIVLEADER', -- LeaderType
+--		'LOC_LEADER_MS2099_CIVLEADER_NAME', -- LeaderName
+--		'ICON_LEADER_MS2099_CIVLEADER', -- LeaderIcon (Portrait)
+--		'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_NAME', -- LeaderAbilityName
+--		'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_DESCRIPTION', -- LeaderAbilityDescription
+--		'ICON_LEADER_MS2099_CIVLEADER' -- LeaderAbilityIcon
 --		);
 
 -----------------------------------------------
@@ -46,20 +46,20 @@
 --VALUES	(	
 		-- Civilization
 --		'Players:Expansion1_Players', -- Domain
---		'CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationType
---		'LOC_CIVILIZATION_MRSHAKE_CIVNAME_NAME', -- CivilizationName
---		'ICON_CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationIcon
---		'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_NAME', -- CivilizationAbilityName
---		'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
---		'ICON_CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationAbilityIcon
+--		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'LOC_CIVILIZATION_MS2099_CIVNAME_NAME', -- CivilizationName
+--		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationIcon
+--		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_NAME', -- CivilizationAbilityName
+--		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
+--		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationAbilityIcon
 		
 		-- Leader
---		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
---		'LOC_LEADER_MRSHAKE_CIVLEADER_NAME', -- LeaderName
---		'ICON_LEADER_MRSHAKE_CIVLEADER', -- LeaderIcon (Portrait)
---		'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_NAME', -- LeaderAbilityName
---		'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_DESCRIPTION', -- LeaderAbilityDescription
---		'ICON_LEADER_MRSHAKE_CIVLEADER' -- LeaderAbilityIcon
+--		'LEADER_MS2099_CIVLEADER', -- LeaderType
+--		'LOC_LEADER_MS2099_CIVLEADER_NAME', -- LeaderName
+--		'ICON_LEADER_MS2099_CIVLEADER', -- LeaderIcon (Portrait)
+--		'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_NAME', -- LeaderAbilityName
+--		'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_DESCRIPTION', -- LeaderAbilityDescription
+--		'ICON_LEADER_MS2099_CIVLEADER' -- LeaderAbilityIcon
 --		);
 
 -----------------------------------------------
@@ -74,20 +74,20 @@ INSERT INTO Players (Domain, CivilizationType, CivilizationName, CivilizationIco
 VALUES	(	
 		-- Civilization
 		'Players:Expansion2_Players', -- Domain
-		'CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationType
-		'LOC_CIVILIZATION_MRSHAKE_CIVNAME_NAME', -- CivilizationName
-		'ICON_CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationIcon
-		'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_NAME', -- CivilizationAbilityName
-		'LOC_TRAIT_CIVILIZATION_MRSHAKE_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
-		'ICON_CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationAbilityIcon
+		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+		'LOC_CIVILIZATION_MS2099_CIVNAME_NAME', -- CivilizationName
+		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationIcon
+		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_NAME', -- CivilizationAbilityName
+		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
+		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationAbilityIcon
 		
 		-- Leader
-		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
-		'LOC_LEADER_MRSHAKE_CIVLEADER_NAME', -- LeaderName
-		'ICON_LEADER_MRSHAKE_CIVLEADER', -- LeaderIcon (Portrait)
-		'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_NAME', -- LeaderAbilityName
-		'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_DESCRIPTION', -- LeaderAbilityDescription
-		'ICON_LEADER_MRSHAKE_CIVLEADER' -- LeaderAbilityIcon
+		'LEADER_MS2099_CIVLEADER', -- LeaderType
+		'LOC_LEADER_MS2099_CIVLEADER_NAME', -- LeaderName
+		'ICON_LEADER_MS2099_CIVLEADER', -- LeaderIcon (Portrait)
+		'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_NAME', -- LeaderAbilityName
+		'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_DESCRIPTION', -- LeaderAbilityDescription
+		'ICON_LEADER_MS2099_CIVLEADER' -- LeaderAbilityIcon
 		);
 
 -----------------------------------------------
@@ -101,18 +101,18 @@ VALUES	(
 --INSERT INTO PlayerItems
 --		(CivilizationType, LeaderType, Type, Icon, Name, Description, SortIndex	)
 --VALUES	(
---		'CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationType
---		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
---		'UNIT_MRSHAKE_CIVUNIT', -- Type
---		'ICON_UNIT_MRSHAKE_CIVUNIT', -- Icon
---		'LOC_UNIT_MRSHAKE_CIVUNIT_NAME', -- Name
---		'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION', -- Description
+--		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'LEADER_MS2099_CIVLEADER', -- LeaderType
+--		'UNIT_MS2099_CIVUNIT', -- Type
+--		'ICON_UNIT_MS2099_CIVUNIT', -- Icon
+--		'LOC_UNIT_MS2099_CIVUNIT_NAME', -- Name
+--		'LOC_UNIT_MS2099_CIVUNIT_DESCRIPTION', -- Description
 --		10	-- SortIndex
 --		),
 --		
 --		(
---		'CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationType
---		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
+--		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'LEADER_MS2099_CIVLEADER', -- LeaderType
 --		'IMPROVEMENT_CIVIMPROVEMENT', -- Type
 --		'ICON_IMPROVEMENT_CIVIMPROVEMENT', -- Icon
 --		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME', -- Name
@@ -134,19 +134,19 @@ VALUES	(
 --		(Domain, CivilizationType, LeaderType, Type, Icon, Name, Description, SortIndex	)
 --VALUES	(
 --		'Players:Expansion1_Players', -- Domain
---		'CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationType
---		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
---		'UNIT_MRSHAKE_CIVUNIT', -- Type
---		'ICON_UNIT_MRSHAKE_CIVUNIT', -- Icon
---		'LOC_UNIT_MRSHAKE_CIVUNIT_NAME', -- Name
---		'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION', -- Description
+--		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'LEADER_MS2099_CIVLEADER', -- LeaderType
+--		'UNIT_MS2099_CIVUNIT', -- Type
+--		'ICON_UNIT_MS2099_CIVUNIT', -- Icon
+--		'LOC_UNIT_MS2099_CIVUNIT_NAME', -- Name
+--		'LOC_UNIT_MS2099_CIVUNIT_DESCRIPTION', -- Description
 --		10	-- SortIndex
 --		),
 --		
 --		(
 --		'Players:Expansion1_Players', -- Domain
---		'CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationType
---		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
+--		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'LEADER_MS2099_CIVLEADER', -- LeaderType
 --		'IMPROVEMENT_CIVIMPROVEMENT', -- Type
 --		'ICON_IMPROVEMENT_CIVIMPROVEMENT', -- Icon
 --		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME', -- Name
@@ -166,19 +166,19 @@ INSERT INTO PlayerItems
 		(Domain, CivilizationType, LeaderType, Type, Icon, Name, Description, SortIndex	)
 VALUES	(
 		'Players:Expansion2_Players', -- Domain
-		'CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationType
-		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
-		'UNIT_MRSHAKE_CIVUNIT', -- Type
-		'ICON_UNIT_MRSHAKE_CIVUNIT', -- Icon
-		'LOC_UNIT_MRSHAKE_CIVUNIT_NAME', -- Name
-		'LOC_UNIT_MRSHAKE_CIVUNIT_DESCRIPTION', -- Description
+		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+		'LEADER_MS2099_CIVLEADER', -- LeaderType
+		'UNIT_MS2099_CIVUNIT', -- Type
+		'ICON_UNIT_MS2099_CIVUNIT', -- Icon
+		'LOC_UNIT_MS2099_CIVUNIT_NAME', -- Name
+		'LOC_UNIT_MS2099_CIVUNIT_DESCRIPTION', -- Description
 		10	-- SortIndex
 		),
 		
 		(
 		'Players:Expansion2_Players', -- Domain
-		'CIVILIZATION_MRSHAKE_CIVNAME', -- CivilizationType
-		'LEADER_MRSHAKE_CIVLEADER', -- LeaderType
+		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+		'LEADER_MS2099_CIVLEADER', -- LeaderType
 		'IMPROVEMENT_CIVIMPROVEMENT', -- Type
 		'ICON_IMPROVEMENT_CIVIMPROVEMENT', -- Icon
 		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME', -- Name

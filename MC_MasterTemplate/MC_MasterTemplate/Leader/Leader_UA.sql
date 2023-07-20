@@ -17,34 +17,34 @@
 
 INSERT INTO	Types
 		(Type,								Kind			)
-VALUES	('TRAIT_LEADER_MRSHAKE_CIVTRAIT',	'KIND_TRAIT'	),
-		('ABILITY_MRSHAKE_CIVTRAITEFFECT',	'KIND_ABILITY'	);
+VALUES	('TRAIT_LEADER_MS2099_CIVTRAIT',	'KIND_TRAIT'	),
+		('ABILITY_MS2099_CIVTRAITEFFECT',	'KIND_ABILITY'	);
 
 -----------------------------------------------
 -- Tags
 
--- The Unique Ability this example creates will be applied to two specific UnitType entities - the Builder and the Settler. As such, because these two - and no others - do not exist as their own class of unit, we need to ring-fence them accordingly. The below section does this for us, by inserting our new CLASS_MRSHAKE_TAGPLACEHOLDER class as an ABILITY_CLASS - such that we can tie the new Ability to them.
+-- The Unique Ability this example creates will be applied to two specific UnitType entities - the Builder and the Settler. As such, because these two - and no others - do not exist as their own class of unit, we need to ring-fence them accordingly. The below section does this for us, by inserting our new CLASS_MS2099_TAGPLACEHOLDER class as an ABILITY_CLASS - such that we can tie the new Ability to them.
 -----------------------------------------------
 
 INSERT INTO Tags
 		(Tag,								Vocabulary		)
-VALUES	('CLASS_MRSHAKE_TAGPLACEHOLDER',	'ABILITY_CLASS'	);
+VALUES	('CLASS_MS2099_TAGPLACEHOLDER',	'ABILITY_CLASS'	);
 
 -----------------------------------------------
 -- TypeTags
 
 -- The below section ties together some of the new items we defined above.
 
--- Firstly, it associates the UNIT_BUILDER and the UNIT_SETTLER to our new class - CLASS_MRSHAKE_TAGPLACEHOLDER.
+-- Firstly, it associates the UNIT_BUILDER and the UNIT_SETTLER to our new class - CLASS_MS2099_TAGPLACEHOLDER.
 
 -- Secondly, we link the UnitAbilityType to that same class. By doing this, we ensure the UnitAbilityType is only applied to the two units in question - which make up all of the members of the new class.
 -----------------------------------------------
 
 INSERT INTO TypeTags
 		(Type,								Tag								)
-VALUES	--('UNIT_BUILDER',					'CLASS_MRSHAKE_TAGPLACEHOLDER'	),
-		--('UNIT_SETTLER',					'CLASS_MRSHAKE_TAGPLACEHOLDER'	),
-		('ABILITY_MRSHAKE_CIVTRAITEFFECT',	'CLASS_MRSHAKE_TAGPLACEHOLDER'	);
+VALUES	--('UNIT_BUILDER',					'CLASS_MS2099_TAGPLACEHOLDER'	),
+		--('UNIT_SETTLER',					'CLASS_MS2099_TAGPLACEHOLDER'	),
+		('ABILITY_MS2099_CIVTRAITEFFECT',	'CLASS_MS2099_TAGPLACEHOLDER'	);
 
 -----------------------------------------------
 -- UnitAbilities
@@ -56,7 +56,7 @@ VALUES	--('UNIT_BUILDER',					'CLASS_MRSHAKE_TAGPLACEHOLDER'	),
 
 INSERT INTO UnitAbilities
 		(UnitAbilityType,					Name,											Description,										Inactive	)
-VALUES	('ABILITY_MRSHAKE_CIVTRAITEFFECT',	'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_NAME',	'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_DESCRIPTION',	1			);
+VALUES	('ABILITY_MS2099_CIVTRAITEFFECT',	'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_NAME',	'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_DESCRIPTION',	1			);
 
 -----------------------------------------------
 -- UnitAbilityModifiers
@@ -72,7 +72,7 @@ VALUES	('ABILITY_MRSHAKE_CIVTRAITEFFECT',	'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_
 
 INSERT INTO UnitAbilityModifiers
 		(UnitAbilityType,					ModifierId							)
-VALUES	('ABILITY_MRSHAKE_CIVTRAITEFFECT',	'ALTITUDE_TRAINING_IGNORE_HILLS'	);
+VALUES	('ABILITY_MS2099_CIVTRAITEFFECT',	'ALTITUDE_TRAINING_IGNORE_HILLS'	);
 
 -----------------------------------------------
 -- Traits
@@ -82,7 +82,7 @@ VALUES	('ABILITY_MRSHAKE_CIVTRAITEFFECT',	'ALTITUDE_TRAINING_IGNORE_HILLS'	);
 
 INSERT INTO	Traits
 		(TraitType,							Name,											Description											)
-VALUES	('TRAIT_LEADER_MRSHAKE_CIVTRAIT',	'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_NAME',	'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_DESCRIPTION'	);
+VALUES	('TRAIT_LEADER_MS2099_CIVTRAIT',	'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_NAME',	'LOC_TRAIT_LEADER_MS2099_LEADERTRAIT_DESCRIPTION'	);
 		
 -----------------------------------------------
 -- LeaderTraits
@@ -92,7 +92,7 @@ VALUES	('TRAIT_LEADER_MRSHAKE_CIVTRAIT',	'LOC_TRAIT_LEADER_MRSHAKE_LEADERTRAIT_N
 
 INSERT INTO	LeaderTraits
 		(LeaderType,					TraitType						)
-VALUES	('LEADER_MRSHAKE_CIVLEADER',	'TRAIT_LEADER_MRSHAKE_CIVTRAIT'	);
+VALUES	('LEADER_MS2099_CIVLEADER',	'TRAIT_LEADER_MS2099_CIVTRAIT'	);
 
 -----------------------------------------------
 -- Modifiers
@@ -114,7 +114,7 @@ VALUES	('TRAIT_GRANT_SETTLERS_BUILDERS_ALTITUDE_TRAINING',		'MODIFIER_PLAYER_UNI
 
 INSERT INTO TraitModifiers 
 		(TraitType,							ModifierId											)
-VALUES	('TRAIT_LEADER_MRSHAKE_CIVTRAIT',	'TRAIT_GRANT_SETTLERS_BUILDERS_ALTITUDE_TRAINING'	);
+VALUES	('TRAIT_LEADER_MS2099_CIVTRAIT',	'TRAIT_GRANT_SETTLERS_BUILDERS_ALTITUDE_TRAINING'	);
 
 -----------------------------------------------
 -- ModifierArguments
@@ -134,4 +134,4 @@ VALUES	('TRAIT_LEADER_MRSHAKE_CIVTRAIT',	'TRAIT_GRANT_SETTLERS_BUILDERS_ALTITUDE
 
 INSERT INTO ModifierArguments 
 		(ModifierId,										Name,			Value								)
-VALUES	('TRAIT_GRANT_SETTLERS_BUILDERS_ALTITUDE_TRAINING',	'AbilityType',	'ABILITY_MRSHAKE_CIVTRAITEFFECT'	);
+VALUES	('TRAIT_GRANT_SETTLERS_BUILDERS_ALTITUDE_TRAINING',	'AbilityType',	'ABILITY_MS2099_CIVTRAITEFFECT'	);

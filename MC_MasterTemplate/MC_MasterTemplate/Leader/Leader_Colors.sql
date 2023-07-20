@@ -13,14 +13,14 @@
 
 INSERT INTO	PlayerColors (Type, Usage, PrimaryColor, SecondaryColor, Alt1PrimaryColor, Alt1SecondaryColor, Alt2PrimaryColor, Alt2SecondaryColor, Alt3PrimaryColor, Alt3SecondaryColor )
 VALUES	(
-		'LEADER_MRSHAKE_CIVLEADER',				-- Type
+		'LEADER_MS2099_CIVLEADER',				-- Type
 		'Unique',								-- Usage
-		'COLOR_MRSHAKE_CIVLEADER_A_PRIMARY',	-- PrimaryColor
-		'COLOR_MRSHAKE_CIVLEADER_A_SECONDARY',	-- SecondaryColor
-		'COLOR_MRSHAKE_CIVLEADER_B_PRIMARY',	-- Alt1PrimaryColor
-		'COLOR_MRSHAKE_CIVLEADER_B_SECONDARY',	-- Alt1SecondaryColor
-		'COLOR_MRSHAKE_CIVLEADER_C_PRIMARY',	-- Alt2PrimaryColor
-		'COLOR_MRSHAKE_CIVLEADER_C_SECONDARY',	-- Alt2SecondaryColor
-		'COLOR_MRSHAKE_CIVLEADER_D_PRIMARY',	-- Alt3PrimaryColor
-		'COLOR_MRSHAKE_CIVLEADER_D_SECONDARY'	-- Alt3SecondaryColor
+		'COLOR_MS2099_CIVLEADER_A_PRIMARY',	-- PrimaryColor
+		'COLOR_MS2099_CIVLEADER_A_SECONDARY',	-- SecondaryColor
+		'COLOR_MS2099_CIVLEADER_B_PRIMARY',	-- Alt1PrimaryColor
+		'COLOR_MS2099_CIVLEADER_B_SECONDARY',	-- Alt1SecondaryColor
+		'COLOR_MS2099_CIVLEADER_C_PRIMARY',	-- Alt2PrimaryColor
+		'COLOR_MS2099_CIVLEADER_C_SECONDARY',	-- Alt2SecondaryColor
+		'COLOR_MS2099_CIVLEADER_D_PRIMARY',	-- Alt3PrimaryColor
+		'COLOR_MS2099_CIVLEADER_D_SECONDARY'	-- Alt3SecondaryColor
 		);

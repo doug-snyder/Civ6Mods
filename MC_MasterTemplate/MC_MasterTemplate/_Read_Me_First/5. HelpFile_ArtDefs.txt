@@ -23,7 +23,7 @@ We'll start with the FallbackLeaders.artdef file, as it directly relates/uses so
 
 1. Within the Asset Editor, go to File --> Open ArtDef and choose the FallbackLeaders.artdef file.
 
-2. In the left-hand-pane, expand the 'Leaders' folder and click once to select the 'LEADER_MRSHAKE_CIVLEADER' entry that has a green circle/dot next to it.
+2. In the left-hand-pane, expand the 'Leaders' folder and click once to select the 'LEADER_MS2099_CIVLEADER' entry that has a green circle/dot next to it.
 
 3. In the right-hand-pane, you'll see a single field, labelled 'Name'. Click inside it to select the text and change it to exactly match the unique leader string for your custom leader. If you're unsure what it is, take a look at the first section of code in the Leader_Core.sql file. Whatever you set it as here is what you need to enter in the 'Name' field in the ArtDef file.
 
@@ -82,9 +82,9 @@ A few simple notes from myself:
 
 Within Units.artdef, there are numerous folders - but we're only using the Units, UnitMemberTypes and UnitTintTypes.
 
-The entry under 'Units' (in the original file, it's labelled 'UNIT_MRSHAKE_CIVUNIT') must match the string of your unique unit exactly. Take a look at Civilization_UU.sql if you need to confirm what you have set it as.
+The entry under 'Units' (in the original file, it's labelled 'UNIT_MS2099_CIVUNIT') must match the string of your unique unit exactly. Take a look at Civilization_UU.sql if you need to confirm what you have set it as.
 
-If you wish to simply reuse an existing unit, wholesale, you do not need to populate anything within UnitMemberTypes. You can simply reference the base-game's UnitMemberTypes entries within Units --> UNIT_MRSHAKE_CIVUNIT --> Members, accordingly.
+If you wish to simply reuse an existing unit, wholesale, you do not need to populate anything within UnitMemberTypes. You can simply reference the base-game's UnitMemberTypes entries within Units --> UNIT_MS2099_CIVUNIT --> Members, accordingly.
 
 --------
 HOUSEKEEPING

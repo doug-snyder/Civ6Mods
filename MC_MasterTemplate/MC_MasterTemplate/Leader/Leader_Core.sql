@@ -16,7 +16,7 @@
 
 INSERT INTO	Types
 			(Type,							Kind			)
-VALUES		('LEADER_MRSHAKE_CIVLEADER',	'KIND_LEADER'	);
+VALUES		('LEADER_MS2099_CIVLEADER',	'KIND_LEADER'	);
 		
 -----------------------------------------------
 -- Leaders
@@ -31,7 +31,7 @@ VALUES		('LEADER_MRSHAKE_CIVLEADER',	'KIND_LEADER'	);
 
 INSERT INTO	Leaders
 			(LeaderType,					Name,									InheritFrom,		SceneLayers		)
-VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LOC_LEADER_MRSHAKE_CIVLEADER_NAME',	'LEADER_DEFAULT', 	4				);
+VALUES		('LEADER_MS2099_CIVLEADER',	'LOC_LEADER_MS2099_CIVLEADER_NAME',	'LEADER_DEFAULT', 	4				);
 
 -----------------------------------------------
 -- CivilizationLeaders
@@ -43,17 +43,17 @@ VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LOC_LEADER_MRSHAKE_CIVLEADER_NAME',	'LEADE
 
 INSERT INTO	CivilizationLeaders
 			(CivilizationType,					LeaderType,					CapitalName							)
-VALUES		('CIVILIZATION_MRSHAKE_CIVNAME',	'LEADER_MRSHAKE_CIVLEADER',	'LOC_CITY_NAME_MRSHAKE_CIVNAME_1'	);
+VALUES		('CIVILIZATION_MS2099_CIVNAME',	'LEADER_MS2099_CIVLEADER',	'LOC_CITY_NAME_MS2099_CIVNAME_1'	);
 		
 -----------------------------------------------
 -- LeaderQuotes
 
--- This 'flavour' item ties the Quote - which appears in the Civilopedia on the Leader page - to the custom leader. As with all text entries, the LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_QUOTE string is defined in Leader_Localisation.sql.
+-- This 'flavour' item ties the Quote - which appears in the Civilopedia on the Leader page - to the custom leader. As with all text entries, the LOC_PEDIA_LEADERS_PAGE_MS2099_CIVLEADER_QUOTE string is defined in Leader_Localisation.sql.
 -----------------------------------------------
 
 INSERT INTO	LeaderQuotes
 			(LeaderType,					Quote												)
-VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_QUOTE'	);
+VALUES		('LEADER_MS2099_CIVLEADER',	'LOC_PEDIA_LEADERS_PAGE_MS2099_CIVLEADER_QUOTE'	);
 
 -----------------------------------------------
 -- CityNames
@@ -67,4 +67,4 @@ VALUES		('LEADER_MRSHAKE_CIVLEADER',	'LOC_PEDIA_LEADERS_PAGE_MRSHAKE_CIVLEADER_Q
 
 INSERT INTO	CityNames
 			(CivilizationType,					LeaderType,					SortIndex,	CityName							)
-VALUES		('CIVILIZATION_MRSHAKE_CIVNAME',	'LEADER_MRSHAKE_CIVLEADER',	-1,			'LOC_CITY_NAME_MRSHAKE_CIVNAME_1'	);
+VALUES		('CIVILIZATION_MS2099_CIVNAME',	'LEADER_MS2099_CIVLEADER',	-1,			'LOC_CITY_NAME_MS2099_CIVNAME_1'	);
