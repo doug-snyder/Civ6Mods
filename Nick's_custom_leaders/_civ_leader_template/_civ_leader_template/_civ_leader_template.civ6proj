@@ -23,6 +23,27 @@
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="ArtDefs\FallbackLeaders.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\FALLBACK_NEUTRAL_CIVLEADER.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_CIVLEADER_NEUTRAL.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\FALLBACK_NEUTRAL_CIVLEADER.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_CIVLEADER_NEUTRAL.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\LeaderFallbacks.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\UILeaders.xlp">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="Artdefs\" />
     <Folder Include="Textures\" />
     <Folder Include="XLPs\" />
@@ -45,13 +66,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="NewLeader_Text.xml" />
-    <None Include="Textures\FALLBACK_NEUTRAL_JASPERKITTY.dds" />
-    <None Include="Textures\FALLBACK_NEUTRAL_JASPERKITTY.tex" />
-    <None Include="Textures\LEADER_JASPER_KITTY_NEUTRAL.dds" />
-    <None Include="Textures\LEADER_JASPER_KITTY_NEUTRAL.tex" />
-    <None Include="ArtDefs\FallbackLeaders.artdef" />
-    <None Include="XLPs\LeaderFallbacks.xlp" />
-    <None Include="XLPs\UILeaders.xlp" />
     <None Include="_civ_leader_template.Art.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />

@@ -6,12 +6,12 @@
 		<build>253</build>
 		<revision>293</revision>
 	</m_Version>
-	<m_ClassName text="LeaderFallback"/>
-	<m_PackageName text="LeaderFallbacks"/>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="UILeaders"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="FALLBACK_NEUTRAL_JASPERKITTY"/>
-			<m_ObjectName text="FALLBACK_NEUTRAL_JASPERKITTY"/>
+			<m_EntryID text="LEADER_CIVLEADER_NEUTRAL"/>
+			<m_ObjectName text="LEADER_CIVLEADER_NEUTRAL"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
