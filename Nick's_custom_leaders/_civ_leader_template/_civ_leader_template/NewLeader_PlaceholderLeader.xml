@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Types>
-		<Row Type="LEADER_PLACEHOLDER" Kind="KIND_LEADER" />
+		<Row Type="LEADER_PLACEHOLDER" Kind="KIND_LEADER"/>
 	</Types>
 
 	<Leaders>

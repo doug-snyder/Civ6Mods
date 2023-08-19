@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Types>
-		<Row Type="CIVILIZATION_PLACEHOLDER" Kind="KIND_CIVILIZATION" />
-		<Row Type="TRAIT_CIVILIZATION_BUILDING_PLACEHOLDER" Kind="KIND_TRAIT" />
+		<Row Type="CIVILIZATION_PLACEHOLDER" Kind="KIND_CIVILIZATION"/>
+		<Row Type="TRAIT_CIVILIZATION_BUILDING_PLACEHOLDER" Kind="KIND_TRAIT"/>
 	</Types>
 
 	<Civilizations>
@@ -16,7 +16,7 @@
 	</Civilizations>
 
 	<CivilizationLeaders>
-		<Row CivilizationType="CIVILIZATION_PLACEHOLDER" LeaderType="LEADER_PLACEHOLDER" CapitalName="LOC_CIVILIZATION_PLACEHOLDER_CITY_1" />
+		<Row CivilizationType="CIVILIZATION_PLACEHOLDER" LeaderType="LEADER_PLACEHOLDER" CapitalName="LOC_CIVILIZATION_PLACEHOLDER_CITY_1"/>
 	</CivilizationLeaders>
 
 	<CivilizationCitizenNames>
@@ -25,19 +25,19 @@
 	</CivilizationCitizenNames>
 
 	<CivilizationInfo>
-		<Row CivilizationType="CIVILIZATION_PLACEHOLDER" Header="LOC_CIVINFO_BINOMIAL_NAME" Caption="LOC_CIVINFO_PLACEHOLDER" />
+		<Row CivilizationType="CIVILIZATION_PLACEHOLDER" Header="LOC_CIVINFO_BINOMIAL_NAME" Caption="LOC_CIVINFO_PLACEHOLDER"/>
 	</CivilizationInfo>
 
 	<CivilizationTraits>
-		<Row CivilizationType="CIVILIZATION_PLACEHOLDER" TraitType="TRAIT_CIVILIZATION_BUILDING_PLACEHOLDER" />
+		<Row CivilizationType="CIVILIZATION_PLACEHOLDER" TraitType="TRAIT_CIVILIZATION_BUILDING_PLACEHOLDER"/>
 	</CivilizationTraits>
 
 	<Traits>
-		<Row TraitType="TRAIT_CIVILIZATION_BUILDING_PLACEHOLDER" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER" />
+		<Row TraitType="TRAIT_CIVILIZATION_BUILDING_PLACEHOLDER" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
 	</Traits>
 
 	<CityNames>
-		<Row CivilizationType="CIVILIZATION_PLACEHOLDER" CityName="LOC_CIVILIZATION_PLACEHOLDER_CITY_1" />
+		<Row CivilizationType="CIVILIZATION_PLACEHOLDER" CityName="LOC_CIVILIZATION_PLACEHOLDER_CITY_1"/>
 	</CityNames>
 
 </GameData>
