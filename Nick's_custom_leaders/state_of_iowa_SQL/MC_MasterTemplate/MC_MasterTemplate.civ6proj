@@ -37,7 +37,6 @@
     <Folder Include="ArtDefs\" />
     <Folder Include="Core" />
     <Folder Include="Leader" />
-    <Folder Include="_Read_Me_First" />
     <Folder Include="XLPs" />
     <Folder Include="Textures" />
   </ItemGroup>
@@ -342,33 +341,6 @@
     <XLP Include="XLPs\OlmecAtlas.xlp">
       <SubType>Content</SubType>
     </XLP>
-    <None Include="_Read_Me_First\0. Introduction.txt">
-      <SubType>Content</SubType>
-    </None>
-    <None Include="_Read_Me_First\1. HelpFile_CoreCode.txt">
-      <SubType>Content</SubType>
-    </None>
-    <None Include="_Read_Me_First\2. HelpFile_LeaderCode.txt">
-      <SubType>Content</SubType>
-    </None>
-    <None Include="_Read_Me_First\3. HelpFile_Textures.txt">
-      <SubType>Content</SubType>
-    </None>
-    <None Include="_Read_Me_First\4. HelpFile_XLPs.txt">
-      <SubType>Content</SubType>
-    </None>
-    <None Include="_Read_Me_First\5. HelpFile_ArtDefs.txt">
-      <SubType>Content</SubType>
-    </None>
-    <None Include="_Read_Me_First\6. HelpFile_ArtXML.txt">
-      <SubType>Content</SubType>
-    </None>
-    <None Include="_Read_Me_First\7. HelpFile_BuildActions.txt">
-      <SubType>Content</SubType>
-    </None>
-    <None Include="_Read_Me_First\8. HelpFile_BasicTroubleshooting.txt">
-      <SubType>Content</SubType>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>

@@ -21,7 +21,7 @@
 INSERT INTO Types
 		(Type,									Kind			)
 VALUES	('TRAIT_CIVILIZATION_MS2099_CIVUNIT',	'KIND_TRAIT'	),
-		('UNIT_MS2099_CIVUNIT',				'KIND_UNIT'		),
+		('UNIT_MS2099_CIVUNIT',					'KIND_UNIT'		),
 		('ABILITY_MS2099_CIVUNIT',				'KIND_ABILITY'	);
 
 -----------------------------------------------

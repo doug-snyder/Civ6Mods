@@ -40,7 +40,7 @@ VALUES	('TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT',
 -----------------------------------------------
 
 INSERT INTO	CivilizationTraits
-		(CivilizationType,					TraitType									)
+		(CivilizationType,				TraitType									)
 VALUES	('CIVILIZATION_MS2099_CIVNAME',	'TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT'	);
 
 -----------------------------------------------
