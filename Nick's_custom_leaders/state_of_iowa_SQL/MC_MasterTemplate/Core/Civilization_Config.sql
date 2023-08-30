@@ -1,114 +1,90 @@
 /*
 	Main Civilization Configuration
-	Authors: MC
 */
 
 -----------------------------------------------
--- Types
-
--- This inserts the civilization reference into the primary Data Types table as a playable Civilization. This is mandatory. The string listed under 'Type' must be used throughout the mod when referring to the CivilizationType.
-
--- It is customary for this to take the following format: CIVILIZATION_PREFIX_CIVNAME
-
--- PREFIX: A 'unique', brief string of characters - often derived from the modder's initials, name or other alias (e.g. MC, MATT or MYALIAS). This is used to differentiate from other mods, primarily.
--- CIVNAME: The name of the civilization itself (e.g. FRANCE, GERMANY or RUSSIA).
+-- TYPES
+-- This inserts the civilization reference into the primary Data Types table as a playable Civilization.
 -----------------------------------------------
 INSERT INTO	Types
-			(Type,							Kind				)
-VALUES		('CIVILIZATION_MS2099_CIVNAME',	'KIND_CIVILIZATION'	);
+			(Type,									Kind				)
+VALUES		('CIVILIZATION_MS2099_STATE_OF_IOWA',	'KIND_CIVILIZATION'	);
+	
 		
 -----------------------------------------------
--- Civilizations
--- This inserts some basic configuration into the list of Civilizations that the game recognises. The below entry contains all seven columns required for this table to be fully populated - no fields are ommitted in the below example.
--- Locally-referenced values (i.e. those defined in this mod): CivilizationType, Name, Description, Adjective
--- Game-referenced values (i.e. those drawn from the base game):
--- StartingCivilizationLevelType: For a playable civilization, this must always be: CIVILIZATION_LEVEL_FULL_CIV. The game utilises this string to differentiate between playable civilizations and city-states (and any other lesser entities).
--- RandomCityNameDepth: An integer value, this is the size of the pool of city names from which the game chooses the next built city's name. The capital will always be built first; after which, the game will pick randomly from the next X cities listed (where X = value).
--- Ethnicity: Picked from an explicit list of defined ethnicities, this must be one of ETHNICITY_AFRICAN, ETHNICITY_ASIAN, ETHNICITY_EURO, ETHNICITY_MEDIT or ETHNICITY_SOUTHAM
+-- CIVILIZATIONS
+-- Locally-referenced values:		CivilizationType, Name, Description, Adjective
+-- StartingCivilizationLevelType:	Playable civilization: CIVILIZATION_LEVEL_FULL_CIV.
+-- RandomCityNameDepth:				Size of the pool of city names.
+-- Ethnicity:						ETHNICITY_<ethnicity>. AFRICAN, ASIAN, EURO, MEDIT, SOUTHAM
 -----------------------------------------------
 INSERT INTO	Civilizations
 			(CivilizationType, Name, Description, Adjective, StartingCivilizationLevelType, RandomCityNameDepth, Ethnicity)
 VALUES		(
-			'CIVILIZATION_MS2099_CIVNAME',					-- CivilizationType
-			'LOC_CIVILIZATION_MS2099_CIVNAME_NAME',			-- Name
-			'LOC_CIVILIZATION_MS2099_CIVNAME_DESCRIPTION',	-- Description
-			'LOC_CIVILIZATION_MS2099_CIVNAME_ADJECTIVE',	-- Adjective
-			'CIVILIZATION_LEVEL_FULL_CIV',					-- StartingCivilizationLevelType
-			5,												-- RandomCityNameDepth
-			'ETHNICITY_SOUTHAM'								-- Ethnicity
+			'CIVILIZATION_MS2099_STATE_OF_IOWA',				-- CivilizationType
+			'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_NAME',		-- Name
+			'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_DESCRIPTION',-- Description
+			'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_ADJECTIVE',	-- Adjective
+			'CIVILIZATION_LEVEL_FULL_CIV',						-- StartingCivilizationLevelType
+			1,													-- RandomCityNameDepth
+			'ETHNICITY_EURO'									-- Ethnicity
 			);
 
+
 -----------------------------------------------
--- NamedMountains
--- This list of locally-referenced values ensures that flavour text is displayed wherever a named mountain range has been linked to your custom civilization.
+-- NAMED MOUNTAINS
 -- All Name references have a corresponding entry in Civilization_Localisation.sql.
--- This is an optional section and only required if there are new, custom mountain range names defined in the NamedMountainCivilizations, below.
--- Compatibility: NamedMountains were introduced in the Gathering Storm expansion (Expansion2). This section should only be used where there is an intention to develop a mod with a dependency on Gathering Storm (Expansion2).
+-- Compatibility: NamedMountains were introduced in the Gathering Storm expansion.
 -----------------------------------------------
-/*
 REPLACE INTO NamedMountains
-		(NamedMountainType,							Name											)
-VALUES	('NAMED_MOUNTAIN_CORDILLERA_NEOVOLCANICA',	'LOC_NAMED_MOUNTAIN_CORDILLERA_NEOVOLCANICA'	);
-*/
------------------------------------------------
+		(NamedMountainType,					Name								)
+VALUES	('NAMED_MOUNTAIN_HAWKEYE_POINT',	'LOC_NAMED_MOUNTAIN_HAWKEYE_POINT'	),
+		('NAMED_MOUNTAIN_OCHEYEDAN_MOUNT',	'LOC_NAMED_MOUNTAIN_OCHEYEDAN_MOUNT');
 
--- NamedMountainCivilizations
--- This ties named mountain ranges to your custom civilization. This is optional. The entries for NamedMountainType can either be new, custom mountain ranges or those that exist in the Gathering Storm (Expansion2) files.
--- Compatibility: NamedMountainCivilizations were introduced in the Gathering Storm expansion (Expansion2). This section should only be used where there is an intention to develop a mod with a dependency on Gathering Storm (Expansion2).
+
 -----------------------------------------------
-/*
+-- NAMED MOUNTAIN CIVILIZATIONS
+-----------------------------------------------
 INSERT INTO NamedMountainCivilizations
-		(CivilizationType,				NamedMountainType							)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_MOUNTAIN_CORDILLERA_NEOVOLCANICA'	);
-*/
------------------------------------------------
+		(CivilizationType,						NamedMountainType				)
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_MOUNTAIN_HAWKEYE_POINT'	);
 
--- NamedRivers
--- This list of locally-referenced values ensures that flavour text is displayed wherever a named river has been linked to your custom civilization.
--- All Name references have a corresponding entry in Civilization_Localisation.sql.
--- This is an optional section and only required if there are new, custom river names defined in the NamedRiverCivilizations, below.
--- Compatibility: NamedRivers were introduced in the Gathering Storm expansion (Expansion2). This section should only be used where there is an intention to develop a mod with a dependency on Gathering Storm (Expansion2).
+
 -----------------------------------------------
-/*
+-- NAMED RIVERS
+-----------------------------------------------
 REPLACE INTO NamedRivers
-		(NamedRiverType,		Name						)
-VALUES	('NAMED_RIVER_GRANDE',	'LOC_NAMED_RIVER_GRANDE'	);
-*/
+		(NamedRiverType,				Name							)
+VALUES	('NAMED_IOWA_RIVER',			'LOC_NAMED_IOWA_RIVER'			),
+		('NAMED_MIDDLE_RACCOON_RIVER',	'LOC_NAMED_MIDDLE_RACCOON_RIVER');
+
 
 -----------------------------------------------
--- NamedRiverCivilizations
--- This ties named rivers to your custom civilization. This is optional. The entries for NamedRiverType can either be new, custom rivers or those that exist in the Gathering Storm (Expansion2) files.
--- Compatibility: NamedRiverCivilizations were introduced in the Gathering Storm expansion (Expansion2). This section should only be used where there is an intention to develop a mod with a dependency on Gathering Storm (Expansion2).
+-- NAMED RIVER CIVILIZATIONS
 -----------------------------------------------
-/*
 INSERT INTO NamedRiverCivilizations
-		(CivilizationType,				NamedRiverType			)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_RIVER_GRANDE'	);
-*/
+		(CivilizationType,						NamedRiverType				)
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_IOWA_RIVER'			),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_MIDDLE_RACCOON_RIVER');
+
 
 -----------------------------------------------
--- NamedLakes
--- This list of locally-referenced values ensures that flavour text is displayed wherever a named lake has been linked to your custom civilization.
--- All Name references have a corresponding entry in Civilization_Localisation.sql.
--- This is an optional section and only required if there are new, custom lake names defined in the NamedLakeCivilizations, below.
--- Compatibility: NamedLakes were introduced in the Gathering Storm expansion (Expansion2). This section should only be used where there is an intention to develop a mod with a dependency on Gathering Storm (Expansion2).
+-- NAMED LAKES
 -----------------------------------------------
-/*
 INSERT OR REPLACE INTO NamedLakes
-		(NamedLakeType,			Name						)
-VALUES	('NAMED_LAKE_CHAPALA',	'LOC_NAMED_LAKE_CHAPALA'	);
-*/
+		(NamedLakeType,				Name						)
+VALUES	('NAMED_OKOBOJI_LAKE',		'LOC_NAMED_OKOBOJI_LAKE'	),
+		('NAMED_BIG_SPIRIT_LAKE',	'LOC_NAMED_BIG_SPIRIT_LAKE'	);
+
 
 -----------------------------------------------
--- NamedLakeCivilizations
--- This ties named lakes to your custom civilization. This is optional. The entries for NamedLakeType can either be new, custom lakes or those that exist in the Gathering Storm (Expansion2) files. In the below example, the first entry exists already in the game - all of the others we have created ourselves.
--- Compatibility: NamedLakeCivilizations were introduced in the Gathering Storm expansion (Expansion2). This section should only be used where there is an intention to develop a mod with a dependency on Gathering Storm (Expansion2).
+-- NAMED LAKE CIVILIZATIONS
 -----------------------------------------------
-/*
 INSERT INTO NamedLakeCivilizations
-		(CivilizationType,				NamedLakeType				)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_LAKE_LAKE_TEXCOCO'	);
-*/
+		(CivilizationType,						NamedLakeType				)
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_LAKE_OKOBOJI_LAKE'	),
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_LAKE_BIG_SPIRIT_LAKE');
+
 
 -----------------------------------------------
 -- NamedSeas
@@ -132,7 +108,7 @@ VALUES	('NAMED_SEA_GULF_OF_CALIFORNIA',	'LOC_NAMED_SEA_GULF_OF_CALIFORNIA_NAME'	
 /*
 INSERT INTO NamedSeaCivilizations
 		(CivilizationType,				NamedSeaType					)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_SEA_GULF_OF_CALIFORNIA'	);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_SEA_GULF_OF_CALIFORNIA'	);
 */
 
 -----------------------------------------------
@@ -159,7 +135,7 @@ VALUES	('NAMED_DESERT_SONORAN',	'LOC_NAMED_DESERT_SONORA'	);
 /*
 INSERT INTO NamedDesertCivilizations
 		(CivilizationType,				NamedDesertType			)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_DESERT_SONORAN'	);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_DESERT_SONORAN'	);
 */
 
 -----------------------------------------------
@@ -183,7 +159,7 @@ VALUES	('NAMED_VOLCANO_PICO_DE_ORIZABA',	'LOC_NAMED_VOLCANO_PICO_DE_ORIZABA'	);
 /*
 INSERT INTO NamedVolcanoCivilizations
 		(CivilizationType,				NamedVolcanoType				)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_VOLCANO_PICO_DE_ORIZABA'	);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_VOLCANO_PICO_DE_ORIZABA'	);
 */
 
 -----------------------------------------------
@@ -193,7 +169,7 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_VOLCANO_PICO_DE_ORIZABA'	);
 -----------------------------------------------
 INSERT INTO	CityNames
 		(CivilizationType,				CityName							)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CITY_NAME_MS2099_CIVNAME_1'	);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CITY_NAME_MS2099_STATE_OF_IOWA_1'	);
 	
 -----------------------------------------------
 -- CivilizationCitizenNames
@@ -203,22 +179,22 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CITY_NAME_MS2099_CIVNAME_1'	);
 -- All CitizenName references have a corresponding entry in Civilization_Localisation.sql.
 -----------------------------------------------
 INSERT INTO	CivilizationCitizenNames
-		(CivilizationType,				CitizenName,							Female	)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CITIZEN_MS2099_CIVNAME_MALE_1',	0 		),
-		('CIVILIZATION_MS2099_CIVNAME',	'LOC_CITIZEN_MS2099_CIVNAME_FEMALE_1',	1		);
+		(CivilizationType,						CitizenName,									Female	)
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CITIZEN_MS2099_STATE_OF_IOWA_MALE_1',		0 		),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CITIZEN_MS2099_STATE_OF_IOWA_FEMALE_1',	1		);
 
 -----------------------------------------------
 -- CivilizationInfo
 -- The below entries are primarily used in the Civilopedia - specifically in the side-bar that describes some further flavour information about your custom civilization.
--- Please note: the entries here are for flavour only. The values do not affect gameplay in any way - specifically, the LOC_CIVINFO_PREFIX_CIVNAME_CAPITAL value does not dictate the capital in-game.
+-- Please note: the entries here are for flavour only. The values do not affect gameplay in any way - specifically, the LOC_CIVINFO_PREFIX_STATE_OF_IOWA_CAPITAL value does not dictate the capital in-game.
 -- All Header and Caption references have a corresponding entry in Civilization_Localisation.sql.
 -----------------------------------------------
 INSERT INTO	CivilizationInfo
 		(CivilizationType,				Header,						Caption,									SortIndex	)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_LOCATION',		'LOC_CIVINFO_MS2099_CIVNAME_LOCATION',		10			),
-		('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_SIZE',			'LOC_CIVINFO_MS2099_CIVNAME_SIZE',			20			),
-		('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_POPULATION',	'LOC_CIVINFO_MS2099_CIVNAME_POPULATION',	30			),
-		('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_CAPITAL',		'LOC_CIVINFO_MS2099_CIVNAME_CAPITAL',		40			);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CIVINFO_LOCATION',		'LOC_CIVINFO_MS2099_STATE_OF_IOWA_LOCATION',		10			),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CIVINFO_SIZE',			'LOC_CIVINFO_MS2099_STATE_OF_IOWA_SIZE',			20			),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CIVINFO_POPULATION',	'LOC_CIVINFO_MS2099_STATE_OF_IOWA_POPULATION',	30			),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CIVINFO_CAPITAL',		'LOC_CIVINFO_MS2099_STATE_OF_IOWA_CAPITAL',		40			);
 		
 -----------------------------------------------
 -- Start Bias
@@ -230,17 +206,17 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_LOCATION',		'LOC_CIVINFO_MS2
 -----------------------------------------------
 INSERT INTO	StartBiasTerrains
 		(CivilizationType,				TerrainType,			Tier	)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'TERRAIN_PLAINS',		1		),
-		('CIVILIZATION_MS2099_CIVNAME',	'TERRAIN_GRASS',		5		);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'TERRAIN_PLAINS',		1		),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA',	'TERRAIN_GRASS',		5		);
 
 INSERT INTO	StartBiasFeatures
 		(CivilizationType,				FeatureType,			Tier	)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'FEATURE_FLOODPLAINS',	4		);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'FEATURE_FLOODPLAINS',	4		);
 
 INSERT INTO	StartBiasResources
 		(CivilizationType,				ResourceType,			Tier	)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'RESOURCE_JADE',		3		);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'RESOURCE_JADE',		3		);
 
 INSERT INTO	StartBiasRivers
 		(CivilizationType,										Tier	)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',							2		);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',							2		);

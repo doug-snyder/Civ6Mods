@@ -1,13 +1,8 @@
-/*
-	Civilization Badge Colours
-	Authors: MC
-*/
-
------------------------------------------------
--- Colors
--- This configures four colour options for your custom civilization. All values are formatted as RGBA - with the A (Alpha) channel always set to 255.
--- In this file/section, all we are doing is defining the colours and giving them unique string 'names'. We'll assign them to our civilization (via our Leader) in a separate file (Leader_Colors.sql).
------------------------------------------------
+--------------------------------------------------------------------------------
+-- CIVILIZATION COLORS
+-- All values in RGBA. Alpha is always '255'.
+-- Assign to our civilization (via Leader) in Leader_Colors.sql.
+--------------------------------------------------------------------------------
 INSERT INTO	Colors
 		(Type,									Color				)
 VALUES	('COLOR_MS2099_CIVLEADER_A_PRIMARY',	'0,80,82,255'		),

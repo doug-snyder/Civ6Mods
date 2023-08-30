@@ -16,12 +16,12 @@
 --INSERT INTO Players (CivilizationType, CivilizationName, CivilizationIcon, CivilizationAbilityName, CivilizationAbilityDescription, CivilizationAbilityIcon, LeaderType, LeaderName, LeaderIcon, LeaderAbilityName, LeaderAbilityDescription, LeaderAbilityIcon)
 --VALUES	(	
 		-- Civilization
---		'CIVILIZATION_MS2099_CIVNAME',	-- CivilizationType
---		'LOC_CIVILIZATION_MS2099_CIVNAME_NAME', -- CivilizationName
---		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationIcon
+--		'CIVILIZATION_MS2099_STATE_OF_IOWA',	-- CivilizationType
+--		'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_NAME', -- CivilizationName
+--		'ICON_CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationIcon
 --		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_NAME', -- CivilizationAbilityName
 --		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
---		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationAbilityIcon
+--		'ICON_CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationAbilityIcon
 		
 		-- Leader
 --		'LEADER_MS2099_CIVLEADER', -- LeaderType
@@ -46,12 +46,12 @@
 --VALUES	(	
 		-- Civilization
 --		'Players:Expansion1_Players', -- Domain
---		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
---		'LOC_CIVILIZATION_MS2099_CIVNAME_NAME', -- CivilizationName
---		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationIcon
+--		'CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationType
+--		'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_NAME', -- CivilizationName
+--		'ICON_CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationIcon
 --		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_NAME', -- CivilizationAbilityName
 --		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
---		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationAbilityIcon
+--		'ICON_CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationAbilityIcon
 		
 		-- Leader
 --		'LEADER_MS2099_CIVLEADER', -- LeaderType
@@ -74,12 +74,12 @@ INSERT INTO Players (Domain, CivilizationType, CivilizationName, CivilizationIco
 VALUES	(	
 		-- Civilization
 		'Players:Expansion2_Players', -- Domain
-		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
-		'LOC_CIVILIZATION_MS2099_CIVNAME_NAME', -- CivilizationName
-		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationIcon
+		'CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationType
+		'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_NAME', -- CivilizationName
+		'ICON_CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationIcon
 		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_NAME', -- CivilizationAbilityName
 		'LOC_TRAIT_CIVILIZATION_MS2099_CIVTRAIT_DESCRIPTION', -- CivilizationAbilityDescription
-		'ICON_CIVILIZATION_MS2099_CIVNAME', -- CivilizationAbilityIcon
+		'ICON_CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationAbilityIcon
 		
 		-- Leader
 		'LEADER_MS2099_CIVLEADER', -- LeaderType
@@ -101,7 +101,7 @@ VALUES	(
 --INSERT INTO PlayerItems
 --		(CivilizationType, LeaderType, Type, Icon, Name, Description, SortIndex	)
 --VALUES	(
---		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationType
 --		'LEADER_MS2099_CIVLEADER', -- LeaderType
 --		'UNIT_MS2099_CIVUNIT', -- Type
 --		'ICON_UNIT_MS2099_CIVUNIT', -- Icon
@@ -111,12 +111,12 @@ VALUES	(
 --		),
 --		
 --		(
---		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationType
 --		'LEADER_MS2099_CIVLEADER', -- LeaderType
 --		'IMPROVEMENT_CIVIMPROVEMENT', -- Type
 --		'ICON_IMPROVEMENT_CIVIMPROVEMENT', -- Icon
---		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME', -- Name
---		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION', -- Description
+--		'LOC_IMPROVEMENT_STATE_OF_IOWA_CIVIMPROVEMENT_NAME', -- Name
+--		'LOC_IMPROVEMENT_STATE_OF_IOWA_CIVIMPROVEMENT_DESCRIPTION', -- Description
 --		20 -- SortIndex
 --		);
 		
@@ -134,7 +134,7 @@ VALUES	(
 --		(Domain, CivilizationType, LeaderType, Type, Icon, Name, Description, SortIndex	)
 --VALUES	(
 --		'Players:Expansion1_Players', -- Domain
---		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationType
 --		'LEADER_MS2099_CIVLEADER', -- LeaderType
 --		'UNIT_MS2099_CIVUNIT', -- Type
 --		'ICON_UNIT_MS2099_CIVUNIT', -- Icon
@@ -145,12 +145,12 @@ VALUES	(
 --		
 --		(
 --		'Players:Expansion1_Players', -- Domain
---		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+--		'CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationType
 --		'LEADER_MS2099_CIVLEADER', -- LeaderType
 --		'IMPROVEMENT_CIVIMPROVEMENT', -- Type
 --		'ICON_IMPROVEMENT_CIVIMPROVEMENT', -- Icon
---		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME', -- Name
---		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION', -- Description
+--		'LOC_IMPROVEMENT_STATE_OF_IOWA_CIVIMPROVEMENT_NAME', -- Name
+--		'LOC_IMPROVEMENT_STATE_OF_IOWA_CIVIMPROVEMENT_DESCRIPTION', -- Description
 --		20 -- SortIndex
 --		);
 
@@ -166,7 +166,7 @@ INSERT INTO PlayerItems
 		(Domain, CivilizationType, LeaderType, Type, Icon, Name, Description, SortIndex	)
 VALUES	(
 		'Players:Expansion2_Players', -- Domain
-		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+		'CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationType
 		'LEADER_MS2099_CIVLEADER', -- LeaderType
 		'UNIT_MS2099_CIVUNIT', -- Type
 		'ICON_UNIT_MS2099_CIVUNIT', -- Icon
@@ -177,11 +177,11 @@ VALUES	(
 		
 		(
 		'Players:Expansion2_Players', -- Domain
-		'CIVILIZATION_MS2099_CIVNAME', -- CivilizationType
+		'CIVILIZATION_MS2099_STATE_OF_IOWA', -- CivilizationType
 		'LEADER_MS2099_CIVLEADER', -- LeaderType
 		'IMPROVEMENT_CIVIMPROVEMENT', -- Type
 		'ICON_IMPROVEMENT_CIVIMPROVEMENT', -- Icon
-		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_NAME', -- Name
-		'LOC_IMPROVEMENT_CIVNAME_CIVIMPROVEMENT_DESCRIPTION', -- Description
+		'LOC_IMPROVEMENT_STATE_OF_IOWA_CIVIMPROVEMENT_NAME', -- Name
+		'LOC_IMPROVEMENT_STATE_OF_IOWA_CIVIMPROVEMENT_DESCRIPTION', -- Description
 		20 -- SortIndex
 		);

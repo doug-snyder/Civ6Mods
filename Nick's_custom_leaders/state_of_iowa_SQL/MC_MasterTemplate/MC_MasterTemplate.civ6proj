@@ -170,70 +170,10 @@
     <XLP Include="Textures\LEADER_PO_NGBE_DIPLO_BG.tex">
       <SubType>Content</SubType>
     </XLP>
-    <XLP Include="Textures\OlmecAtlas200.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas200.tex">
-      <SubType>Content</SubType>
-    </XLP>
     <XLP Include="Textures\OlmecAtlas22.dds">
       <SubType>Content</SubType>
     </XLP>
     <XLP Include="Textures\OlmecAtlas22.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas256.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas256.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas30.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas30.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas36.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas36.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas44.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas44.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas48.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas48.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas50.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas50.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas64.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas64.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas80.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\OlmecAtlas80.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon256.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon256.tex">
       <SubType>Content</SubType>
     </XLP>
     <XLP Include="Textures\PoNgbeIcon32.dds">
@@ -242,94 +182,10 @@
     <XLP Include="Textures\PoNgbeIcon32.tex">
       <SubType>Content</SubType>
     </XLP>
-    <XLP Include="Textures\PoNgbeIcon45.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon45.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon48.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon48.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon50.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon50.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon55.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon55.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon64.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon64.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon80.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\PoNgbeIcon80.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas200.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas200.tex">
-      <SubType>Content</SubType>
-    </XLP>
     <XLP Include="Textures\WerejaguarAtlas22.dds">
       <SubType>Content</SubType>
     </XLP>
     <XLP Include="Textures\WerejaguarAtlas22.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas256.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas256.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas32.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas32.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas38.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas38.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas50.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas50.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas70.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas70.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas80.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas80.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas95.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\WerejaguarAtlas95.tex">
       <SubType>Content</SubType>
     </XLP>
     <XLP Include="Textures\WerejaguarHistoricMoment.dds">
