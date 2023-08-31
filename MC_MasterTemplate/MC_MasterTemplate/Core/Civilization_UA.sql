@@ -1,4 +1,7 @@
-/* MisterShake2099 (MS2099) */
+/*
+	MisterShake2099 (MS2099)
+	Civilization_UA.sql
+*/
 
 --------------------------------------------------------------------------------
 -- TYPES
@@ -23,7 +26,8 @@ VALUES	('TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT',
 --------------------------------------------------------------------------------
 INSERT INTO	CivilizationTraits
 		(CivilizationType, TraitType)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT');
+VALUES	('CIVILIZATION_MS2099_CIVNAME',
+		 'TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT');
 
 
 --------------------------------------------------------------------------------
@@ -31,8 +35,10 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME',	'TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT
 --------------------------------------------------------------------------------
 INSERT INTO	TraitModifiers	
 		(TraitType, ModifierId)
-VALUES	('TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT', 'MODIFIER_MS2099_CIVIMPROVEMENT_SHRINE_YIELD'),
-		('TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT', 'MODIFIER_MS2099_CIVIMPROVEMENT_TEMPLE_YIELD');
+VALUES	('TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT',
+		 'MODIFIER_MS2099_CIVIMPROVEMENT_SHRINE_YIELD'),
+		('TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT',
+		 'MODIFIER_MS2099_CIVIMPROVEMENT_TEMPLE_YIELD');
 
 
 --------------------------------------------------------------------------------
@@ -40,8 +46,10 @@ VALUES	('TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT', 'MODIFIER_MS2099_CIVIMPROVEM
 --------------------------------------------------------------------------------
 INSERT INTO	Modifiers
 		(ModifierId, ModifierType, RunOnce, Permanent)
-VALUES	('MODIFIER_MS2099_CIVIMPROVEMENT_SHRINE_YIELD',	'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE', 0, 1),
-		('MODIFIER_MS2099_CIVIMPROVEMENT_TEMPLE_YIELD',	'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE', 0, 1);
+VALUES	('MODIFIER_MS2099_CIVIMPROVEMENT_SHRINE_YIELD',
+		 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE', 0, 1),
+		('MODIFIER_MS2099_CIVIMPROVEMENT_TEMPLE_YIELD',
+		 'MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE', 0, 1);
 
 
 --------------------------------------------------------------------------------

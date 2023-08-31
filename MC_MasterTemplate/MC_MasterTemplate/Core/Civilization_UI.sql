@@ -1,6 +1,7 @@
 /*
 	MisterShake2099 (MS2099)
-	CIVILIZATION UNIQUE INFRASTRUCTURE
+	Civilization_UI.sql
+	CIVILIZATION UNIQUE IMPROVEMENTS/INFRASTRUCTURE
 */
 
 --------------------------------------------------------------------------------
@@ -111,9 +112,11 @@ VALUES	('IMPROVEMENT_CIVIMPROVEMENT', 'YIELD_yield', 1);
 
 --------------------------------------------------------------------------------
 -- IMPROVEMENT: ADJACENCIES
--- TilesRequired: Adjacent tiles required to trigger YieldChange. For Districts, always 1.
+-- TilesRequired: Adjacent tiles required to trigger YieldChange.
+--				  For Districts: 1
 -- AdjacentDistrict: Type of required adjacent District.
--- District Types: DISTRICT_district, Adjacent(Feature(str); Terrain(str); NaturalWonder(bool); SeaResource(bool)
+-- District Types: DISTRICT_district,
+--				   Adjacent(Feature(str); Terrain(str); NaturalWonder(bool); SeaResource(bool)
 --------------------------------------------------------------------------------
 DELETE FROM Improvement_Adjacencies WHERE ImprovementType = 'IMPROVEMENT_CIVIMPROVEMENT';
 

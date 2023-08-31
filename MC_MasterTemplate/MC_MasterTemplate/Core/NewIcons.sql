@@ -1,48 +1,51 @@
-/* MisterShake2099 (MS2099) */
+/*
+	MisterShake2099 (MS2099)
+	NewIcons.sql
+*/
 
 --------------------------------------------------------------------------------
 -- ICON TEXTURE ALTASES
 --------------------------------------------------------------------------------
 INSERT INTO IconTextureAtlases
 		(Name, IconSize, IconsPerRow, IconsPerColumn, Filename)
-VALUES	('ICON_ATLAS_MS2099_CIVNAME', 22,  1, 1, 'OlmecAtlas22.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 30,  1, 1, 'OlmecAtlas30.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 36,  1, 1, 'OlmecAtlas36.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 44,  1, 1, 'OlmecAtlas44.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 48,  1, 1, 'OlmecAtlas48.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 50,  1, 1, 'OlmecAtlas50.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 64,  1, 1, 'OlmecAtlas64.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 80,  1, 1, 'OlmecAtlas80.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 200, 1, 1, 'OlmecAtlas200.dds'),
-		('ICON_ATLAS_MS2099_CIVNAME', 256, 1, 1, 'OlmecAtlas256.dds'),
+VALUES	('ICON_ATLAS_MS2099_CIVNAME', 22,  1, 1, 'CIVNAMEAtlas22.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 30,  1, 1, 'CIVNAMEAtlas30.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 36,  1, 1, 'CIVNAMEAtlas36.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 44,  1, 1, 'CIVNAMEAtlas44.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 48,  1, 1, 'CIVNAMEAtlas48.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 50,  1, 1, 'CIVNAMEAtlas50.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 64,  1, 1, 'CIVNAMEAtlas64.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 80,  1, 1, 'CIVNAMEAtlas80.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 200, 1, 1, 'CIVNAMEAtlas200.dds'),
+		('ICON_ATLAS_MS2099_CIVNAME', 256, 1, 1, 'CIVNAMEAtlas256.dds'),
 
-		('ICON_ATLAS_MS2099_CIVLEADER',	32,	 1, 1, 'PoNgbeIcon32.dds'),
-		('ICON_ATLAS_MS2099_CIVLEADER',	45,	 1, 1, 'PoNgbeIcon45.dds'),
-		('ICON_ATLAS_MS2099_CIVLEADER',	48,	 1, 1, 'PoNgbeIcon48.dds'),
-		('ICON_ATLAS_MS2099_CIVLEADER',	50,	 1, 1, 'PoNgbeIcon50.dds'),
-		('ICON_ATLAS_MS2099_CIVLEADER',	55,	 1, 1, 'PoNgbeIcon55.dds'),
-		('ICON_ATLAS_MS2099_CIVLEADER',	64,	 1, 1, 'PoNgbeIcon64.dds'),
-		('ICON_ATLAS_MS2099_CIVLEADER',	80,	 1, 1, 'PoNgbeIcon80.dds'),
-		('ICON_ATLAS_MS2099_CIVLEADER',	256, 1, 1, 'PoNgbeIcon256.dds'),
+		('ICON_ATLAS_MS2099_CIVLEADER',	32,	 1, 1, 'CIVLEADERIcon32.dds'),
+		('ICON_ATLAS_MS2099_CIVLEADER',	45,	 1, 1, 'CIVLEADERIcon45.dds'),
+		('ICON_ATLAS_MS2099_CIVLEADER',	48,	 1, 1, 'CIVLEADERIcon48.dds'),
+		('ICON_ATLAS_MS2099_CIVLEADER',	50,	 1, 1, 'CIVLEADERIcon50.dds'),
+		('ICON_ATLAS_MS2099_CIVLEADER',	55,	 1, 1, 'CIVLEADERIcon55.dds'),
+		('ICON_ATLAS_MS2099_CIVLEADER',	64,	 1, 1, 'CIVLEADERIcon64.dds'),
+		('ICON_ATLAS_MS2099_CIVLEADER',	80,	 1, 1, 'CIVLEADERIcon80.dds'),
+		('ICON_ATLAS_MS2099_CIVLEADER',	256, 1, 1, 'CIVLEADERIcon256.dds'),
 		
 		-- TODO: Check that this shouldn't be 'CIVUNIQUEUNIT'
-		('ICON_ATLAS_MS2099_CIVUNIT', 22,  2, 1, 'WerejaguarAtlas22.dds'),
-		('ICON_ATLAS_MS2099_CIVUNIT', 32,  2, 1, 'WerejaguarAtlas32.dds'),
-		('ICON_ATLAS_MS2099_CIVUNIT', 38,  2, 1, 'WerejaguarAtlas38.dds'),
-		('ICON_ATLAS_MS2099_CIVUNIT', 50,  2, 1, 'WerejaguarAtlas50.dds'),
-		('ICON_ATLAS_MS2099_CIVUNIT', 70,  2, 1, 'WerejaguarAtlas70.dds'),
-		('ICON_ATLAS_MS2099_CIVUNIT', 80,  2, 1, 'WerejaguarAtlas80.dds'),
-		('ICON_ATLAS_MS2099_CIVUNIT', 95,  2, 1, 'WerejaguarAtlas95.dds'),
-		('ICON_ATLAS_MS2099_CIVUNIT', 200, 2, 1, 'WerejaguarAtlas200.dds'),
-		('ICON_ATLAS_MS2099_CIVUNIT', 256, 2, 1, 'WerejaguarAtlas256.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 22,  2, 1, 'CIVUNITAtlas22.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 32,  2, 1, 'CIVUNITAtlas32.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 38,  2, 1, 'CIVUNITAtlas38.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 50,  2, 1, 'CIVUNITAtlas50.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 70,  2, 1, 'CIVUNITAtlas70.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 80,  2, 1, 'CIVUNITAtlas80.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 95,  2, 1, 'CIVUNITAtlas95.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 200, 2, 1, 'CIVUNITAtlas200.dds'),
+		('ICON_ATLAS_MS2099_CIVUNIT', 256, 2, 1, 'CIVUNITAtlas256.dds'),
 		
 		-- TODO: Check that this shouldn't be 'CIVUNIQUEIMPROVEMENT'
-		('ICON_ATLAS_CIVIMPROVEMENT', 38,  1, 1, 'ColossalHead38.dds'),
-		('ICON_ATLAS_CIVIMPROVEMENT', 40,  1, 1, 'ColossalHead40.dds'),
-		('ICON_ATLAS_CIVIMPROVEMENT', 50,  1, 1, 'ColossalHead50.dds'),
-		('ICON_ATLAS_CIVIMPROVEMENT', 80,  1, 1, 'ColossalHead80.dds'),
-		('ICON_ATLAS_CIVIMPROVEMENT', 200, 1, 1, 'ColossalHead200.dds'),
-		('ICON_ATLAS_CIVIMPROVEMENT', 256, 1, 1, 'ColossalHead256.dds');
+		('ICON_ATLAS_CIVIMPROVEMENT', 38,  1, 1, 'CIVIMPROVEMENT38.dds'),
+		('ICON_ATLAS_CIVIMPROVEMENT', 40,  1, 1, 'CIVIMPROVEMENT40.dds'),
+		('ICON_ATLAS_CIVIMPROVEMENT', 50,  1, 1, 'CIVIMPROVEMENT50.dds'),
+		('ICON_ATLAS_CIVIMPROVEMENT', 80,  1, 1, 'CIVIMPROVEMENT80.dds'),
+		('ICON_ATLAS_CIVIMPROVEMENT', 200, 1, 1, 'CIVIMPROVEMENT200.dds'),
+		('ICON_ATLAS_CIVIMPROVEMENT', 256, 1, 1, 'CIVIMPROVEMENT256.dds');
 
 
 --------------------------------------------------------------------------------

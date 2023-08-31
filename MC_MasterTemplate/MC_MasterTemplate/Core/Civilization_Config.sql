@@ -1,7 +1,12 @@
-/* MisterShake2099 (MS2099) */
+/*
+	MisterShake2099 (MS2099)
+	Civilization_Config.sql
+
+	• Corresponding entries in Civilization_Localisation.sql.
+	• Named<geographical_feature> were introduced in Gathering Storm.
+*/
 --------------------------------------------------------------------------------
 -- TYPES
--- Insert Civilization into primary Data Types table as a playable Civilization.
 --------------------------------------------------------------------------------
 INSERT INTO	Types
 			(Type, Kind)
@@ -10,9 +15,7 @@ VALUES		('CIVILIZATION_MS2099_CIVNAME',	'KIND_CIVILIZATION');
 
 --------------------------------------------------------------------------------
 -- CIVILIZATIONS
--- Locally-referenced values: CivilizationType, Name, Description, Adjective
--- RandomCityNameDepth:	Number of defined city names for the Civ
--- Ethnicity: ETHNICITY_AFRICAN, ETHNICITY_ASIAN, ETHNICITY_EURO, ETHNICITY_MEDIT, ETHNICITY_SOUTHAM
+-- Ethnicity: ETHNICITY_[AFRICAN; ASIAN; EURO; MEDIT; SOUTHAM]
 --------------------------------------------------------------------------------
 INSERT INTO	Civilizations
 			(CivilizationType, Name, Description, Adjective,
@@ -24,14 +27,12 @@ VALUES		(
 			'LOC_CIVILIZATION_MS2099_CIVNAME_ADJECTIVE',
 			'CIVILIZATION_LEVEL_FULL_CIV',
 			5,
-			'ETHNICITY_SOUTHAM'
+			'ETHNICITY_ethnicity'
 			);
 
 
 --------------------------------------------------------------------------------
 -- NAMED MOUNTAINS
--- All Name references have a corresponding entry in Civilization_Localisation.sql.
--- Compatibility: NamedMountains were introduced in the Gathering Storm expansion.
 --------------------------------------------------------------------------------
 REPLACE INTO NamedMountains
 		(NamedMountainType,	Name)
@@ -40,8 +41,6 @@ VALUES	('NAMED_MOUNTAIN_CIVMOUNTAIN', 'LOC_NAMED_MOUNTAIN_CIVMOUNTAIN');
 
 --------------------------------------------------------------------------------
 -- NAMED MOUNTAIN CIVILIZATIONS
--- This ties named mountain ranges to your custom civilization.
--- Compatibility: NamedMountainCivilizations were introduced in the Gathering Storm expansion.
 --------------------------------------------------------------------------------
 INSERT INTO NamedMountainCivilizations
 		(CivilizationType, NamedMountainType)
@@ -160,9 +159,9 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_LOCATION', 'LOC_CIVINFO_MS20
 --------------------------------------------------------------------------------
 -- START BIAS
 -- Tier: 1−5, with 1 being the strongest bias.
--- TerrainType: Explicit value from list(s): Terrains.xml.
--- FeatureType: Explicit value from list(s) in: Features.xml, Expansion1_Features.xml, Expansion2_Features.xml.
--- ResourceType: Explicit value from list(s) in: Resources.xml, Expansion1_Resources.xml.
+-- TerrainType: Terrains.xml.
+-- FeatureType: Features.xml, Expansion1_Features.xml, Expansion2_Features.xml.
+-- ResourceType: Resources.xml, Expansion1_Resources.xml.
 --------------------------------------------------------------------------------
 INSERT INTO	StartBiasTerrains
 		(CivilizationType, TerrainType,	Tier)

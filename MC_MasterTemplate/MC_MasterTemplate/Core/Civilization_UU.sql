@@ -1,5 +1,6 @@
 /*
 	MisterShake2099 (MS2099)
+	Civilization_UU.sql
 	CIVILIZATION UNIQUE UNIT
 */
 
@@ -55,7 +56,9 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME', 'TRAIT_CIVILIZATION_MS2099_CIVUNIT');
 -- UNITS
 --------------------------------------------------------------------------------
 INSERT INTO Units(
-		UnitType, Name, Description,
+		UnitType,
+		Name,
+		Description,
 		TraitType,
 		BaseMoves, Cost, PurchaseYield, AdvisorType,
 		Combat, RangedCombat, Range,
@@ -65,7 +68,9 @@ INSERT INTO Units(
 		MandatoryObsoleteTech, PrereqTech,
 		PrereqCivic
 		)
-SELECT	'UNIT_MS2099_CIVUNIT', 'LOC_UNIT_MS2099_CIVUNIT_NAME', 'LOC_UNIT_MS2099_CIVUNIT_DESCRIPTION',
+SELECT	'UNIT_MS2099_CIVUNIT',
+		'LOC_UNIT_MS2099_CIVUNIT_NAME',
+		'LOC_UNIT_MS2099_CIVUNIT_DESCRIPTION',
 		'TRAIT_CIVILIZATION_MS2099_CIVUNIT',
 		BaseMoves, Cost + 15, PurchaseYield, AdvisorType,
 		Combat + 5, RangedCombat, Range,
