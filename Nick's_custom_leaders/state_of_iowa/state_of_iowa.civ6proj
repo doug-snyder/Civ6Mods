@@ -2,17 +2,19 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>MC_MasterTemplate</Name>
-    <Guid>8c6472be-9b71-4608-b804-b4918e1eaddc</Guid>
+    <Name>MS2099_state_of_iowa</Name>
+    <Guid>3eacdd3b-80af-4c45-be21-19a757efd32f</Guid>
     <ProjectGuid>f1d6e542-03ea-4e6d-bab2-6e3bc6353dda</ProjectGuid>
-    <ModVersion>2</ModVersion>
-    <Teaser>Introduces the CIVILIZATION_NAME to Civilization VI.</Teaser>
-    <Description>Introduces the CIVILIZATION_NAME to Civilization VI.
-
-[NEWLINE][NEWLINE]Lead them to glory with LEADERNAME as your leader.
-
-[NEWLINE][NEWLINE]Harness the fearsome UNIQUE_UNIT_NAME Unique Unit, alongside the UNIQUE_INFRASTRUCTURE_NAME Unique Improvement.</Description>
-    <Authors>maconnolly</Authors>
+    <ModVersion>1</ModVersion>
+    <Teaser>The great civilization: State of Iowa</Teaser>
+    <Description>Adds the custom civilization: State of Iowa
+[NEWLINE]
+Leader: Corneal Cornials Cornwall
+[NEWLINE]
+Use the Cob Cannon (replaces Bombard)
+[NEWLINE]
+Build Corn Fields</Description>
+    <Authors>MisterShake2099</Authors>
     <SpecialThanks>
     </SpecialThanks>
     <AffectsSavedGames>false</AffectsSavedGames>
@@ -98,7 +100,7 @@
     <Content Include="Leader\Leader_UA.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="MC_MasterTemplate.Art.xml">
+    <Content Include="state_of_iowa.Art.xml">
       <SubType>Content</SubType>
     </Content>
     <XLP Include="Textures\LEADER_MC_PO_NGBE_BACKGROUND.dds">
@@ -110,40 +112,10 @@
     <XLP Include="XLPs\LeaderFallbacks.xlp">
       <SubType>Content</SubType>
     </XLP>
-    <XLP Include="Textures\ColossalHead200.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead200.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead256.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead256.tex">
-      <SubType>Content</SubType>
-    </XLP>
     <XLP Include="Textures\ColossalHead38.dds">
       <SubType>Content</SubType>
     </XLP>
     <XLP Include="Textures\ColossalHead38.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead40.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead40.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead50.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead50.tex">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead80.dds">
-      <SubType>Content</SubType>
-    </XLP>
-    <XLP Include="Textures\ColossalHead80.tex">
       <SubType>Content</SubType>
     </XLP>
     <XLP Include="Textures\ColossalHeadHistoricMoment.dds">

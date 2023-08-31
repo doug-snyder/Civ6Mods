@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <AssetObjects::GameArtSpecification>
 	<id>
-		<name text="MC_MasterTemplate"/>
+		<name text="state_of_iowa"/>
 		<id text="8c6472be-9b71-4608-b804-b4918e1eaddc"/>
 	</id>
 	<artConsumers>
