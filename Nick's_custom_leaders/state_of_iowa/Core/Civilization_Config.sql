@@ -20,10 +20,10 @@ INSERT INTO	Civilizations
 		(CivilizationType, Name, Description, Adjective,
 			StartingCivilizationLevelType, RandomCityNameDepth, Ethnicity)
 VALUES	(
-		'CIVILIZATION_MS2099_CIVNAME',
-		'LOC_CIVILIZATION_MS2099_CIVNAME_NAME',
-		'LOC_CIVILIZATION_MS2099_CIVNAME_DESCRIPTION',
-		'LOC_CIVILIZATION_MS2099_CIVNAME_ADJECTIVE',
+		'CIVILIZATION_MS2099_STATE_OF_IOWA',
+		'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_NAME',
+		'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_DESCRIPTION',
+		'LOC_CIVILIZATION_MS2099_STATE_OF_IOWA_ADJECTIVE',
 		'CIVILIZATION_LEVEL_FULL_CIV',
 		5,
 		'ETHNICITY_EURO'
@@ -35,8 +35,7 @@ VALUES	(
 --------------------------------------------------------------------------------
 REPLACE INTO NamedMountains
 		(NamedMountainType, Name)
-VALUES	('NAMED_MOUNTAIN_HAWKEYE_POINT', 'LOC_NAMED_MOUNTAIN_HAWKEYE_POINT'),
-		('NAMED_MOUNTAIN_OCHEYEDAN_MOUNT', 'LOC_NAMED_MOUNTAIN_OCHEYEDAN_MOUNT');
+VALUES	('NAMED_MOUNTAIN_HAWKEYE_POINT', 'LOC_NAMED_MOUNTAIN_HAWKEYE_POINT');
 
 
 --------------------------------------------------------------------------------
@@ -52,8 +51,7 @@ VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'NAMED_MOUNTAIN_HAWKEYE_POINT');
 --------------------------------------------------------------------------------
 REPLACE INTO NamedRivers
 		(NamedRiverType, Name)
-VALUES	('NAMED_IOWA_RIVER', 'LOC_NAMED_IOWA_RIVER'),
-		('NAMED_MIDDLE_RACCOON_RIVER', 'LOC_NAMED_MIDDLE_RACCOON_RIVER');
+VALUES	('NAMED_RIVER_IOWA_RIVER', 'LOC_NAMED_RIVER_IOWA_RIVER');
 
 
 --------------------------------------------------------------------------------
@@ -61,8 +59,7 @@ VALUES	('NAMED_IOWA_RIVER', 'LOC_NAMED_IOWA_RIVER'),
 --------------------------------------------------------------------------------
 INSERT INTO NamedRiverCivilizations
 		(CivilizationType, NamedRiverType)
-VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'NAMED_IOWA_RIVER'),
-		('CIVILIZATION_MS2099_STATE_OF_IOWA', 'NAMED_MIDDLE_RACCOON_RIVER');
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'NAMED_RIVER_IOWA_RIVER');
 
 
 --------------------------------------------------------------------------------
@@ -70,8 +67,7 @@ VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'NAMED_IOWA_RIVER'),
 --------------------------------------------------------------------------------
 INSERT OR REPLACE INTO NamedLakes
 		(NamedLakeType, Name)
-VALUES	('NAMED_OKOBOJI_LAKE', 'LOC_NAMED_OKOBOJI_LAKE'),
-		('NAMED_BIG_SPIRIT_LAKE', 'LOC_NAMED_BIG_SPIRIT_LAKE');
+VALUES	('NAMED_LAKE_OKOBOJI_LAKE', 'LOC_NAMED_LAKE_OKOBOJI_LAKE');
 
 
 --------------------------------------------------------------------------------
@@ -79,8 +75,7 @@ VALUES	('NAMED_OKOBOJI_LAKE', 'LOC_NAMED_OKOBOJI_LAKE'),
 --------------------------------------------------------------------------------
 INSERT INTO NamedLakeCivilizations
 		(CivilizationType, NamedLakeType)
-VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'NAMED_LAKE_OKOBOJI_LAKE'),
-VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'NAMED_LAKE_BIG_SPIRIT_LAKE');
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'NAMED_LAKE_OKOBOJI_LAKE');
 
 
 --------------------------------------------------------------------------------
@@ -96,7 +91,7 @@ VALUES	('NAMED_SEA_CIVSEA', 'LOC_NAMED_SEA_CIVSEA');
 --------------------------------------------------------------------------------
 INSERT INTO NamedSeaCivilizations
 		(CivilizationType, NamedSeaType)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_SEA_CIVSEA');
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_SEA_CIVSEA');
 
 
 --------------------------------------------------------------------------------
@@ -112,7 +107,7 @@ VALUES	('NAMED_DESERT_CIVDESERT', 'LOC_NAMED_DESERT_CIVDESERT');
 --------------------------------------------------------------------------------
 INSERT INTO NamedDesertCivilizations
 		(CivilizationType, NamedDesertType)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_DESERT_CIVDESERT');
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_DESERT_CIVDESERT');
 
 
 --------------------------------------------------------------------------------
@@ -128,7 +123,7 @@ VALUES	('NAMED_VOLCANO_CIVVOLCANO', 'LOC_NAMED_VOLCANO_CIVVOLCANO');
 --------------------------------------------------------------------------------
 INSERT INTO NamedVolcanoCivilizations
 		(CivilizationType, NamedVolcanoType)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_VOLCANO_CIVVOLCANO');
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'NAMED_VOLCANO_CIVVOLCANO');
 
 
 --------------------------------------------------------------------------------
@@ -136,18 +131,18 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME',	'NAMED_VOLCANO_CIVVOLCANO');
 --------------------------------------------------------------------------------
 INSERT INTO	CityNames
 		(CivilizationType, CityName)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CITY_NAME_MS2099_CIVCITY_1');
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CITY_NAME_MS2099_CIVCITY_1');
 
 
 --------------------------------------------------------------------------------
 -- CIVILIATION CITIZEN NAMES
--- e.g. LOC_CITIZEN_MS2099_CIVNAME_MALE_1
--- e.g. LOC_CITIZEN_MS2099_CIVNAME_MODERN_MALE_1
+-- e.g. LOC_CITIZEN_MS2099_STATE_OF_IOWA_MALE_1
+-- e.g. LOC_CITIZEN_MS2099_STATE_OF_IOWA_MODERN_MALE_1
 --------------------------------------------------------------------------------
 INSERT INTO	CivilizationCitizenNames
 		(CivilizationType, CitizenName, Female)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CITIZEN_MS2099_CIVNAME_MALE_1', 0),
-		('CIVILIZATION_MS2099_CIVNAME',	'LOC_CITIZEN_MS2099_CIVNAME_FEMALE_1', 1);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CITIZEN_MS2099_STATE_OF_IOWA_MALE_1', 0),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA',	'LOC_CITIZEN_MS2099_STATE_OF_IOWA_FEMALE_1', 1);
 
 
 --------------------------------------------------------------------------------
@@ -155,10 +150,10 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CITIZEN_MS2099_CIVNAME_MALE_1', 0),
 --------------------------------------------------------------------------------
 INSERT INTO	CivilizationInfo
 		(CivilizationType, Header, Caption, SortIndex)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_LOCATION', 'LOC_CIVINFO_MS2099_CIVNAME_LOCATION', 10),
-		('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_SIZE', 'LOC_CIVINFO_MS2099_CIVNAME_SIZE', 20),
-		('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_POPULATION', 'LOC_CIVINFO_MS2099_CIVNAME_POPULATION', 30),
-		('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_CAPITAL', 'LOC_CIVINFO_MS2099_CIVNAME_CAPITAL', 40);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'LOC_CIVINFO_LOCATION', 'LOC_CIVINFO_MS2099_STATE_OF_IOWA_LOCATION', 10),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA', 'LOC_CIVINFO_SIZE', 'LOC_CIVINFO_MS2099_STATE_OF_IOWA_SIZE', 20),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA', 'LOC_CIVINFO_POPULATION', 'LOC_CIVINFO_MS2099_STATE_OF_IOWA_POPULATION', 30),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA', 'LOC_CIVINFO_CAPITAL', 'LOC_CIVINFO_MS2099_STATE_OF_IOWA_CAPITAL', 40);
 		
 
 --------------------------------------------------------------------------------
@@ -170,17 +165,18 @@ VALUES	('CIVILIZATION_MS2099_CIVNAME',	'LOC_CIVINFO_LOCATION', 'LOC_CIVINFO_MS20
 --------------------------------------------------------------------------------
 INSERT INTO	StartBiasTerrains
 		(CivilizationType, TerrainType,	Tier)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'TERRAIN_PLAINS', 1),
-		('CIVILIZATION_MS2099_CIVNAME',	'TERRAIN_GRASS', 5);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'TERRAIN_PLAINS', 1),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA', 'TERRAIN_GRASS', 5);
 
 INSERT INTO	StartBiasFeatures
 		(CivilizationType, FeatureType, Tier)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'FEATURE_FLOODPLAINS', 4);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'FEATURE_PLAINS', 5),
+		('CIVILIZATION_MS2099_STATE_OF_IOWA', 'FEATURE_MOUNTAINS', 1);
 
 INSERT INTO	StartBiasResources
 		(CivilizationType, ResourceType, Tier)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',	'RESOURCE_JADE', 3);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'RESOURCE_MAIZE', 3);
 
 INSERT INTO	StartBiasRivers
 		(CivilizationType, Tier)
-VALUES	('CIVILIZATION_MS2099_CIVNAME', 2);
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 2);

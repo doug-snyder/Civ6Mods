@@ -26,7 +26,7 @@ VALUES	('TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT',
 --------------------------------------------------------------------------------
 INSERT INTO	CivilizationTraits
 		(CivilizationType, TraitType)
-VALUES	('CIVILIZATION_MS2099_CIVNAME',
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA',
 		 'TRAIT_CIVILIZATION_MS2099_CIVIMPROVEMENT');
 
 

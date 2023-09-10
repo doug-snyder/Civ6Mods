@@ -297,7 +297,7 @@ VALUES
 	'Civleader_Chapter_Capsule_Body.'),
 	
 	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_DETAILED_BODY',
-	'Civleader_Chapter_Detailed_Body. [ICON_Faith] [ICON_Science]'),
+	'Civleader_Chapter_Detailed_Body.'),
 
 	('en_US',	'LOC_PEDIA_LEADERS_PAGE_LEADER_MS2099_CIVLEADER_CHAPTER_HISTORY_PARA_1',
 	'Civleader_Chapter_History_Para_1.'),

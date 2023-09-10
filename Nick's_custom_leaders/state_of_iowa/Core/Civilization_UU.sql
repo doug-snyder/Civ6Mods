@@ -49,7 +49,7 @@ VALUES	('TRAIT_CIVILIZATION_MS2099_CIVUNIT', 'LOC_UNIT_MS2099_CIVUNIT_NAME', 'LO
 --------------------------------------------------------------------------------
 INSERT INTO CivilizationTraits
 		(CivilizationType, TraitType)
-VALUES	('CIVILIZATION_MS2099_CIVNAME', 'TRAIT_CIVILIZATION_MS2099_CIVUNIT');
+VALUES	('CIVILIZATION_MS2099_STATE_OF_IOWA', 'TRAIT_CIVILIZATION_MS2099_CIVUNIT');
 
 
 --------------------------------------------------------------------------------

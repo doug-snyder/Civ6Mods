@@ -1,0 +1,33 @@
+STATE OF ONTARIO
+
+Snow Warriors
+• All units have +2 movement on snow and tundra tiles.
+• Units receive 75% more attack and defense to barbarians while on snow or tundra tiles.
+• Units receive 85% more attack and defense while on snow or tundra tiles.
+• Units lose 15% health each turn while on desert tiles.
+
+Snow economy
+• Replaces farms and mines with snow farms or ice mines.
+• Can build farms and mines on snow or tundra tiles.
+• Ice mines provide +3 production on tundra tiles, and +1 on snow tiles
+• Snow Farms Provide +2 food on snow and +3 on tundra tiles.
+• Industrial Zone gives 100% adjacency bonuses if in a tundra tile.
+
+Snow Resources? (pun intended)
+• Units no longer require resources to maintain them.
+• The amount of resources you need to make a unit is 50% less.
+• Units are 35% cheaper and after economics it's 55% cheaper to buy.
+• Units cost 15% more gold to maintain.
+
+International expansion
+• Cities founded or stolen that are on different continents then the capital receive -5 loyalty. And -15% science, culture, production, and gold.
+
+Winter Navy
+• +25% production towards naval units.
+• +10% defense for naval units.
+
+A Good Friend
+• Receive +100% defense and attack while in an allies' borders.
+• Units receive +3 movement while in allies borders. 
+• Cities near an allied city receive +15 loyalty, even if on another continent.
+• Cities near an allied city receive 15% more production.
