@@ -1,6 +1,12 @@
 STATE OF IOWA
 Leader Name: Corneal Cornials Cornwall
 
+
+WHICH ARE WHICH?
+LEADER Trait -> Corn Jesus?
+
+
+
 Corn Jesus
 • +1 Faith for every corn field.
 • +1 Faith for every corn field adjacent to an economic district.
@@ -12,7 +18,7 @@ Corn Jesus
 • All national trade routes receive +1 faith and +4 food.
 • Increases the max amount of traders by 1 for every citizen in the capital.
 
-Corn Based Army
+Corn-based Army
 • All military units have 55% less attack and defense while in friendly borders.
 • Military units have an additional 75% less attack and defense while in enemy borders.
 • Cities cannot build walls.
@@ -24,11 +30,11 @@ Corn Based Army
     - Replaces the Bombard.
     - Does not suffer any debuffs and gains +1 strength for every corn field in the capital.
 
-Corn buys everything
+Corn Buys Everything
 • All district upgrades cost 75% less gold
 • Can buy religious units with gold.
 
-Corn Based Economy
+Corn-based Economy
 • Replaces Farms with Corn Fields and gives +4 food and +2 gold per turn.
 • Corn fields Gain +2 food and + 2 gold after banking tech, and gains +2 more food and gold after economics tech.
 • Capital city receives +75% more gold, and cities on same continent as the capital receive +25% gold
@@ -36,4 +42,4 @@ Corn Based Economy
 • Economic districts gain +2 gold for every corn field adjacent to it. +3 after banking and +4 after Economics.
 • Receives -25% less science per turn.
 
-Spawning location: This civ spawns in Plains and does not spawn near mountains.
+Spawning location: This civ spawns in plains and does not spawn near mountains.
