@@ -12,7 +12,7 @@ Corn Jesus
 • +1 Faith for every corn field adjacent to an economic district.
 • Starts with Great Prophet.
 • Starts with Astrology.
-• Capital City can have 100% production holy site
+• Capital City can have 100% production holy site.
 • Corn Trading:
     - All international trade routes receive +2 Gold and +2 Food for every Corn field in the City.
 • All national trade routes receive +1 faith and +4 food.
@@ -26,7 +26,7 @@ Corn-based Army
 • Military units cost 100% more to maintain.
 • Military camps take 100% more production to build.
 • Barbarians do 45% more damage to your units.
-• Unique Unit: Cob Cannon
+• Unique Unit: Cob Cannon:
     - Replaces the Bombard.
     - Does not suffer any debuffs and gains +1 strength for every corn field in the capital.
 
@@ -37,7 +37,7 @@ Corn Buys Everything
 Corn-based Economy
 • Replaces Farms with Corn Fields and gives +4 food and +2 gold per turn.
 • Corn fields Gain +2 food and + 2 gold after banking tech, and gains +2 more food and gold after economics tech.
-• Capital city receives +75% more gold, and cities on same continent as the capital receive +25% gold
+• Capital city receives +75% more gold, and cities on same continent as the capital receive +25% gold.
 • Replaces the Factory with a Corn syrup plant which provides +1 production for every corn field in that city.
 • Economic districts gain +2 gold for every corn field adjacent to it. +3 after banking and +4 after Economics.
 • Receives -25% less science per turn.

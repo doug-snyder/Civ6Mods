@@ -1,6 +1,7 @@
 /*
-	Localisation
-	Authors: MC
+	MisterShake2099 (MS2099)
+	Leader_Localisation.sql
+	LEADER LOCALIZATION
 */
 
 -----------------------------------------------

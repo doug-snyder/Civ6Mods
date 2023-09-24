@@ -1,6 +1,7 @@
 /*
 	MisterShake2099 (MS2099)
 	Civilization_UA.sql
+	CIVILIZATION UNIQUE A
 */
 
 --------------------------------------------------------------------------------
